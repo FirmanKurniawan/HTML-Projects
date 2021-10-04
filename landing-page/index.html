@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootsrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/503704af2c.js" crossorigin="anonymous"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="assets/style/main.css">
+</head>
+
+<body>
+    <!-- NABBAR ATAS -->
+    <nav class="navbar navbar-expand navbar-dark navbar-satu">
+        <div class="container font-weight-bold">
+            <div class="navbar-nav">
+                <a target="_blank" href="#" title="facebook" class="nav-item nav-link">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+                <a target="_blank" href="#" title="instagram" class="nav-item nav-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a target="_blank" href="#" title="youtube" class="nav-item nav-link">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#" title="faq" class="nav-item nav-link lsp-bnsp-link">FAQ</a>
+                <a href="#" title="kontak" class="nav-item nav-link lsp-bnsp-link">Kontak</a>
+                <a href="#" title="lokasi" class="nav-item nav-link lsp-bnsp-link">Lokasi</a>
+                <a href="#" title="kunjungan" class="nav-item nav-link lsp-bnsp-link">Permohonan Kunjungan</a>
+                <a href="#" title="sidatik" class="nav-item nav-link lsp-bnsp-link">Sidatik</a>
+            </div>
+
+
+            <form class="d-flex">
+                <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-search" type="submit">Search</button>
+            </form>
+
+        </div>
+    </nav>
+    <!-- NABBAR ATAS -->
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/logobpptik.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-md-2">
+                        <a class="nav-link active" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            PROFILE
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Profil Singkat</a>
+                            <a href="#" class="dropdown-item">Sejarah</a>
+                            <a href="#" class="dropdown-item">Tugas dan Fungsi</a>
+                            <a href="#" class="dropdown-item">Struktur Organisasi</a>
+                            <a href="#" class="dropdown-item">Prestasi</a>
+                            <a href="#" class="dropdown-item">Website BPPTIK</a>
+                        </div>
+                    </li>
+                    <li class="nav-item mx-md-2">
+                        <a class="nav-link" href="#resume">PELATIHAN</a>
+                    </li>
+                    <li class="nav-item mx-md-2">
+                        <a class="nav-link" href="#portfolio">SERTIFIKASI</a>
+                    </li>
+                    <li class="nav-item mx-md-2">
+                        <a class="nav-link" href="#portfolio">JADWAL</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            FASILITAS
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Galeri Foto</a>
+                            <a href="#" class="dropdown-item">Galeri Video</a>
+                        </div>
+                    </li>
+                    <li class="nav-item mx-md-2">
+                        <a class="nav-link" href="#portfolio">BERITA</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            GALERI
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Galeri Foto</a>
+                            <a href="#" class="dropdown-item">Galeri Video</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            DATA
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Indeks Kepuasan Masyarakat</a>
+                            <a href="#" class="dropdown-item">Laporan Tahunan</a>
+                            <a href="#" class="dropdown-item">SKKNI</a>
+                            <a href="#" class="dropdown-item">Unit Kompetensi</a>
+                            <a href="#" class="dropdown-item">Booklet BPPTIK</a>
+                            <a href="#" class="dropdown-item">Glosarium</a>
+                            <a href="#" class="dropdown-item">Download</a>
+                        </div>
+                    </li>
+                </ul>
+                <!-- Mobile Buttom -->
+                <!-- <form class="form-inline d-sm-block d-md-none">
+                    <button class="btn btn-login my-2 my-sm-0 px-4">
+                        LOGIN
+                    </button>
+                </form>
+                <form class="form-inline d-sm-block d-md-none">
+                    <button class="btn btn-daftar my-2 my-sm-0 px-4">
+                        DAFTAR
+                    </button>
+                </form> -->
+                <!-- Dekstop Buttom -->
+                <button class="btn btn-login">
+                    LOGIN
+                </button>
+                <button class="btn btn-daftar">
+                    DAFTAR
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar UTAMA -->
+
+    <!-- HERO / HEADER -->
+    <header class="text-center ">
+        <h1 class="my-4">
+            Lembaga Sertifikasi Profesi
+            <br>
+            BPPTIK
+        </h1>
+        <a href="#" class="btn btn-daftar px-5 mt-4">
+            DAFTAR SEKARANG
+        </a>
+    </header>
+
+    <!-- PAGE lsp -->
+    <section class="section-lsp my-5">
+        <div class="container">
+            <h2 class="text-center">Lembaga Sertifikasi Profesi BPPTIK</h2>
+            <p class="text-center">LSP BPPTIK adalah lembaga pendukung BNSP yang bertanggung jawab untuk melaksanakan
+                uji kompetensi dan sertifikasi kompetensi di bidang TIK. LSP BPPTIK didirikan oleh Badan Penelitian dan
+                Pengembangan Sumber Daya Manusia (Balitbang SDM) Kementerian Komunikasi dan Informatika (Kominfo)
+                melalui Surat Keputusan (SK) Kepala Balitbang SDM Nomor 13 Tahun 2018 tanggal 1 Februari 2018 tentang
+                Pembentukan Lembaga Sertifikasi Profesi Pihak Kesatu Balai Pelatihan dan Pengembangan Teknologi
+                Informasi dan Komunikasi.</p>
+            <div class="row py-2 justify-content-center">
+                <div class="col-sm-6 col-md-4 col-lg-3 mx-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/img/c1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="text-center">
+                                36 <br>
+                                Skema Sertifikasi</h3>
+                            <p class="card-text text-center">Skema / Profesi / Jabatan / Pekerjaan di bidang-bidang
+                                strategis sektor
+                                Teknologi Informasi dan Komunikasi.</p>
+                        </div>
+                        <a href="#" class="btn btn-block btn-lsp mt-3 py-2">
+                            Jadwal Sertifikasi
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 mx-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/img/c2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="text-center">
+                                300++ <br>
+                                Link DUDI</h3>
+                            <p class="card-text text-center">Perusahaan mitra LSP yang siap untuk menerima profesional
+                                bidang IT
+                                yang telah tersertifikasi, kompeten dan sesuai bidang keahliannya.</p>
+                        </div>
+                        <a href="#" class="btn btn-block btn-lsp mt-3 py-2">
+                            Lowongan Pekerjaan
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 mx-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/img/c3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="text-center">
+                                1000++ <br>
+                                SDM Tersertifikasi</h3>
+                            <p class="card-text text-center">Daftar tenaga kerja profesional yang telah tersertifikasi
+                                oleh LSP Teknologi Digital. Siap untuk menjawab kebutuhan industri.</p>
+                        </div>
+                        <a href="#" class="btn btn-block btn-lsp mt-3 py-2">
+                            Lowongan Pekerjaan
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Daftar Skema -->
+    <section class="section-skema my-5">
+        <div class="container">
+            <h2 class="text-center">Daftar Skema Sertifkasi</h2>
+            <div class="row mb-3">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <ul>
+                        <li style="display: inline-block;"><a href="#" class="btn btn-active">Lihat
+                                Semua</a></li>
+                        <li style="display: inline-block;"><a href="#" class="btn btn-label">Digital Marketing &
+                                Office</a></li>
+                        <li style="display: inline-block;"><a href="#" class="btn btn-label">Sofware Development</a>
+                        </li>
+                        <li style="display: inline-block;"><a href="#" class="btn btn-label">Multimedia</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row py-2 justify-content-center">
+
+                <div class="col-3">
+                    <div class="card">
+                        <img src="assets/img/skema.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="text-center">
+                                ITC Project
+                                Manager</h3>
+                        </div>
+                        <a href="#" class="btn btn-block btn-lihat mt-3 py-2">
+                            Lihat Skema
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card">
+                        <img src="assets/img/skema.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="text-center">
+                                ITC Project
+                                Manager</h3>
+                        </div>
+                        <a href="#" class="btn btn-block btn-lihat mt-3 py-2">
+                            Lihat Skema
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card">
+                        <img src="assets/img/skema.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="text-center">
+                                ITC Project
+                                Manager</h3>
+                        </div>
+                        <a href="#" class="btn btn-block btn-lihat mt-3 py-2">
+                            Lihat Skema
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card">
+                        <img src="assets/img/skema.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="text-center">
+                                ITC Project
+                                Manager</h3>
+                        </div>
+                        <a href="#" class="btn btn-block btn-lihat mt-3 py-2">
+                            Lihat Skema
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card">
+                        <img src="assets/img/skema.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="text-center">
+                                ITC Project
+                                Manager</h3>
+                        </div>
+                        <a href="#" class="btn btn-block btn-lihat mt-3 py-2">
+                            Lihat Skema
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card">
+                        <img src="assets/img/skema.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="text-center">
+                                ITC Project
+                                Manager</h3>
+                        </div>
+                        <a href="#" class="btn btn-block btn-lihat mt-3 py-2">
+                            Lihat Skema
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card">
+                        <img src="assets/img/skema.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="text-center">
+                                ITC Project
+                                Manager</h3>
+                        </div>
+                        <a href="#" class="btn btn-block btn-lihat mt-3 py-2">
+                            Lihat Skema
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card">
+                        <img src="assets/img/skema.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="text-center">
+                                ITC Project
+                                Manager</h3>
+                        </div>
+                        <a href="#" class="btn btn-block btn-lihat mt-3 py-2">
+                            Lihat Skema
+                        </a>
+                    </div>
+                </div>
+
+                <a href="#" class="btn btn-label my-5"> Lihat Semua</a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PAGE BERGABUNG -->
+    <section class="section-gabung my-5">
+        <div class="container">
+            <h2 class="text-center">Daftar Skema Sertifkasi</h2>
+            <div class="card mb-4 py-3">
+                <div class="row card-body">
+                    <div class="col-md-8">
+                        <h5>Asesor Kompetensi (Askom)</h5>
+                        <p>
+                            Bergabunglah bersama LSP untuk menjadi profesional yang telah
+                            memiliki lisensi atau sertifikat kompetensi dari Badan Nasional
+                            Sertifikasi Profesi (BNSP) sehingga berwenang melakukan asesmen
+                            terhadap para asesi.
+                        </p>
+                    </div>
+
+                    <div class="col-md-4  align-items-center">
+                        <a href="#" class="btn btn-info btn-block">Menjadi Askom</a>
+                        <a href="#" class="btn btn-info2 btn-block">Pelajari
+                            lebih lanjut</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-4 py-3">
+                <div class="row card-body">
+                    <div class="col-md-8">
+                        <h5>Asesor Kompetensi (Askom)</h5>
+                        <p>
+                            Bergabunglah bersama LSP untuk menjadi profesional yang telah
+                            memiliki lisensi atau sertifikat kompetensi dari Badan Nasional
+                            Sertifikasi Profesi (BNSP) sehingga berwenang melakukan asesmen
+                            terhadap para asesi.
+                        </p>
+                    </div>
+                    <div class="col-md-4 align-items-center">
+                        <a href="#" class="btn btn-info btn-block">Menjadi Askom</a>
+                        <a href="#" class="btn btn-info2 btn-block">Pelajari
+                            lebih lanjut</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card mb-4 py-3">
+                <div class="row card-body">
+                    <div class="col-md-8">
+                        <h5>Asesor Kompetensi (Askom)</h5>
+                        <p>
+                            Bergabunglah bersama LSP untuk menjadi profesional yang telah
+                            memiliki lisensi atau sertifikat kompetensi dari Badan Nasional
+                            Sertifikasi Profesi (BNSP) sehingga berwenang melakukan asesmen
+                            terhadap para asesi.
+                        </p>
+                    </div>
+                    <div class="col-md-4 align-items-center">
+                        <a href="#" class="btn btn-info btn-block">Menjadi Askom</a>
+                        <a href="#" class="btn btn-info2 btn-block">Pelajari
+                            lebih lanjut</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAGE Testimoni -->
+    <div class="section section-testi my-5">
+        <div class="container">
+            <h2 class="text-center">Testimoni Peserta</h2>
+            <div class="row justify-content-center">
+                <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div class="card text-center">
+                        <div class="testi">
+                            <img src="assets/img/profil.png" alt="User" class="mb-2 rounded-circle">
+                            <h3>Rizky Dwi Putra Sidik</h3>
+                            <h5>Web Developer</h5>
+                            <p class="text-center">
+                                “ Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+                                luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim
+                                praesent elementum facilisis leo.“
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div class="card text-center">
+                        <div class="testi">
+                            <img src="assets/img/profil.png" alt="User" class="mb-2 rounded-circle">
+                            <h3>Rizky Dwi Putra Sidik</h3>
+                            <h5>Web Developer</h5>
+                            <p class="text-center">
+                                “ Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+                                luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim
+                                praesent elementum facilisis leo.“
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div class="card text-center">
+                        <div class="testi">
+                            <img src="assets/img/profil.png" alt="User" class="mb-2 rounded-circle">
+                            <h3>Rizky Dwi Putra Sidik</h3>
+                            <h5>Web Developer</h5>
+                            <p>
+                                “ Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+                                luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim
+                                praesent elementum facilisis leo.“
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <section class="section-footer mt-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12 col-lg-3">
+                            <h5>Mitra LSP Bpptik</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">LSP MIGAS</a></li>
+                                <li><a href="#">LSP Manajemen Resiko</a></li>
+                                <li><a href="#">LSP STP Bandung</a></li>
+                                <li><a href="#">LSP Kimia Industri</a></li>
+                                <li><a href="#">Indonesia Kompeten</a></li>
+                                <li><a href="#">BNSP</a></li>
+                                <li><a href="#">KOMINFO</a></li>
+                                <li><a href="#">KEMNAKER Bandung</a></li>
+                                <li><a href="#">LSP Teknologi</a></li>
+                                <li><a href="#">LPK Alfabank</a></li>
+                                <li><a href="#">Islamic Boarding School</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <h5>Info Lainnya</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Visi Dan Misi LSP BPPTIK</a></li>
+                                <li><a href="#">Struktur Organisasi LSP BPPTIK</a></li>
+                                <li><a href="#">Personil LSP BPPTIK</a></li>
+                                <li><a href="#">Ruang Lingkup LSP BPPTIK</a></li>
+                                <li><a href="#">Skema Sertifikasi</a></li>
+                                <li><a href="#">Kontak</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <h5>Media</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#"><i class="fab fa-instagram-square"></i> Instagram</a></li>
+                                <li><a href="#"><i class="fab fa-facebook-square"></i> Facebook</a></li>
+                                <li><a href="#"><i class="fab fa-youtube-square"></i> Youtube</a></li>
+                                <li><a href="#">
+                                        <i class="fas fa-podcast"></i> Podcast
+                                    </a></li>
+                                <li><a href="#"><i class="fab fa-hotjar"></i> Hot News</a></li>
+                                <li><a href="#"><i class="fas fa-camera"></i> Galeri Foto</a></li>
+                                <li><a href="#"><i class="fas fa-camera"></i> Galeri Video</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <h5>Kontak</h5>
+                            <!-- google maps -->
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15863.485942369221!2d107.17095665993344!3d-6.280621005222475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6984b6582f19ef%3A0x86c476e7529bc486!2sBPPTIK%20Kementerian%20Kominfo!5e0!3m2!1sid!2sid!4v1628182552866!5m2!1sid!2sid"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <hr>
+                    <p>© Copyright 2021 ❤ RizkyDPS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="assets/script/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+    </script>
+</body>
+
+
+</html>
