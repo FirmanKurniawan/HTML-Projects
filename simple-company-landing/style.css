@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    overflow-x: hidden;
+}
+
+h1 {
+    color: #FFFFFF;
+}
+
+.z-index img {
+    position: absolute;
+    z-index: 1;
+    top: 13%;
+    left: 0;
+    height: 100%;
+}
+
+.z-index-bottom img {
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    margin-top: -17%;
+    height: 117%;
+    width: 100%;
+}
+
+.white-button button {
+    color: #0E6699;
+    font-weight: 700;
+    padding: 10px 33px;
+}
+
+.white-outline-button button {
+    font-weight: 700;
+    width: 99%;
+    border: 2px solid;
+}
+
+.line-horizontal {
+    width: 95px;
+    height: 4px;
+    background-color: #0E6699;
+}
+
+.card-small {
+    color: white;
+    background: rgb(41,41,41);
+    background: linear-gradient(90deg, rgba(41,41,41,0.9472163865546218) 0%, rgba(41,41,41,1) 100%);
+}
+
+@media (min-width: 772px) and (max-width: 1920px) {
+    #sm-display {
+        display: none !important;
+    }
+    #lg-display {
+        display: flex !important;
+    }
+
+    .head-title {
+        margin-top: 3%;
+    }
+  }
+
+@media only screen and (max-width: 774px) {
+    #lg-display {
+        display: none !important;
+    }
+    #sm-display {
+        display: flex !important;
+    }
+
+    .center {
+        text-align: center;
+        padding-top: 3%;
+    }
+
+    .adv-card-down {
+        padding-top: 0 !important;
+    }
+
+    .adv-card-items {
+        margin: 15px 0;
+    }
+
+    .pricing-card {
+        margin: 25px 0;
+    }
+
+    .social-docs {
+        margin: 25px 0;
+    }
+
+  }
