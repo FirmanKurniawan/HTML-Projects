@@ -1,0 +1,5 @@
+<script>
+   /* ini komentar selamat datang */
+  document.write("Selamat datang bissmilah kaos sama botol minuman");
+</script>
+#Hacktoberfest-indonesia-2021
