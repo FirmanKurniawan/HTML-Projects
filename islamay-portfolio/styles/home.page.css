@@ -1,0 +1,504 @@
+@import 'global.css';
+@import 'var.css';
+@import 'poppin.font.css';
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-background);
+    min-height: 100vh;
+}
+
+header {
+    position: fixed;
+    padding: 0 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+header .title {
+    text-align: center;
+    position: relative;
+    color: transparent;
+    font-size: 45px;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    text-decoration: none;
+    -webkit-text-stroke: .5px white;
+}
+
+header .title::before {
+    content: 'Dean';
+    width: 0;
+    color: white;
+    position: absolute;
+    -webkit-text-stroke: none;
+    overflow: hidden;
+}
+
+header .title:hover::before {
+    animation: titleGrow .3s forwards;
+}
+
+
+
+header ul {
+    display: flex;
+}
+
+header li {
+    margin: 0 10px;
+    list-style: none;
+}
+
+.header-link {
+    position: relative;
+    color: white;
+    font-size: 25px;
+}
+
+.header-link::before {
+    content: '';
+    width: 0;
+    height: 100%;
+    position: absolute;
+    border-bottom: 2px solid white;
+    align-self: center;
+    overflow: hidden;
+}
+
+.header-link:hover::before {
+    animation: titleGrow .5s forwards;
+}
+
+
+
+main {
+    padding: 200px 150px;
+}
+
+.intro-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.intro-text {
+    color: white;
+    font-size: 40px;
+    font-weight: 200;
+    width: 50%;
+    padding: 10px;
+}
+
+.intro-text::before {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--color-primary);
+}
+
+.intro-text::after {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--color-light-purple);
+    bottom: 0;
+    right: 0;
+}
+
+#hire-me-button {
+    margin: 0 auto;
+}
+
+#hire-me-button-text {
+    position: relative;
+    color: transparent;
+    font-size: 80px;
+    font-style: italic;
+    -webkit-text-stroke: 1px var(--color-light-purple);
+    animation: updown 1s infinite alternate;
+}
+
+#hire-me-button-text::before {
+    content: 'HireMe!';
+    width: 0;
+    position: absolute;
+    color: var(--color-light-purple);
+    overflow: hidden;
+    -webkit-text-stroke: none;
+}
+
+#hire-me-button-text:hover {
+    animation: none;
+}
+
+#hire-me-button-text:hover::before {
+    animation: titleGrow .7s forwards;
+}
+
+.unique-section {
+    margin-top: 100px;
+}
+
+.unique-text {
+    display: flex;
+    justify-content: center;
+}
+
+.unique-text h1 {
+    cursor: default;
+    position: relative;
+    color: transparent;
+    font-size: 45px;
+    display: inline;
+    font-style: italic;
+    letter-spacing: 5px;
+    -webkit-text-stroke: 1px var(--color-primary);
+}
+
+.unique-text.first h1:first-child {
+    -webkit-text-stroke: 1px var(--color-light-purple);
+}
+
+.unique-text.second h1:last-child {
+    -webkit-text-stroke: 1px var(--color-light-purple);
+}
+
+.unique-text.first h1:first-child::before,
+.unique-text.first h1:last-child::before,
+.unique-text.second h1:first-child::before,
+.unique-text.second h1:last-child::before {
+    width: 0;
+    white-space: nowrap;
+    position: absolute;
+    overflow: hidden;
+}
+
+.unique-text.first h1:first-child::before {
+    content: '<> Unique.';
+    color: var(--color-light-purple);
+}
+
+.unique-text.first h1:last-child::before {
+    content: 'Unparallel';
+    color: var(--color-primary);
+}
+
+.unique-text.second h1:first-child::before {
+    content: '<> Unique';
+    color: var(--color-primary);
+}
+
+.unique-text.second h1:last-child::before {
+    content: 'Unparallel';
+    color: var(--color-light-purple);
+}
+
+.unique-text.first h1:first-child:hover::before,
+.unique-text.first h1:last-child:hover::before,
+.unique-text.second h1:first-child:hover::before,
+.unique-text.second h1:last-child:hover::before {
+    animation: titleGrow 1s forwards;
+}
+
+
+
+.projects-section {
+    margin-top: 200px;
+}
+
+.projects-section .title {
+    width: min-content;
+    position: relative;
+    color: transparent;
+    font-style: italic;
+    -webkit-text-stroke: 1px var(--color-primary);
+    cursor: default;
+}
+
+.projects-section .title::before {
+    content: "<Projects>";
+    position: absolute;
+    width: 0;
+    overflow: hidden;
+    color: var(--color-primary);
+}
+
+.projects-section .title:hover::before {
+    animation: titleGrow .5s forwards;
+}
+
+.projects-section ul li {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.projects-section ul li h1 {
+    position: relative;
+    font-size: 60px;
+    cursor: default;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--color-light-purple);
+    white-space: nowrap;
+}
+
+.projects-section ul li h1::before {
+    content: "Coming Soon...";
+    position: absolute;
+    width: 0;
+    overflow: hidden;
+    color: var(--color-light-purple);
+    animation: titleGrow 2s infinite alternate;
+}
+
+section div .title {
+    position: relative;
+    cursor: default;
+    width: fit-content;
+    font-style: italic;
+    color: transparent;
+}
+
+.content-section {
+    margin: 100px 0;
+}
+
+.content-section div .title::before {
+    position: absolute;
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.content-section:nth-child(2n) div .title::before {
+    color: var(--color-primary);
+}
+
+.content-section:not(:nth-child(2n)) div .title::before {
+    color: var(--color-light-purple);
+}
+
+.content-section div .title:hover::before {
+    animation: titleGrow .5s forwards;
+}
+
+.content-section:nth-child(2n) div .title {
+    -webkit-text-stroke: 1px var(--color-primary);
+}
+
+.content-section:not(:nth-child(2n)) div .title {
+    -webkit-text-stroke: 1px var(--color-light-purple);
+}
+
+.about-section {
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.about-section::before,
+.about-section::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border: 1px solid var(--color-primary);
+}
+
+.about-section::before {
+    left: 0;
+    bottom: 0;
+    border-color: var(--color-light-purple);
+}
+
+.about-section::after {
+    right: 0;
+    top: 0;
+}
+
+.about-section .title {
+    display: inline;
+    position: relative;
+    font-style: italic;
+    -webkit-text-stroke: 1px var(--color-light-purple);
+    color: transparent;
+    cursor: default;
+
+}
+
+.about-section .title::before {
+    content: "<About Me>";
+    width: 0;
+    overflow: hidden;
+    position: absolute;
+    color: var(--color-light-purple);
+    white-space: nowrap;
+}
+
+.about-section .title:hover::before {
+    animation: titleGrow .5s forwards;
+}
+
+.about-section p {
+    display: block;
+    width: 550px;
+    margin: 0 auto;
+    color: white;
+    font-size: 25px;
+}
+
+.about-section p:not(:first-child) {
+    margin-top: 25px;
+}
+
+.about-section strong {
+    font-size: 1.2em;
+}
+
+.tech-section div .title::before {
+    content: "<Technologies>";
+}
+
+.contact-section div .title::before {
+    content: "<Contact Me>";
+}
+
+.contact-section {
+    margin-top: 100px;
+}
+
+#contactForm {
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input {
+    font-size: 25px;
+    background-color: transparent;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 2px solid var(--color-primary);
+    outline: none;
+    color: var(--color-light-purple);
+    padding: 5px;
+}
+
+.form-input::placeholder {
+    color: var(--color-primary);
+    opacity: .5;
+}
+
+#contactForm button {
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid var(--color-light-purple);
+    color: var(--color-light-purple);
+    cursor: pointer;
+    transition: .5s;
+}
+
+#contactForm button:hover {
+    background-color: var(--color-light-purple);
+    color: var(--color-background);
+}
+
+@keyframes updown {
+    from {
+        transform: translateY(-10%);
+    }
+
+    to {
+        transform: translateY(10%);
+    }
+}
+
+@keyframes titleGrow {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header {
+        padding: 0 20px;
+    }
+
+    header .header-link {
+        display: none;
+    }
+
+    main {
+        width: 100vw;
+        padding: 100px 10px;
+    }
+
+    .intro-container {
+        flex-direction: column;
+    }
+
+    .intro-text {
+        display: block;
+        font-size: 25px;
+        width: calc(100vw - 20px);
+    }
+
+    .intro-text strong {
+        font-size: 1.2em;
+    }
+
+    #hire-me-button-text {
+        font-size: 60px;
+    }
+
+    .unique-text h1 {
+        font-size: 20px;
+    }
+
+    .content-section div .title {
+        font-size: 40px;
+    }
+
+    .about-section p {
+        width: 100%;
+        font-size: 18px;
+        word-wrap: break-word;
+    }
+
+    .projects-section ul li h1 {
+        font-size: 30px;
+    }
+
+    #contactForm {
+        width: 300px;
+    }
+
+    .form-input {
+        border-radius: 5px;
+        font-size: 20px;
+    }
+
+    #contactForm button {
+        border-radius: 5px;
+        font-size: 20px;
+    }
+}
