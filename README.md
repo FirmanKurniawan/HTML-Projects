@@ -11,4 +11,6 @@ Please make sure to update tests as appropriate.
 
 hacktoberfest @2021
 hacktoberfest
+hacktoberfest-2021
 hacktoberhehe
+cr0wid-hacktober
