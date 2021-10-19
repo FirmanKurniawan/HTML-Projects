@@ -1,0 +1,32 @@
+.container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+.content-container{
+  display: flex;
+}
+
+.item{
+  list-style: none;
+  cursor: pointer;
+  margin: 0 1em;
+  padding: 1.5em;
+  border-radius: 1em;
+  border: 1px solid #eaeaea;
+  transition: .3s;
+}
+  .item:hover{
+      box-shadow: #000000 0 1.5em 2em -2em;
+      border: 1px solid #ffffff;
+      transform: translateY(-10px);
+      transition: 0.3s;
+      border: 1px solid #eaeaea;
+  }
+  .item h1{
+    font-size: 2em;
+    text-align: center;
+  }
