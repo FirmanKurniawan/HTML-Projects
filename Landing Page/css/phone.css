@@ -1,0 +1,150 @@
+@media (min-width: 500px) and (max-width: 1090px){
+
+	.container{
+	margin-top: 15px;
+	margin-left: 0px;
+	margin-right: 0px;
+	
+	}
+
+	.frame-4-left {
+	    width: 612px;
+	}
+
+	.frame-4-left p {
+	    margin-right: 20px;
+	    font-size: 14.5px;
+	 }
+
+	.content .btn2 {
+	    margin-right: 51px;
+	    margin-top: 5px;
+	}
+	 
+	.plan {
+		margin: 27px;
+		line-height: 27px;
+		}
+
+
+	.input-area-1 form input {
+	    width: 260px;
+	    margin-bottom: 10px;
+	    margin-left: 20px;
+	}
+
+	.input-area-1 select {
+	    width: 293px;
+	    margin-left: 20px;
+	}
+
+	#female {
+	    margin-left: 100px;
+	}
+
+	#male {
+	    margin-left: 20px;
+	}
+
+	textarea {
+	    width: 220px;
+	    height: 147px;
+	    margin-left: 20px;
+	    margin-right: 10px;
+	}
+}
+
+/*For Mobile Phones*/
+@media (max-width: 500px){
+	.container{
+	margin-top: 15px;
+	margin-left: 0px;
+	margin-right: 0px;
+	
+	}
+	.frame-4 {
+	    display: grid;
+	    margin-top: 20px;
+	    grid-template-columns: none;
+	    grid-template-rows: repeat(2,1fr);
+	    height: 480px;
+	}
+	.frame-4-left {
+	    display: block;
+	    margin: 0px auto;
+	    height: 480px;
+	}
+	.frame-4-right {
+	    display: none;
+	}
+
+	.plan {
+	    margin: 18px;
+	    line-height: 30px;
+	}
+
+	.content .btn2 {
+	    width: 140px;
+	    margin-right: 44px;
+	    margin-top: 0px;
+	}
+
+	.content {
+	    height: 440px;
+	}
+
+	.service-img img {
+    	height: 470px;
+	}
+
+	.frame-5{
+		height: 470px; 
+	}
+	.form {
+	    margin-left: 110px;
+	    margin-right: 110px;
+	}
+	.submition {
+	    margin-left: 110px;
+	    margin-right: 110px;
+	}
+	.input-area-1 form input {
+	    width: 260px;
+	    margin-bottom: 10px;
+	    margin-left: 20px;
+	}
+
+	.input-area-1 select {
+	    width: 293px;
+	    margin-left: 20px;
+	}
+
+	#female {
+	    margin-left: 100px;
+	}
+
+	#male {
+	    margin-left: 20px;
+	}
+	textarea {
+	    width: 220px;
+	    height: 147px;
+	    margin-left: 20px;
+	    margin-right: 10px;
+	}
+
+	.submition input{
+		margin-bottom: 20px;
+	}
+}
+
+@media (min-width: 1090px) and (max-width: 1210px){
+	.plan{
+		margin: 37px;
+	}
+	.content .btn2 {
+    	margin-top: 0px;
+    	margin-right: 67px;
+    }
+
+}
