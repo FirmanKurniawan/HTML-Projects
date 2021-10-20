@@ -1,0 +1,143 @@
+@media (min-width:675px) and (max-width: 1000px){
+
+	.about-content p {
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    margin-left: -68px;
+    margin-left: 97px;
+    background-color: black;
+    margin-right: 14px;
+}
+}
+
+
+@media (min-width:200px) and (max-width: 674px){
+
+
+/*Navigation*/
+#navbar{
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+#navbar ul li a{
+	font-size: 1.2rem;
+	padding:0px 7px;
+
+}
+
+/*Home*/
+
+#home{
+	margin-top: -44px;
+	height: 288px;
+	padding: 3px 61px;
+
+}
+#home::before {
+    
+    height: 75%;
+    
+}
+
+#home h1{
+	font-size: 23px;
+}
+#home p{
+	font-size: 14px;
+}
+/*About us*/
+
+.about{
+	flex-direction: column;
+	height: 556px;
+
+}
+#about-container{
+	height: 446px;
+	margin-top: -33px;
+}
+.about-img{
+	/*height: 80%;
+	width: 100px;*/
+
+	
+	margin-left: 86px;
+
+} 
+.about-img img{
+	height: 130px;
+	width: :100px;
+	border-radius: 34px;
+	margin-top: -42px;
+    margin-left: -20px;
+
+}
+.about-content{
+	
+	opacity: inherit;
+	/*margin-left: 80px;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+
+}
+.about-content p{
+	height: 89px;
+    width: 300px;
+	color: white;
+	padding-top: 16px;
+	font-size: 10px;
+	border: 2px solid white;
+	margin-top: -249px;
+    background-color: black;
+
+
+}
+
+/*Services*/
+#services{
+	flex-direction: column;
+
+}
+
+#services .box{
+	margin: 23px;
+	margin-left: 104px;
+    height: 279px;
+    margin: 36px;
+    width: 269px;
+}
+
+#services .box img{
+	height: 86px;
+}
+
+/*Cntact us*/
+
+#contact-box input {
+    width: 106%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.2rem;
+    border: 2px solid black;
+}
+
+
+#contact-box textarea {
+    width: 105%;
+    height: 164px;
+/*footer*/
+
+
+/*Utility classes*/
+.h-primary{
+	font-size: 2.0rem;
+}
+
+.h-secondary {
+   
+}
+}
