@@ -1,0 +1,466 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	
+}
+body{
+	background-color: #e8e7e7;
+	font-family: 'Epilogue', sans-serif;
+}
+
+
+.container{
+	display: grid;
+	margin-top: 15px;
+	margin-left: 80px;
+	margin-right: 80px;
+	
+}
+
+/*Introduction Starts*/
+.frame-1{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	background-color: #ffffff;
+	
+}
+
+.left-intro{
+	display: flex;
+	position: relative;
+	background-color: #9a3334;
+	align-items: center;
+	justify-content: center;
+	height: 280px;
+}
+.right-intro{
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	height: 280px;
+}
+
+.right-intro p{
+	position: absolute;
+	font-family: 'Playball', cursive;
+	padding: 20px;
+}
+
+.logo{
+	background-color: #9a3334;
+	color: #ffffff;
+	font-family: 'Nunito', sans-serif;
+	font-size: 3.4rem;
+}
+
+/*Intoduction Ends*/
+
+/*About Section*/
+.frame-2{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	background-color: #ffffff;
+}
+
+.left-about{
+	position: relative;
+	height: 280px;
+
+}
+
+.left-about h3{
+	text-align: left;
+	margin-top: 50px;
+	margin-left: 40px;
+	color: #9a3334; 
+}
+
+.left-about p{
+	margin-right: 50px;
+	margin-top: 25px;
+	margin-left: 40px;
+		
+}
+
+.left-about .btn{
+	float: right;
+	width: 150px;
+	height: 45px;
+	background-color: #9a3334;
+	border: none;
+	color: #ffffff;
+	cursor: pointer;
+	text-align: center;
+	padding:5px;
+	margin-right: 70px;
+	margin-top: 20px
+
+
+}
+.right-about{
+	height: 280px;
+	background-color: #9a3334;
+}
+
+.about-image{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.about-image img{
+	width: 110px;
+	height: 110px;
+	border-radius: 100%;
+	margin-top: 60px;
+
+}
+
+.right-about p{
+	color: #ffffff;
+	margin-left: 60px;
+	margin-right: 60px;
+	margin-top: 15px;
+	text-align: center;
+
+}
+
+/*Frame 3 begins here*/
+
+.frame-3{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+}
+
+.frame-3-left{
+	height: 280px;
+}
+
+.frame-3-left img{
+	width: 100%;
+	height: 280px;
+	display: block;
+	overflow: hidden;
+}
+
+
+.frame-3-right{
+	position: relative;
+	height: 280px;
+	background-color: #ffffff;
+}
+.center-btn{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 15px;
+}
+.frame-3-right .btn{
+	float: right;
+	width: 150px;
+	height: 45px;
+	background-color: #9a3334;
+	border: none;
+	color: #ffffff;
+	cursor: pointer;
+	text-align: center;
+	padding:5px;
+}
+
+.frame-3-right h3{
+	margin-top : 50px;
+	margin-left: 40px;
+}
+
+.frame-3-right p{
+	margin-right: 50px;
+	margin-top: 25px;
+	margin-left: 40px;
+}
+
+/*Frame 3 Ends Here*/
+
+/*Frame 4 Starts*/
+
+.frame-4{
+	display: grid;
+	margin-top: 20px;
+	grid-template-columns: repeat(2,1fr);
+	height: 480px;
+}
+.frame-4-left{
+	background-color: #ffffff;
+	width: 730px;
+
+}
+.frame-4-left h3{
+	text-align: left;
+	margin-top: 50px;
+	margin-left: 40px;
+	color: #9a3334; 
+}
+
+.frame-4-left p{
+	margin-right: 50px;
+	margin-top: 25px;
+	margin-left: 40px;
+		
+}
+
+.frame-4-left .btn{
+	float: right;
+	width: 150px;
+	height: 45px;
+	background-color: #9a3334;
+	border: none;
+	color: #ffffff;
+	cursor: pointer;
+	text-align: center;
+	padding:5px;
+	margin-right: 70px;
+	margin-top: 20px
+}
+
+.frame-4-right{
+	height: 480px;
+}
+
+.frame-4-right img{
+	height: 480px;
+	width: 100%;
+
+}
+
+/*Frame 4 Ends*/
+
+/*Frame 5/Services Starts Here*/
+.frame-5{
+	margin-top: 20px;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	height: 500px;
+	background-color: #ffffff;
+}
+
+.service-img{
+	position: relative;
+}
+
+.service-img img{
+	height: 500px;
+	width: 100%;
+}
+
+.service-1{
+	position: relative;
+
+}
+
+.service-2{
+	position: relative;
+
+}
+
+.content{
+	border:1px solid #009997;
+	height:460px;
+	width: 85%;
+	margin-top:17px;
+	margin-left: 30px;
+	background-color: #ffffff;
+
+}
+
+.content h3{
+	color: #ffffff;
+	text-align: center;
+	background-color: #009997;
+	padding: 15px;
+}
+
+.content .price{
+	color: #ffffff;
+	text-align: center;
+	background-color: #009997;
+	padding-bottom: 20px;
+	margin-top: -1px;
+}
+
+.plan{
+	text-align: center;
+	margin: 40px;
+	line-height: 30px;
+
+}
+
+.content .btn2{
+	float: right;
+	width: 150px;
+	height: 45px;
+	background-color: #009997;
+	border: none;
+	color: #ffffff;
+	cursor: pointer;
+	text-align: center;
+	padding:5px;
+	margin-right: 80px;
+	margin-top: 10px
+
+}
+
+/*Services End*/
+
+
+/* Contact Application Starts Here*/
+
+.contact{
+	display: grid;
+	grid-template-rows: repeat(3,auto);
+	margin-top: 20px;
+}
+
+.heading{
+	height: 100px;
+	background-color: #9a3334;
+
+}
+
+.heading h3{
+	margin-top: 30px;
+	margin-left: 110px;
+	color: #ffffff;
+
+}
+
+.form{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	margin-left: 130px;
+	margin-right: 150px;
+	margin-top: -40px;
+}
+
+.input-area-1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ffffff;
+}
+.input-area-1 form input{
+	width: 300px;
+	height: 10px;
+	padding: 15px;
+	margin-bottom: 10px;
+}
+
+.input-area-1 form input::placeholder{
+	color: black;
+	opacity: 1;
+}
+.input-area-1 select{
+	width: 334px;
+	height: 43px;
+	margin-bottom: 10px;
+	padding-left: 15px;
+}
+
+.name{
+	margin-top: 40px;
+}
+
+
+.input-area-2{
+	background-color: #ffffff;
+}
+
+.gender{
+	margin-top: 40px;
+}
+
+#male{
+	margin-right: 6px;
+}
+#female{
+	margin-left: 130px;
+	margin-right: 6px;
+}
+
+textarea{
+	margin-top: 17px;
+	width: 300px;
+	height: 150px;
+	padding: 10px;
+}
+
+textarea::placeholder{
+	color: black;
+	opacity: 1;
+}
+
+
+.submition{
+	margin-left: 130px;
+	margin-right: 150px;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	background-color: #ffffff;
+}
+
+.submition input{
+	width: 150px;
+	height: 45px;
+	background-color: #9a3334;
+	border: none;
+	color: #ffffff;
+	cursor: pointer;
+	text-align: center;
+	padding:5px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+/* Contact Application Ends Here*/
+
+/*Address Starts Here*/
+
+.address{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	background-color: #676767;
+	margin-top: -40px;
+	z-index: -1;
+
+}
+.address-1{
+	margin-top: 60px;
+	display:flex;
+	flex-direction: column;
+	margin-left: 200px;
+}
+.address-1 h3{
+	color: white;
+	margin-bottom: 5px;
+}
+
+.address p{
+	color: white;
+	line-height: 25px;
+	margin-bottom: 20px;
+}
+
+.address-2{
+	margin-top: 60px;
+	display:flex;
+	flex-direction: column;
+	margin-left: 30px;
+
+}
+
+/*Address Ends Here*/
+
+/*Footer Area*/
+.footer{
+	display: block;
+	margin:5px auto;
+}
+/*Footer Area Ends*/
