@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: yellow;
+  transition: width 2s;
+  border-radius:50%;
+}
+
+div:hover {
+  width: 300px;
+}
+</style>
+</head>
+<body>
+
+<h1>Hacktoberfest task</h1>
+
+<div></div>
+
+</body>
+</html>
+
+
