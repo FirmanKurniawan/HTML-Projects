@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1 id="title">KOLOR</h1>
+    <div>
+        <label for="points">Red:</label>
+        <br>
+        <input type="range" id="red" min="0" max="255" onchange="changeHandle()">
+        <br>
+        <label for="points">Green:</label>
+        <br>
+        <input type="range" id="green" min="0" max="255" onchange="changeHandle()">
+        <br>
+        <label for="points">Blue:</label>
+        <br>
+        <input type="range" id="blue" min="0" max="255" onchange="changeHandle()">
+
+    </div>
+    <script>
+        const changeHandle = () => {
+            let red = document.getElementById("red").value
+            let green = document.getElementById("green").value
+            let blue = document.getElementById("blue").value
+            const rgbColor = `rgb(${red}, ${green}, ${blue})`
+
+            const body = document.getElementById("title")
+            body.setAttribute("style", `color : ${rgbColor}`)
+            console.log(rgbColor)
+        }
+    </script>
+
+</body>
+
+</html>
