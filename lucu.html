@@ -1,0 +1,112 @@
+<html>
+<meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script><script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script><link href="https://untukyou.likeadream.repl.co/style.css" rel="stylesheet" type="text/css" /><script src="https://untukyou.likeadream.repl.co/script.js"></script>
+<head>
+<!-- 
+This code was made by Rayya R!
+Blog: https://sinkronin.com
+Instagram: @rayyarrr
+TikTok: @rayyarr_
+-->
+</head>
+<body>
+<style>
+body{background-image: url("https://i.postimg.cc/j5c70hW6/IMG-20211227-125249-101.jpg");background-repeat: no-repeat;background-size: 100% 100% 100%;}
+</style><div id="bodyblur"></div>
+
+<div id="konten"><div id="fotoloveu"><div class="image">
+<!-- Foto Akhir --><img src="https://i.postimg.cc/pLm4mGRT/bubududu-panda.gif" id="animasi" width="170px" height="170px"/></div><span id="penutup" style="font-size:1.1rem;"></span></div>
+
+<div id="tomAksi"><a class='button' onClick='reaksi();'>Jawab</a></div>
+
+</div>
+
+<!-- Teks, Lagu --><script>
+var u=0,penutup;penutup = "Gimana kalo kita jadian aja? ><";
+
+function play() {//Link Audio Bisa Diganti
+var audio = new Audio('https://lv3000.likeadream.repl.co/musik.mp3');audio.play();}         
+
+//Reaksi
+ async function reaksi(){
+   var { value: hasiljawab } = await swals.fire({
+                    title: 'Ketik jawabannya',
+                    input: 'text',
+                    confirmButtonText: 'Lanjut',
+                    showCancelButton: false,
+                });
+   if(hasiljawab && hasiljawab.length < 16){      
+   window.hasiljawab = hasiljawab;          	
+   await swals.fire('Makasi dah mau jawab <3', 'Nanti kirim jawabannya ke WhatsApp gw ya!');   
+   window.location = "https://api.whatsapp.com/send?phone=&text=Hai, gw dah liat semuanya. Jawabannya: " + window.hasiljawab;
+   } else { await swals.fire('Ups!', 'Tidak boleh kosong atau lebih dari 15 karakter, ya!'); reaksi();}
+   } 
+</script>
+ 
+<script type="text/javascript">            
+            var today = new Date();var date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear()+'.';var dateTime = date;
+            const swals = Swal.mixin({
+                backdrop: 'rgba(0,0,123,0.4)', confirmButtonColor: '#55009E', cancelButtonColor: '#FFCA00', allowOutsideClick: false,
+            });
+            async function mulai(){
+                 await swals.fire({
+                  title: 'Padahal cuma temenan...', 
+                  imageUrl: 'https://i.postimg.cc/L8QQRzPp/ugh.gif',
+                  imageWidth: 120, imageHeight: 120,
+                 });   
+                 play();	
+                 await swals.fire({
+                  title: 'Tapi ko gw ngerasa nyaman ya :(',
+                  imageUrl: 'https://i.postimg.cc/cJVDt0Tk/bear-cute.gif',
+                  imageWidth: 120, imageHeight: 120,
+                 });
+                 await swals.fire({
+                  title: 'Siapa lagi kalo bukan sama lu &#129325;',
+                  imageUrl: 'https://i.postimg.cc/L5VvWfSG/saltobears.gif',
+                  imageWidth: 120, imageHeight: 120,
+                 });
+                 ketik();expl();
+            }            
+            mulai();
+</script>
+
+
+
+<!-- Di bawah ini JANGAN DIEDIT SEMBARANGAN -->
+<script>
+  function tombol() {document.getElementById('tomAksi').style.visibility = "visible";document.getElementById('tomAksi').style.opacity = "1";}
+  async function expl(){aksifoto();document.getElementById('bodyblur').style.opacity = "1";document.getElementById('bodyblur').style.visibility = "visible";setTimeout(duar,200);}
+  function aksifoto(){var e1 = document.getElementById('animasi');e1.classList.add("degdeg");document.getElementById('fotoloveu').style.opacity = "1";document.getElementById('fotoloveu').style.height = "180px";document.getElementById('fotoloveu').style.margin = "50px 0 0 0";}
+  
+async function duar(){
+document.getElementById('konten').style.top = "0";
+document.body.style.backgroundColor = "#000";
+}
+
+const body = document.querySelector("body");
+function createHeart() {
+    const heart = document.createElement("div");
+    heart.className = "fas fa-heart";
+    heart.style.left = (Math.random() * 90)+"vw";
+    heart.style.animationDuration = (Math.random()*3)+2+"s"
+    body.appendChild(heart);
+}
+setInterval(function name(params) {
+    var heartArr = document.querySelectorAll(".fa-heart")
+    if (heartArr.length > 50) {
+       heartArr[0].remove()
+    }
+},100);
+
+  function ketik() {
+    if(u<penutup.length){
+      document.getElementById("penutup").innerHTML += penutup.charAt(u);
+      u++;
+      setTimeout(ketik,110);
+    }
+    if(u==penutup.length){
+    tombol();setInterval(createHeart,300);
+    }
+  }
+</script>
+</body>
+</html>
