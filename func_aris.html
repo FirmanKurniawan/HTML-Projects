@@ -1,0 +1,107 @@
+<html>
+    <head>
+	    <title>Func</title>
+</head>
+        <style>
+			table {
+				border: 1px solid black;
+				border-collapse : collapse;
+			}
+			td {
+				background-color:rgb(130, 255, 228);
+			}
+		</style>
+<body onload="focusTxt()">
+	<form name="form">
+		
+	<pre>No Order           : <input type="text" name="txtNo" id="No"> <br> </pre>
+	<hr>
+	    <pre>Kode Barang        : <input type="text" name="txtKode" id="Kode"onchange="proses()"> <br> </pre>
+	        <pre>Tulisan Dinding    : <input type="text" name="txtDinding" id="Dinding">  <br> </pre>
+	    <pre>Harga Satuan       : <input type="text" name="txtHarga" id="Harga"> <br> </pre>
+	<pre>Jumlah             : <input type="text" name="txtJumlah" id="Jumlah"> <br> </pre>
+	
+	    <input type="button" name="button1" value="SIMPAN" onclick="simpan()">
+	<input type="button" name="button2" value="TAMPILKAN" onclick="tampilkan()"> <br><br>
+	</form>
+
+	<p id="hasil"></p>
+	    <table id="tampil" border="1"></table>
+            <p id="hasiltotal"></p>
+
+	<script type="text/javascript" language="Javascript">
+   
+var no = [];
+var kode = [];
+var dinding = [];
+var harga = [];
+var jumlah = [];
+var subtotal = [];
+var i = 0;
+
+function clearTxt(){
+		document.form.txtKode.value = "";
+	document.form.txtDinding.value = "";
+		document.form.txtHarga.value = "";
+	document.form.txtJumlah.value = "";
+        document.form.txtSubtotal.value="";
+    }
+
+function proses()
+    {
+		var Barang = document.form.txtKode.value;
+	if (Barang <= "H001")
+    {
+		document.form.txtDinding.value = "Berkata Baik Atau Diam ";
+		document.form.txtHarga.value = "100000";
+	}
+	else if (Barang <= "H002")
+    {
+		document.form.txtDinding.value = "Kita Sering Lupa Ada Malaikat Bersama Kita Yang Dengan Teliti Mencatat Setiap Amalan Kita";
+		document.form.txtHarga.value = "150000";
+	}
+	else if (Barang <= "H003")
+    {
+		document.form.txtDinding.value = "Hidup Ini Hanya Sementara";
+		document.form.txtHarga.value = "200000";
+	}
+	else {
+		document.form.txtDinding.value = "Kesalahan Input";
+		document.form.txtHarga.value = "Kesalahan Input";
+		}
+    }
+
+function simpan(){
+    var bilangan1=document.form.txtJumlah.value;
+    var bilangan2=document.form.txtHarga.value;
+    hitung=bilangan1*bilangan2;
+
+	no[i] = document.form.txtNo.value;
+	kode[i] = document.form.txtKode.value;
+    dinding[i] = document.form.txtDinding.value;
+	harga[i] = document.form.txtHarga.value;
+	jumlah[i] = document.form.txtJumlah.value;
+    subtotal[i] = 'Rp.' + hitung;
+    i++;
+	clearTxt();
+    }
+
+function tampilkan()
+{
+
+var tampilan = "<tr><td> No <td> Kode Barang <td> Tulisan Dinding <td> Harga <td> Jumlah <td> Subtotal";
+total = no.length;			
+
+	for (var i = 0; i < total; i++){
+		look = "No : " + no[i];
+		tampilan = tampilan + "<tr><td>" + (i+1) + "<td>" + kode[i] + "<td>" + dinding[i] + "<td>" + harga[i] + "<td>" + jumlah[i] + "<td>" + subtotal[i];
+        totalharga = "Total Bayar = " + subtotal[i];
+	}
+
+			document.getElementById('tampil').innerHTML = tampilan;
+			document.getElementById('hasil').innerHTML = look;
+            document.getElementById('hasiltotal').innerHTML = totalharga;
+}
+	</script>
+</body>
+</html>
