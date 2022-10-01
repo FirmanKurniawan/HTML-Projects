@@ -1,0 +1,136 @@
+.login{
+    padding-top:10px;
+    background-color: #421d91;
+    margin:0% 35% 10% 35%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+.loginbox
+{
+    width: max-content;
+    margin:2%;
+    border-radius: 8px;
+    width: 332px;
+    height:30px;
+    font-size:20px;
+    background-color: #bed2f5;
+    padding:15px;
+}
+.login_button
+{
+    background-color: #6e37e4;
+    color:white;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    border-radius: 6px;
+    border-style: none;
+    font-size: 20px;
+    line-height: 48px;
+    padding: 0 16px;
+    width: 332px;
+    margin-bottom:10%;
+}
+.login_button:hover
+{
+    background-color: #320a88;
+}
+
+
+
+p{
+    font-weight: bold;
+    text-align: left;
+}
+
+#imgy{
+    float:right;
+    height:80px;
+}
+#red{
+    color:red;
+}
+.box{
+    margin-right: 70px;
+    margin-left:0px;
+}
+.box2{
+    margin-right: 130px;
+    margin-left:20px;
+}
+.box3{
+    margin-right: 150px;
+    margin-left:20px;
+}
+#ut{
+    text-align: center;
+    margin:20px 110px 20px 110px;
+    font-size: 15px;
+}
+#Heading{
+    background-color: #5F2AD2;
+    color: white;
+    padding: 12px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    margin:0px;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+}
+.buttons:hover{
+    color:rgb(0, 238, 255);
+    background-color: black;
+}
+.buttons{
+    font-size: 25px;
+    text-align: center;
+    border:3px solid black;
+    margin:2% 45% 0% 45%;
+    border-radius: 15px;
+    background-color: rgb(69, 52, 167);
+    color: white;
+    letter-spacing: 3px;
+}
+.boxu{
+    margin-right: 170px;
+    margin-left:20px;
+}
+
+
+.inh{
+    text-align: left;
+}
+table, th{
+    padding:10px;
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+    font-size: 20px;
+}
+#special{
+    border-bottom:0px;
+}
+.buttonsed{
+    display: inline;
+    font-size: 15px;
+    text-align: center;
+    border:3px solid black;
+    margin: 0% 50% 0% 50%;
+    border-radius: 15px;
+    background-image: -moz-linear-gradient(white, rgb(255, 255, 117) );
+    letter-spacing: 3px;
+    padding: 5px;
+    font-weight: bold;
+    }
+a{
+    text-decoration: none;
+}
+.buttonsed:hover{
+    color:red;
+}
+    .hp{
+        font-size: 20px;
+        color:white;
+        padding:5px 0px 5px 0px;
+        background-color: #5F2AD2;
+        border:1px solid black;
+    }
