@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Add Data Array</title>
+    </head>
+<body onLoad="focustxt()">
+<form name="form1">
+    Program Tambah Data : <br>
+    Masukan Kata : <input type="text" name="txtKata" id="kata"> <br><br>
+
+    Hasil :
+    <table border=1 id="hasil">
+    </table>
+</form>
+
+<script>
+    var data=[]; // atau var data=new Array();
+    var i=0;
+
+    function focusTxt(){
+        document.form1.txtKata.focus();
+    }
+    function simpan(){
+        data[i]=document.form1.txtKata.value;
+        document.form1.txtKata.value="";
+        i++;
+        alert("Data Telah Disimpan");
+    }
+    function tampil(){
+        var isi="<tr><td>Nama";
+            Total=data.length;
+            for(var i=0;i<Total;i++){
+                isi=isi+"<tr><td>"+data[i];
+            }
+
+            document.getElementById('hasil').innerHTML=isi;
+    }
+</script>
+</html>
