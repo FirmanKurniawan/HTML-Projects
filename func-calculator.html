@@ -27,7 +27,7 @@
 
         referrerpolicy="no-referrer"></script> 
 
-    <!-- for styling -->
+   
 
     <style> 
 
@@ -84,7 +84,6 @@
     </style> 
 
 </head> 
-<!-- create table -->
 
   
 
@@ -104,10 +103,7 @@
 
         <tr> 
 
-            <!-- create button and assign value to each button -->
-
-            <!-- dis("1") will call function dis to display value -->
-
+            
             <td><input type="button" value="1" onclick="dis('1')" 
 
                         onkeydown="myFunction(event)"> </td> 
@@ -176,7 +172,7 @@
 
                         onkeydown="myFunction(event)"> </td> 
 
-            <!-- solve function call function solve to evaluate value -->
+           
 
             <td><input type="button" value="=" onclick="solve()"> </td> 
 
@@ -194,8 +190,7 @@
 
     <script> 
 
-        // Function that display value 
-
+        
         function dis(val) { 
 
             document.getElementById("result").value += val 
@@ -246,8 +241,7 @@
 
   
 
-        // Function that evaluates the digit and return result 
-
+        
         function solve() { 
 
             let x = document.getElementById("result").value 
@@ -260,7 +254,7 @@
 
   
 
-        // Function that clear the display 
+        
 
         function clr() { 
 
