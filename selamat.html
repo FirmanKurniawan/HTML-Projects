@@ -1,0 +1,116 @@
+<html><meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/><link href="https://feeldreams.github.io/yukbuka/style.css" rel="stylesheet" type="text/css" /><script src="https://feeldreams.github.io/yukbuka/script.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script><script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
+<head>
+<title>Script HTML HBD</title>
+<!-- 
+  Made with love by Rayys!
+     Blog: https://PalingIT.com
+     Instagram: @rayyarrr
+     TikTok: @rayy4r
+     Email: rayyar0703@gmail.com
+  Thanks to all <3
+-->
+</head>
+<body>
+	
+   <!-- Ganti Audio di sini -->
+   <audio src="https://feeldreams.github.io/anotherme.mp3" id="linkmp3"></audio>
+   
+   <div id="bodyblur">
+     <!-- Wallpaper --><img src="https://feeldreams.github.io/wpemandangan.jpg" id="wallpaper"/>
+   </div>
+   
+   <div id='Content'>
+
+     <div id="suratin" onClick="memulai();">
+       <!-- Tombol Surat --><img src="https://rayyscoding.github.io/envelope.png"/>
+     </div>
+       <p id="ket">Klik Suratnya!</p>
+    
+     <div><blockquote id='bq'>
+       <div>
+         <!-- Stiker untuk Konten -->
+         <img src="https://feeldreams.github.io/bunga.gif" id="fotoakhir"/>
+         <img src="https://feeldreams.github.io/peach1.gif" id="fotoakhir2"/>
+         <img src="https://feeldreams.github.io/peach3.gif" id="fotoakhir3"/>
+         <img src="https://feeldreams.github.io/peachktw.gif" id="fotoakhir4"/>
+       </div>
+
+       <!-- Konten Pembukaan -->
+       <p id="kalimat">Hai, Kamu! 😆</p>
+       <p id="kalimatb">Kamu Ultah ya Hari Ini? 🤭❤️</p>
+       <p id="kalimatc"><b>Selamat Ulang Tahun &gt;&lt;</b></p>
+
+       <!-- Konten Pertanyaan -->
+       <p id="kalimat1">Mau Kado Dariku Gak Nih? 😃❤️</p>
+       <p id="kalimatb1">Jawab yaa 🤭</p>
+       <p id="kalimatc1"></p>
+
+       <!-- Konten Jawaban -->
+       <p id="kalimat2">Okeee! 🥳</p>
+       <p id="kalimatb2">Dalam waktu <b>7 detik</b>, Aku akan memberikanmu 🎁 Kado!</p>
+       <p id="kalimatc2"><b style="font-size:24px"><span id="ctimer">0</span> ⏳</b></p>
+
+       <!-- Konten Jawaban 2 -->
+       <p id="kalimat3">Yahh Macet🤣🙏🏻</p>
+       <p id="kalimatb3">Gajadi Ngasih Kado Deh :v</p>
+       <p id="kalimatc3">Jangan marah ya! 😜❤️</p>
+     </blockquote></div>
+
+     <!-- Pesan Ditolak -->
+     <div id="pesanditolak">
+       <img id="stikerditolak" src="https://feeldreams.github.io/weee.gif"/>
+       <p id="kataditolak">Yaudah kalau gak mau 😜</p>
+     </div>
+     
+     <!-- Tombol Multifungsi -->
+     <div id="Tombol">
+       <a id="By" onClick="multifungsi()">
+         <b id="tmbl">Lanjut</b>
+       </a>
+       
+       <a id="Bn" onClick="ditolak()">Engga</a>
+     </div>
+     
+     <!-- Pesan yang dikirim ke WhatsApp -->
+     <span id="pesanWA">Mana kadonya! 😡</span>
+     
+   </div>
+
+<!-- Jangan Edit Bagian Ini --><script>
+  ftom=0;jikakuis=0;ftganti=0;flag=1;flagg=1;fungsi=0;fungsiAwal=0;
+  pesanwhatsapp = pesanWA.innerHTML;Content.style = "opacity:1;margin-top:15vh;";ket.style="margin-top:30px";Bn.style.display="none";
+  
+  function memulai(){if(fungsiAwal==0){audio.play();fungsiAwal=1;suratin.style="transition:all 1s ease;transform:scale(.1);opacity:0";ket.style="transition:all 1s ease;transform:scale(.1);opacity:0";setTimeout(mulaikonten,500)}}
+  
+  function mulaikonten() {
+    setTimeout(tombol,1000);otomatis();
+    suratin.style="display:none";ket.style="display:none";
+    Content.style = "opacity:1;margin-top:4vh";
+    bodyblur.style="opacity:.5;animation:none";
+    wallpaper.style="transform: scale(1);opacity:1;";
+    fotoakhir.style="display:inline-flex;";setTimeout(ftmuncul,200);
+    bq.style = "position:relative;opacity:1;visibility:visible;transform: scale(1);margin-top:0";fungsi=1;
+  }
+  
+  function ftmuncul(){
+    if(ftganti==0){fotoakhir.style="display:inline-flex;opacity:1;transform:scale(1)";}
+    if(ftganti==1){fotoakhir.src = fotoakhir2.src;fotoakhir.style="display:inline-flex;opacity:1;transition:all .7s ease;transform:scale(1);";}
+    if(ftganti==2){fotoakhir.src = fotoakhir3.src;fotoakhir.style="display:inline-flex;opacity:1;transition:all .7s ease;transform:scale(1);";}
+    if(ftganti==3){fotoakhir.src = fotoakhir4.src;fotoakhir.style="display:inline-flex;opacity:1;transition:all .7s ease;transform:scale(1);";}
+  }
+  function fthilang(){fotoakhir.style="display:inline-flex;opacity:1;transition:all .7s ease;transform:scale(.1)";}
+  function jjfoto(){fotoakhir.style.animation="rto .8s infinite alternate";}
+  
+  function tombol(){ftom=1;Tombol.style="opacity:1;transform: scale(1);";if(jikakuis==1){tmbl.innerHTML="Mau";Bn.style="margin:12px 0 12px 12px";ftom=2}}
+  function multifungsi(){if(ftom==1){lanjut();} if(ftom==2){diterima();} if(ftom==5){menuju();}}
+  async function menuju(){await swals.fire('OK!', 'Kirim pesan ke WhatsApp aku, ya!', 'success');window.location = "https://api.whatsapp.com/send?phone=&text=" + pesanwhatsapp;Tombol.style="margin-top:15px;opacity:1;transform: scale(1);";}
+
+  const body = document.querySelector("body");const swalst = Swal.mixin({timer: 2777, allowOutsideClick: false, showConfirmButton: false, timerProgressBar: true, imageHeight: 90,}); audio = new Audio('' + linkmp3.innerHTML);const swals = Swal.mixin({allowOutsideClick: false, cancelButtonColor: '#FF0040', imageWidth: 100, imageHeight: 100,}); const style = document.createElement('style'); var today = new Date();var dd = String(today.getDate()).padStart(2, '0');var mm = String(today.getMonth() + 1).padStart(2, '0');var yyyy = today.getFullYear();const monthNames = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];today = dd + ' ' + monthNames[today.getMonth()] + ' ' + yyyy;
+  audio = new Audio('' + linkmp3.src);
+  
+   function createHeart() {const heart = document.createElement("div"); heart.className = "fas fa-heart"; heart.style.left = (Math.random() * 90)+"vw"; heart.style.animationDuration = (Math.random()*3)+2+"s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-heart"); if (heartArr.length > 100) {heartArr[0].remove()}},100);
+</script>
+<!-- Sampai Sini -->
+</body>
+</html>
