@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(0deg, rgb(19, 17, 130) 0%, rgb(8, 8, 107) 8%, rgb(67, 10, 141) 29%, rgb(27, 2, 60) 90%);
+}
+
+.elements div {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    border: 6px solid rgb(20, 156, 224);
+}
+
+.elements div:nth-child(1) {
+    top: 11%;
+    left: 41%;
+    animation: animate 10s linear infinite;
+}
+
+.elements div:nth-child(2) {
+    top: 90%;
+    left: 49%;
+    animation: animate 7s linear infinite;
+}
+
+.elements div:nth-child(3) {
+    top: 62%;
+    left: 10%;
+    animation: animate 9s linear infinite;
+}
+
+.elements div:nth-child(4) {
+    top: 45%;
+    left: 78%;
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(0) translateY(-90px) rotate(360deg);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1,3) translateY(-90px) rotate(-180deg);
+        border-radius: 50%;
+        opacity: 1;
+    }
+}
