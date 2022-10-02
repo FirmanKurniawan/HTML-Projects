@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Quotes Generator</title>
+
+    <style>
+      body {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        height: 100vh;
+        overflow: hidden;
+        font-family: monospace;
+      }
+
+      h1 {
+        max-width: 800px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1></h1>
+    <h2></h2>
+
+    <script>
+      const h1 = document.querySelector("h1")
+      const h2 = document.querySelector("h2")
+
+      const getRandomQuotes = async () => {
+        const res = await fetch("https://api.quotable.io/random")
+        const data = await res.json()
+        if (!res.ok) return (h2.textContent = "Something went wrong, try reloading the page.")
+
+        h1.textContent = "❝ " + data.content + " ❞"
+        h2.textContent = "-" + data.author
+      }
+
+      getRandomQuotes()
+      setInterval(() => getRandomQuotes(), 6000)
+    </script>
+  </body>
+</html>
