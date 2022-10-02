@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+          <title>Kordinat lokasi</title>
+            <!-- Required meta tags -->
+            <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        
+            <!-- Bootstrap CSS -->
+            <link
+              rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+              crossorigin="anonymous" />
+            <!--CSS LeafletJS-->
+            <link
+              rel="stylesheet"
+              href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+              integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+              crossorigin=""/>
+
+
+        </head>
+        <body class="bg-dark">
+            <br />
+            <div class="container">
+              <div class="text-white text-center">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16" style="width: 130px;height: 130px;background: white; border-radius: 50%;padding: 20px; color: red;">
+                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                </svg>
+                <h2>Kordinat Lokasi</h2>
+              </div>
+              <p class="text-white text-center">Klik tombol di bawah ini untuk mengetahui kordinat anda sekarang</p>
+              <!-- saat button diklik maka akan menjalankan fungsi getlokasi -->
+              <button class="btn btn-primary btn-block" onclick="getlokasi()">
+                Dapatkan lokasi
+              </button>
+              <br />
+              <!-- peta akan ditampilkan di bawah ini dengan ukuran lebar 600px dan tinggi 400px -->
+              <div id="mapid" style="border-radius: 8px; width: 100%; height: 400px"></div>
+            </div>
+        
+            <!--JavaScript LeafletJS-->
+            <script
+              src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+              integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+              crossorigin="">
+            </script>
+            <script>
+              //mengambil elemen lokasi dan memasukannya ke dalam variabel lokasi
+              var lokasi = document.getElementById("lokasi");
+        
+              function getlokasi() {
+                //jika browser mendukung navigator.geolocation maka akan menjalankan perintah di bawahnya
+                if (navigator.geolocation) {
+                  // getCurrentPosition digunakan untuk mendapatkan lokasi pengguna
+                  //showPosition adalah fungsi yang akan dijalankan
+                  navigator.geolocation.getCurrentPosition(showPosition);
+                }
+              }
+              function showPosition(position) {
+                // masukan kordinat latitude dan longitude ke dalam peta leaflet
+                // ini adalah format dan cara memasukan kordinat pada leaflet js
+                // jika kalian belum paham, bisa melihat tutorial yang saya buat tentang leaflet js di blog ini
+                var mymap = L.map("mapid").setView(
+                  [position.coords.latitude, position.coords.longitude],
+                  13
+                );
+        
+                //setting maps menggunakan api mapbox bukan google maps, daftar dan dapatkan token
+                L.tileLayer(
+                  "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw",
+                  {
+                    maxZoom: 18,
+                    attribution:
+                      'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+                      '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+                      'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+                    id: "mapbox/streets-v11",
+                    tileSize: 512,
+                    zoomOffset: -1,
+                  }
+                ).addTo(mymap);
+                //menambahkan marker letak posisi dengan lat dan lng yang telah didapat sebelumnya
+                L.marker([position.coords.latitude, position.coords.longitude])
+                  .addTo(mymap)
+                  .bindPopup("Lokasi anda");
+              }
+            </script>
+        </body>
+    </html>
+        
