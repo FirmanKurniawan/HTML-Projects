@@ -1,0 +1,1 @@
+# Simple implement HTML5 Dialog Element for Create Modal
