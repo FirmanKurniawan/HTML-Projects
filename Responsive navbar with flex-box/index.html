@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation-responsive</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;500&family=Lobster&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <h2>arsyaadi</h2>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+
+        <div class="burger">
+            <!-- <input type="checkbox"> -->
+            <span class="p-1"></span>
+            <span class="p-3"></span>
+            <span class="p-2"></span>
+    </nav>
+</body>
+
+<script>
+    const burger = document.querySelector('.burger');
+    const ul = document.querySelector('ul');
+    const links = document.querySelectorAll('a');
+    const push1 = document.querySelector('.p-1');
+    const push2 = document.querySelector('.p-2');
+    const push3 = document.querySelector('.p-3');
+
+    burger.addEventListener('click', () => {
+        ul.classList.toggle('slide');
+    });
+
+    burger.addEventListener('click', () => {
+        push1.classList.toggle('push-1');
+        push2.classList.toggle('push-2');
+        push3.classList.toggle('push-3');
+    });
+
+
+    links.forEach(el => {
+        el.addEventListener('click', (e) => {
+            if (e.target.classList.contains('active')) {
+                return;
+            } else {
+                links.forEach(el => {
+                    el.classList.remove('active');
+                });
+                e.target.classList.add('active');
+            }
+        });
+    });
+</script>
+
+</html>
