@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator - JQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    
+    <!-- Boostrap Css -->
+    <link rel="stylesheet" href="../../about-us/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="/">FP</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../../Home/index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Features
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="../../Featurs/kalkulatorJquery/index.html">Kalkulator</a></li>
+                      <li><a class="dropdown-item" href="../../Featurs/todolistJquery/index.html">To-Do</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../about-us/aboutUs.html">About Us</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- <div class="container">
+            <a href="../../Home/index.html"><span class="iconify" data-icon="dashicons:arrow-left-alt" style="color: white; padding-bottom:20px;background-color: burlywood; width: 100px; height: 80px; margin-top: 18px; padding-top: 18px; border-radius: 8px; "></span></a>
+        </div> -->
+    
+        <div class="kal">
+            <form name="form">
+                <input class="kal-display">
+            </form>
+            <table>
+                <tr>
+                    <td><input type="button" value="C" onclick="c()">
+                    <td><input type="button" value="/" onclick="insrt('/')">
+                    <td><input type="button" value="<" onclick="hps()">
+                    <td><input type="button" value="X" onclick="insrt('*')">
+                    </td>
+                </tr><tr>
+                    <td><input type="button" value="7" onclick="insrt(7)">
+                    <td><input type="button" value="8" onclick="insrt(8)">
+                    <td><input type="button" value="9" onclick="insrt(9)">
+                    <td><input type="button" value="-" onclick="insrt('-')">
+                    </td>
+                </tr><tr>
+                    <td><input type="button" value="4" onclick="insrt(4)">
+                    <td><input type="button" value="5" onclick="insrt(5)">
+                    <td><input type="button" value="6" onclick="insrt(6)">
+                    <td><input type="button" value="+" onclick="insrt('+')">
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="1" onclick="insrt(1)">
+                    <td><input type="button" value="2" onclick="insrt(2)">
+                    <td><input type="button" value="3" onclick="insrt(3)">
+                    <td><input type="button" value="="onclick="tbh()">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="button" value="0" onclick="insrt(0)" style="width: 158px";>
+                    <td><input type="button" value="." onclick="insrt('.')">
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="button-kembali">
+            <button><a href="../../Home/index.html" style="text-decoration: none;" onclick="alert('apakah anda yakin ingin kembali ke menu utama')">Kembali</a></button>
+        </div>
+    </main>
+
+    <footer>
+        <section id="footer" class="bg-light">
+            <div class="text-center copyright p-3">
+                &copy; 2022 <span class="px-1 text-muted">|</span> All Rights Reserved by <b>Informatika 02</b>
+            </div>
+        </section>
+    </footer>
+
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <!-- Script -->
+    <script src="../../about-us/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
