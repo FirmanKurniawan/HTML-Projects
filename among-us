@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Among Us Rounded</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body id="home0">
+	<header>
+		<nav>
+			<div class="among-us">
+				<h4>Among Us Rounded</h4>
+			</div>
+			<ul>
+				<li><a href="#home0">Home</a></li>
+				<li><a href="#name0">Name</a></li>
+				<li><a href="#warna0">Color</a></li>
+				<li><a href="#hat0">Hat</a></li>
+				<li><a href="#player0">Player</a></li>
+			</ul>
+			<div class="menu-toggle">
+				<input type="checkbox">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</nav>
+  </header>
+
+  <!-- Nama -->
+  <div class="yourname" id="name0">
+      <h3 class="header-3">Masukkan nama Anda</h3>
+      <input type="text" class="kolom-nama" id="namaaa" onclick="this.value = ''"/>
+      <div class="button" id="btn-submit">
+        <button onclick="nganoke();">Submit</button>
+      </div>
+  </div>
+  <div class="pilih-warna" id="warna0">
+    <h3>Pilihlah salah satu Warna</h3>
+    <div class="table-1">
+        <div class="kolom">
+          <h5>Merah</h5>
+          <div class="gambar"><img src="images/red.png" class="war1"></div>
+        </div>
+        <div class="kolom">
+          <h5>Coklat</h5>
+          <div class="gambar"><img src="images/brown.png" class="war1"></div>
+        </div>
+        <div class="kolom">
+          <h5>Hijau</h5>
+          <div class="gambar"><img src="images/green.png" class="war1"></div>
+        </div>
+        <div class="kolom">
+          <h5>Ungu</h5>
+          <div class="gambar"><img src="images/purple.png" class="war1"></div>
+        </div>
+        <div class="kolom">
+          <h5>Putih</h5>
+          <div class="gambar"><img src="images/white.png" class="war1"></div>
+        </div>
+        <div class="kolom">
+          <h5>Jingga</h5>
+          <div class="gambar"><img src="images/orange.png" class="war1"></div>
+        </div>
+        <div class="kolom">
+          <h5>Merah muda</h5>
+          <div class="gambar"><img src="images/pink.png" class="war1"></div>
+        </div>
+        <div class="kolom">
+          <h5>Biru toska</h5>
+          <div class="gambar"><img src="images/cyan.png" class="war1"></div>
+        </div>
+        <div class="kolom">
+          <h5>Hitam</h5>
+          <div class="gambar"><img src="images/black.png" class="war1"></div>
+        </div>
+        <div class="kolom">
+          <h5>Kuning</h5>
+          <div class="gambar"><img src="images/yellow.png" class="war1"></div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Topi -->
+  <div class="pilih-topi" id="hat0">
+    <h3>Pilihlah salah satu Topi</h3>
+    <div class="table-2">
+        <div class="kolom">
+          <h5>Daun</h5>
+          <div class="gambar1"><img src="images/daun.png" class="war2"></div>
+        </div>
+        <div class="kolom">
+          <h5>Elektro</h5>
+          <div class="gambar1"><img src="images/hme.png" class="war2"></div>
+        </div>
+        <div class="kolom">
+          <h5>Love</h5>
+          <div class="gambar1"><img src="images/love.png" class="war2"></div>
+        </div>
+    </div>
+  </div>
+
+<!-- Player mu -->
+  <div class="player" id="player0">
+    <h3 class="text-player">Player-mu</h3>
+    <div class="namamu">
+      <input type="text" class="namaa" id="nama-to">
+    </div>
+    <div class="topi">
+      <img src="images/hat.png" class="hat">
+    </div>
+    <div class="warna">
+    <img src="images/astronout.png" class="astronout" id="astronout">
+    </div>
+  </div>
+
+<!-- Footer -->
+<footer>
+  <div class="footer">
+    <h6 class="woi">&copy; Credit by <a href="https://api.whatsapp.com/send?phone=6282280731079">Aditya Erlangga Wibowo</a></h6>
+  </div>
+</footer>
+
+
+
+	<script src="js/script.js"></script>
+</body>
+</html>
