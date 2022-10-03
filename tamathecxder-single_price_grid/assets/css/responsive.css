@@ -1,0 +1,687 @@
+/* Very small screen */
+@media (max-width: 374px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    padding: 80px 32px;
+  }
+
+  .card-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 720px;
+    height: auto;
+    background-color: coral;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .card-price .card-head {
+    padding: 30px 24px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .card-price .card-head .main-text-header {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--cyan);
+    margin-bottom: 12px;
+  }
+
+  .card-price .card-head h3 {
+    font-size: 16px;
+    color: var(--bright-yellow);
+    margin-bottom: 12px;
+  }
+
+  .card-price .card-head p {
+    max-width: 90%;
+    color: var(--grayish-blue);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .card-price .card-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: none;
+  }
+
+  .card-price .card-body #monthly-subs {
+    padding: 30px 24px;
+    width: 100%;
+    background-color: hsl(179, 73%, 38%);
+    color: var(--light-gray);
+  }
+
+  .card-price .card-body #monthly-subs .section-text-header {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  .card-price .card-body #monthly-subs .monthly-price-text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 6px;
+  }
+
+  .card-price .card-body #monthly-subs .monthly-price-text h5 {
+    font-size: 34px;
+    font-weight: 700;
+  }
+
+  .card-price .card-body #monthly-subs .monthly-price-text .per-month {
+    font-size: var(--standard-font-size);
+    font-weight: 400;
+    opacity: 0.4;
+  }
+
+  .card-price .card-body #monthly-subs p {
+    font-size: var(--standard-font-size);
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+
+  .card-price .card-body #monthly-subs .btn-sign-up {
+    width: 100%;
+    padding: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: var(--bright-yellow);
+    box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .card-price .card-body #monthly-subs .btn-sign-up:hover {
+    background-color: hsla(71, 82%, 46%, 0.9);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .card-price .card-body #why-us {
+    padding: 30px 24px;
+    width: 100%;
+    background-color: var(--cyan);
+    color: var(--light-gray);
+  }
+
+  .card-price .card-body #why-us .section-text-header {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  .card-price .card-body #why-us p {
+    font-size: 15px;
+    max-width: 85%;
+    color: var(--light-gray);
+    opacity: 0.8;
+    line-height: 26px;
+  }
+}
+
+/* Small screen */
+@media (min-width: 375px) and (max-width: 575px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    padding: 80px 32px;
+  }
+
+  .card-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 720px;
+    height: auto;
+    background-color: coral;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .card-price .card-head {
+    padding: 30px 24px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .card-price .card-head .main-text-header {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--cyan);
+    margin-bottom: 12px;
+  }
+
+  .card-price .card-head h3 {
+    font-size: 16px;
+    color: var(--bright-yellow);
+    margin-bottom: 12px;
+  }
+
+  .card-price .card-head p {
+    max-width: 90%;
+    color: var(--grayish-blue);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .card-price .card-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: none;
+  }
+
+  .card-price .card-body #monthly-subs {
+    padding: 30px 24px;
+    width: 100%;
+    background-color: hsl(179, 73%, 38%);
+    color: var(--light-gray);
+  }
+
+  .card-price .card-body #monthly-subs .section-text-header {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  .card-price .card-body #monthly-subs .monthly-price-text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 6px;
+  }
+
+  .card-price .card-body #monthly-subs .monthly-price-text h5 {
+    font-size: 34px;
+    font-weight: 700;
+  }
+
+  .card-price .card-body #monthly-subs .monthly-price-text .per-month {
+    font-size: var(--standard-font-size);
+    font-weight: 400;
+    opacity: 0.4;
+  }
+
+  .card-price .card-body #monthly-subs p {
+    font-size: var(--standard-font-size);
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+
+  .card-price .card-body #monthly-subs .btn-sign-up {
+    width: 100%;
+    padding: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: var(--bright-yellow);
+    box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .card-price .card-body #monthly-subs .btn-sign-up:hover {
+    background-color: hsla(71, 82%, 46%, 0.9);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .card-price .card-body #why-us {
+    padding: 30px 24px;
+    width: 100%;
+    background-color: var(--cyan);
+    color: var(--light-gray);
+  }
+
+  .card-price .card-body #why-us .section-text-header {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  .card-price .card-body #why-us p {
+    font-size: 15px;
+    max-width: 85%;
+    color: var(--light-gray);
+    opacity: 0.8;
+    line-height: 26px;
+  }
+}
+
+/* Medium (tablets) screen */
+@media (min-width: 576px) and (max-width: 720px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    padding: 80px 32px;
+  }
+
+  .card-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 720px;
+    height: auto;
+    background-color: coral;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .card-price .card-head {
+    padding: 30px 24px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .card-price .card-head .main-text-header {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--cyan);
+    margin-bottom: 12px;
+  }
+
+  .card-price .card-head h3 {
+    font-size: 18px;
+    color: var(--bright-yellow);
+    margin-bottom: 10px;
+  }
+
+  .card-price .card-head p {
+    max-width: 100%;
+    color: var(--grayish-blue);
+    font-weight: 400;
+    font-size: var(--standard-font-size);
+    line-height: 24px;
+  }
+
+  .card-price .card-body {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: none;
+  }
+
+  .card-price .card-body #monthly-subs {
+    padding: 30px 24px;
+    width: 50%;
+    background-color: hsl(179, 73%, 38%);
+    color: var(--light-gray);
+  }
+
+  .card-price .card-body #monthly-subs .section-text-header {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  .card-price .card-body #monthly-subs .monthly-price-text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 6px;
+  }
+
+  .card-price .card-body #monthly-subs .monthly-price-text h5 {
+    font-size: 34px;
+    font-weight: 700;
+  }
+
+  .card-price .card-body #monthly-subs .monthly-price-text .per-month {
+    font-size: var(--standard-font-size);
+    font-weight: 400;
+    opacity: 0.4;
+  }
+
+  .card-price .card-body #monthly-subs p {
+    font-size: var(--standard-font-size);
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+
+  .card-price .card-body #monthly-subs .btn-sign-up {
+    width: 100%;
+    padding: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: var(--bright-yellow);
+    box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .card-price .card-body #monthly-subs .btn-sign-up:hover {
+    background-color: hsla(71, 82%, 46%, 0.9);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .card-price .card-body #why-us {
+    padding: 30px 24px;
+    width: 50%;
+    background-color: var(--cyan);
+    color: var(--light-gray);
+  }
+
+  .card-price .card-body #why-us .section-text-header {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  .card-price .card-body #why-us p {
+    font-size: 15px;
+    max-width: 100%;
+    color: var(--light-gray);
+    opacity: 0.8;
+    line-height: 26px;
+  }
+}
+
+@media (min-width: 721px) and (max-width: 930px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    padding: 80px 32px;
+  }
+
+  .card-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 720px;
+    height: auto;
+    background-color: coral;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .card-price .card-head {
+    padding: 30px 24px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .card-price .card-head .main-text-header {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--cyan);
+    margin-bottom: 12px;
+  }
+
+  .card-price .card-head h3 {
+    font-size: 18px;
+    color: var(--bright-yellow);
+    margin-bottom: 10px;
+  }
+
+  .card-price .card-head p {
+    max-width: 100%;
+    color: var(--grayish-blue);
+    font-weight: 400;
+    font-size: var(--standard-font-size);
+    line-height: 24px;
+  }
+
+  .card-price .card-body {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: none;
+  }
+
+  .card-price .card-body #monthly-subs {
+    padding: 30px 24px;
+    width: 50%;
+    background-color: hsl(179, 73%, 38%);
+    color: var(--light-gray);
+  }
+
+  .card-price .card-body #monthly-subs .section-text-header {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  .card-price .card-body #monthly-subs .monthly-price-text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 6px;
+  }
+
+  .card-price .card-body #monthly-subs .monthly-price-text h5 {
+    font-size: 34px;
+    font-weight: 700;
+  }
+
+  .card-price .card-body #monthly-subs .monthly-price-text .per-month {
+    font-size: var(--standard-font-size);
+    font-weight: 400;
+    opacity: 0.4;
+  }
+
+  .card-price .card-body #monthly-subs p {
+    font-size: var(--standard-font-size);
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+
+  .card-price .card-body #monthly-subs .btn-sign-up {
+    width: 100%;
+    padding: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: var(--bright-yellow);
+    box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .card-price .card-body #monthly-subs .btn-sign-up:hover {
+    background-color: hsla(71, 82%, 46%, 0.9);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .card-price .card-body #why-us {
+    padding: 30px 24px;
+    width: 50%;
+    background-color: var(--cyan);
+    color: var(--light-gray);
+  }
+
+  .card-price .card-body #why-us .section-text-header {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  .card-price .card-body #why-us p {
+    font-size: 15px;
+    max-width: 100%;
+    color: var(--light-gray);
+    opacity: 0.8;
+    line-height: 26px;
+  }
+}
+
+@media (min-width: 931px) and (max-width: 1280px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    padding: 80px 32px;
+  }
+
+  .card-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 720px;
+    height: auto;
+    background-color: coral;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .card-price .card-head {
+    padding: 38px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .card-price .card-head .main-text-header {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--cyan);
+    margin-bottom: 12px;
+  }
+
+  .card-price .card-head h3 {
+    font-size: 18px;
+    color: var(--bright-yellow);
+    margin-bottom: 10px;
+  }
+
+  .card-price .card-head p {
+    max-width: 100%;
+    color: var(--grayish-blue);
+    font-weight: 400;
+    font-size: var(--standard-font-size);
+    line-height: 24px;
+  }
+
+  .card-price .card-body {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: none;
+  }
+
+  .card-price .card-body #monthly-subs {
+    padding: 38px;
+    width: 50%;
+    background-color: hsl(179, 73%, 38%);
+    color: var(--light-gray);
+  }
+
+  .card-price .card-body #monthly-subs .section-text-header {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  .card-price .card-body #monthly-subs .monthly-price-text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 6px;
+  }
+
+  .card-price .card-body #monthly-subs .monthly-price-text h5 {
+    font-size: 34px;
+    font-weight: 700;
+  }
+
+  .card-price .card-body #monthly-subs .monthly-price-text .per-month {
+    font-size: var(--standard-font-size);
+    font-weight: 400;
+    opacity: 0.4;
+  }
+
+  .card-price .card-body #monthly-subs p {
+    font-size: var(--standard-font-size);
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+
+  .card-price .card-body #monthly-subs .btn-sign-up {
+    width: 100%;
+    padding: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: var(--bright-yellow);
+    box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .card-price .card-body #monthly-subs .btn-sign-up:hover {
+    background-color: hsla(71, 82%, 46%, 0.9);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .card-price .card-body #why-us {
+    padding: 38px;
+    width: 50%;
+    background-color: var(--cyan);
+    color: var(--light-gray);
+  }
+
+  .card-price .card-body #why-us .section-text-header {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  .card-price .card-body #why-us p {
+    font-size: 15px;
+    max-width: 100%;
+    color: var(--light-gray);
+    opacity: 0.8;
+    line-height: 26px;
+  }
+}

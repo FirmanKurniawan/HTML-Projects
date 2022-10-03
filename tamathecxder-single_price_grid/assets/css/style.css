@@ -1,0 +1,171 @@
+/* Karla Font: 400, 700 */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+/* My own variables */
+:root {
+  /* primary */
+  --cyan: hsl(179, 64%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+
+  /* neutral */
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+
+  --standard-font-size: 16px;
+  --karla: 'Karla', sans-serif;
+}
+
+/* CSS Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--karla);
+  background-color: var(--light-gray);
+}
+
+.container {
+  width: 1440px;
+  height: 100vh;
+  padding: 0 80px;
+  margin: auto;
+}
+
+.flexible-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.card-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 720px;
+  height: auto;
+  background-color: coral;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-price .card-head {
+  padding: 38px;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.card-price .card-head .main-text-header {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--cyan);
+  margin-bottom: 12px;
+}
+
+.card-price .card-head h3 {
+  font-size: 18px;
+  color: var(--bright-yellow);
+  margin-bottom: 10px;
+}
+
+.card-price .card-head p {
+  max-width: 90%;
+  color: var(--grayish-blue);
+  font-weight: 400;
+  font-size: var(--standard-font-size);
+  line-height: 24px;
+}
+
+.card-price .card-body {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: none;
+}
+
+.card-price .card-body #monthly-subs {
+  padding: 38px;
+  width: 50%;
+  background-color: hsl(179, 73%, 38%);
+  color: var(--light-gray);
+}
+
+.card-price .card-body #monthly-subs .section-text-header {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.card-price .card-body #monthly-subs .monthly-price-text {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.card-price .card-body #monthly-subs .monthly-price-text h5 {
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.card-price .card-body #monthly-subs .monthly-price-text .per-month {
+  font-size: var(--standard-font-size);
+  font-weight: 400;
+  opacity: 0.4;
+}
+
+.card-price .card-body #monthly-subs p {
+  font-size: var(--standard-font-size);
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.card-price .card-body #monthly-subs .btn-sign-up {
+  width: 100%;
+  padding: 16px;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: var(--bright-yellow);
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.card-price .card-body #monthly-subs .btn-sign-up:hover {
+  background-color: hsla(71, 82%, 46%, 0.9);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-price .card-body #why-us {
+  padding: 38px;
+  width: 50%;
+  background-color: var(--cyan);
+  color: var(--light-gray);
+} 
+
+.card-price .card-body #why-us .section-text-header {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.card-price .card-body #why-us p {
+  font-size: 15px;
+  max-width: 75%;
+  color: var(--light-gray);
+  opacity: 0.8;
+  line-height: 26px;
+}
