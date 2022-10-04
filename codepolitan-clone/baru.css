@@ -1,0 +1,160 @@
+*{
+	padding: 0px;
+	margin:0px;
+}
+.menu{
+	height: 100px;
+	background-color: #dfe4ea;
+	border-bottom: 1px solid black;
+}
+.top{
+	margin-top:5px;
+}
+.input{
+	width: 100px;
+	height: 40px;
+	border-radius: 5px;
+	border:none;
+	background-color: #1289A7;
+	color: white;
+}
+.awal{
+	color: white;
+	height: 500px;
+	background-image: url(bg.png);
+}
+#search{
+	background-color:#ced6e0;
+	width:100%;
+	height:500px;
+	border-bottom: 1px solid #747d8c;	
+}
+#res{
+	margin-left: 50px;
+	margin-top: 20px;
+	font-size: 20px;
+	font-family: arial;
+	color: #747d8c;
+}
+#se2{
+	width:700px; height: 30px ; padding:5px; border-radius: 5px; border: none;
+}
+.se2{
+	margin-top: 100px;
+	margin-left: 50px;
+}
+#sebat2{
+	width:80px; height: 40px ; padding:5px; border-radius: 5px; border: none; background-color: #1289A7; 
+	color: white; 
+	margin-left: 10px;
+}
+.footer{
+	width:100%;
+	background-color:#b2bec3;
+}
+
+#se1{
+	width:700px; height: 30px ; padding:5px; border-radius: 5px; border: none;
+}
+#sebat1{
+	width:80px; height: 40px ; padding:5px; border-radius: 5px; border: none; background-color: #00cec9; 
+	color: white; 
+}
+#login{
+	background-color: #b2bec3;
+	height: 550px;
+	width: 500px;
+	border-radius: 5px;
+
+}
+#login1{
+	height: 800px;
+	background-color: #747d8c;
+	position: relative;
+	padding-top: 150px;
+}
+#register{
+	height: 800px;
+	width: 800px;
+	background-color: #f1f2f6;
+	margin-top: 50px;
+	padding: 20px;
+}
+#Regis{
+	color: #70a1ff;
+	font-size: 50px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+.Log{
+	color: #2f3542;
+}
+.intext{
+	width:700px; height: 30px ; padding:5px; border-radius: 5px; border: none;
+	font-family: arial; font-size: 15px; margin-bottom: 20px;  
+}
+#inbat{
+	background-color:#00cec9;
+	color: white;
+}
+
+#awal:target,#login:target,#register:target,#search:target{
+	display:inline-block;
+}
+.login table tr td{
+	text-decoration:none;
+}
+
+.footer{
+	width:100%;
+	background-color:b2bec3;
+}
+.but{
+	color: white;
+}
+
+.list{
+	list-style:none;
+
+}
+
+.list img{
+	width:150px;
+}
+
+.list a li{
+	margin-top:5px;
+	float:left;
+	margin-right:65px;
+	text-decoration:none;
+	color:black;
+}
+
+.list li address{
+	margin-left:1105px;
+}
+
+.ciri{
+	color:text;
+	text-decoration:none;
+}
+
+a:hover{
+	color: #ff6348;
+}
+a{
+	text-decoration: none;
+	color: #57606f;
+}
+
+.ciri:link{
+	background-color:red;
+}
+
+.ciri:visited{
+	background-color:green;
+}
+
+.ciri:actived{
+	background-color:navy;
+}
