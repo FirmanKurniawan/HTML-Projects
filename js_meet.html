@@ -1,0 +1,35 @@
+<html itemscope itemtype="http://schema.org/Product" prefix="og: http://ogp.me/n">
+    <head>
+        <title>Meeting - <?= $title ?></title>
+	<meta charset="utf-8">
+        <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    </head>
+    <body style="background-color: black;">
+	<script src="https://meet.jit.si/external_api.js"></script>
+        <script>
+            var domain = "meet.jit.si";
+            var options = {
+                roomName: "<?= $title ?>",
+                parentNode: undefined,
+                configOverwrite: { 
+                   enableInsecureRoomNameWarning: true,
+                   roomPasswordNumberOfDigits: 10, 
+                   disableInviteFunctions: true 
+                },
+                interfaceConfigOverwrite: {},
+                userInfo: {
+                  email: '<?= $_SESSION['email'] ?>',
+		  displayName: "<?= $nama ?>"
+		}
+            }
+            var api = new JitsiMeetExternalAPI(domain, options);
+            
+            api.addEventListener('participantRoleChanged', function(event) {
+	    	if (event.role === "moderator") {
+		  api.executeCommand('password', '<?= $password ?>');
+		  api.executeCommand('toggleLobby', true);
+	      }
+	    });
+        </script>
+    </body>
+</html>
