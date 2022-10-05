@@ -1,0 +1,126 @@
+*{
+	padding:0;
+	margin:0;
+}
+
+.input{
+	border-radius:5px;
+	background-color:222f3e;
+	color:white;	
+}
+
+.header{
+	width:100%;
+	font-size:20px;
+}
+
+
+.header table tr td{
+	padding:30px;
+	background-color:b2bec3;
+}
+
+.ciri{
+	color:text;
+	text-decoration:none;
+}
+
+.ciri:hover{
+	background-color:yellow;
+}
+
+.ciri:link{
+	background-color:red;
+}
+
+.ciri:visited{
+	background-color:green;
+}
+
+.ciri:actived{
+	background-color:navy;
+}
+
+#awal,#login,#register,#search{
+	color:white;
+	width:100%;
+	height:80%;
+	display:none;
+	box-sizing:border-box;
+}
+#awal{
+	background-image:url(123.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+}
+
+#login{
+	padding:60px;
+	width:50%;
+	height:80%;
+	border-radius:20%
+}
+
+#login table{
+	background-color:b2bec3;
+	border-radius:15px;
+}
+
+#login table tr td a{
+	text-decoration:none;
+}
+
+#register{
+	padding:40px;
+	background-color:b2bec3;
+	width:50%;
+	height:80%;
+	border-radius:15px;
+}
+
+#register table tr td a{
+	text-decoration:none;
+}
+
+#search{
+	padding:100px;
+	background-color:b2bec3;
+	width:50%;
+	height:80%;
+	border-radius:5%;
+	margin-left:25%;
+}
+
+#awal:target,#login:target,#register:target,#search:target{
+	display:inline-block;
+}
+
+
+.login table tr td{
+	text-decoretion:none;
+}
+
+.footer{
+	width:100%;
+	background-color:b2bec3;
+}
+
+.list{
+	list-style:none;
+}
+
+.list img{
+	width:150px;
+}
+
+.list a li{
+	margin-top:5px;
+	float:left;
+	margin-right:65px;
+	text-decoration:none;
+	color:black;
+}
+
+.list li address{
+	margin-left:1105px;
+}
