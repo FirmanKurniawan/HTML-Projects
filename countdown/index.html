@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Countdown</title>
+<meta http-equiv="refresh" content="1">
+</head>
+<body>
+<h1>Countdown</h1>
+<p id="countdown"></p>
+<script>
+var count = 10;
+var countdown = setInterval(function(){
+  document.getElementById("countdown").innerHTML = count;
+  count--;
+  if (count < 0) {
+    clearInterval(countdown);
+    document.getElementById("countdown").innerHTML = "Done";
+  }
+}, 1000);
+</script>
+</body>
+
+</html>
