@@ -1,0 +1,16 @@
+html,
+body {
+  overflow-x: hidden;
+}
+.jumbotron {
+  padding-top: 6rem;
+  background-color: #a2d9ff;
+}
+
+.project {
+  padding: 4rem;
+}
+
+section {
+  padding-top: 5rem;
+}
