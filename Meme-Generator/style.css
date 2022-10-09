@@ -1,0 +1,18 @@
+h1 {
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+
+body{
+  margin: 10px;
+  background-color: lightblue;
+
+
+}
+p {
+  font-family: "sans-serif";
+}
+
+#meme-canvas {
+    width: 300px;
+}
