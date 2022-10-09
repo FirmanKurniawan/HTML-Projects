@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 5px auto;
+}
+
+body {
+    background: #abcdef;
+}
+
+div {
+    position: absolute;
+    line-height: 80%;
+    left: 0;
+    right: 0;
+    max-height: 500px;
+    color: #dffdcf;
+}
+
+.home {
+    max-width: 440px;
+}
+
+.tamagotchi {
+    max-width: 80px;
+    z-index: 20;
+}
+
+.tamagotchi img {
+    position: absolute;
+    max-width: 40px;
+    top: 260px;
+    left: -80px;
+}
+
+.stats {
+	max-width: 110px;
+	top: 50px;
+}
+
+.stats p {
+	text-align: justify;
+}
+
+.actions {
+    text-align: center;
+    top: 330px;
+}
+
+
+
