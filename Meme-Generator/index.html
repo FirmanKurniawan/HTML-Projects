@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Meme Generator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Welcome to Meme-Genie 🧞 </h1>
+        <div>
+            <textarea id="top-text"></textarea>
+            Text size: <input type="range" id="top-text-size-input" min="0.05" max="0.25" value="0.15" step="0.01">
+        </div>
+            <textarea id="bottom-text"></textarea>
+            Text size: <input type="range" id="bottom-text-size-input" min="0.05" max="0.25" value="0.15" step="0.01">
+        </div>
+        <div>
+            <input type="file" id="image-input" accept="image/*">
+        </div>
+        <div>
+            <button id="generate-btn">Generate!</button>
+        </div>
+            <canvas id="meme-canvas" title="Right click to save this meme"></canvas>
+        <script src="script.js"></script>
+    </body>
+</html>
