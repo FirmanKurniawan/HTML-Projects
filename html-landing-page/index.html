@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello Doc</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header id="main-header">
+      <div class="navbar-brand">
+        <a href="#"> Hello<span>Doc</span> </a>
+      </div>
+      <nav class="navbar-nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#howtowork">Cara Kerja</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Kontak</a></li>
+          <li><a href="#review">Review</a></li>
+          <li>
+            <div class="dropdown" id="dropdown-toggler">
+              <a role="button"
+                >Lainnya
+                <i class="fa-solid fa-caret-down"></i>
+              </a>
+            </div>
+
+            <div class="dropdown-menu">
+              <div class="dropdown-item">
+                <div class="theme-wrapper">
+                  <label class="theme-switch">
+                    <input type="checkbox" id="theme-toggler" />
+                    <span class="slider"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="navbar-toggler">
+        <button type="button" id="navbar-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+    <!-- End of Navbar -->
+
+    <!-- Main -->
+    <main>
+      <!-- Hero -->
+      <article class="main-hero" id="home">
+        <section class="hero-left" id="animate__backInLeft">
+          <img src="images/Hero.svg" alt="Hero Image" />
+        </section>
+        <section class="hero-right" id="animate__backInRight">
+          <h1>
+            Tempat yang Bagus untuk<br />
+            Membantumu Dalam Permasalahan Medis
+          </h1>
+          <p>
+            Kesehatan adalah hal yang sangat penting bagi kita. <br />
+            Maka dari itu kami hadir untuk membantumu untuk mengatasi
+            permasalahan medis Anda.
+          </p>
+          <div class="hero-button">
+            <a href="#contact" class="btn btn-primary">Kontak Kami</a>
+            <a href="#howtowork" class="btn btn-secondary">
+              Pelajari Lebih Lanjut
+            </a>
+          </div>
+        </section>
+      </article>
+      <!-- End of Hero -->
+
+      <!-- How to Work -->
+      <article class="howtowork" id="howtowork">
+        <h1 id="animate__zoomInUp">
+          Langkah demi langkah untuk <br />
+          mendapatkan solusi Anda
+        </h1>
+        <section class="howtowork-row" id="animate__backInLeft">
+          <div class="card">
+            <div class="card-icon">
+              <img src="images/Search.png" alt="Search Icon" />
+            </div>
+            <div class="card-content">
+              <h3>Cek keluhan kesehatan</h3>
+              <p>
+                Cek penyakitnya supaya mudah <br />
+                memilih spesialis yang tepat
+              </p>
+            </div>
+          </div>
+          <div class="arrow">
+            <span class="right"></span>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <img src="images/Profile.png" alt="Profile.png Icon" />
+            </div>
+            <div class="card-content">
+              <h3>Pilih dokter Spesialis</h3>
+              <p>
+                Pilih dokter spesialis yang sesuai dengan <br />keluhan penyakit
+                Anda
+              </p>
+            </div>
+          </div>
+        </section>
+        <div class="arrow" id="arrow-icon">
+          <span class="bottom"></span>
+        </div>
+        <section class="howtowork-row" id="animate__backInRight">
+          <div class="card">
+            <div class="card-icon">
+              <img src="images/Star.png" alt="Star Icon" />
+            </div>
+            <div class="card-content">
+              <h3>Dapatkan Solusi Anda</h3>
+              <p>
+                Dapatkan solusi terbaik untuk <br />
+                permasalahan Anda
+              </p>
+            </div>
+          </div>
+          <div class="arrow">
+            <span class="left"></span>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <img src="images/Calendar.png" alt="Calendar Icon" />
+            </div>
+            <div class="card-content">
+              <h3>Buat Jadwal Pertemuan</h3>
+              <p>
+                Buat jadwal dengan dokter spesialis <br />
+                yang sudah Anda pilih
+              </p>
+            </div>
+          </div>
+        </section>
+      </article>
+      <!-- End of How to Work -->
+
+      <!-- Services -->
+      <article class="services" id="services">
+        <section class="services-left" id="animate__backInLeft">
+          <img src="images/Services.svg" alt="Services Image" />
+        </section>
+        <section class="services-right" id="animate__backInRight">
+          <h1>
+            Buat jadwal terlebih dahulu <br />
+            dengan dokter yang tersedia
+          </h1>
+          <p>
+            Perawatan kesehatan adalah proses yang sangat menyakitkan, terutama
+            jika Anda tidak menjaga kesehatan Anda dan melakukan pemeriksaan
+            rutin. HelloDoc memudahkan semua orang untuk menjadwalkan janji
+            dengan dokter.
+          </p>
+
+          <div class="services-list">
+            <div class="services-item">
+              <div class="icon-checkmark">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <p>Membuat jadwal secara online dengan mudah</p>
+            </div>
+            <div class="services-item">
+              <div class="icon-checkmark">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <p>Dokter mudah untuk dihubungi</p>
+            </div>
+            <div class="services-item">
+              <div class="icon-checkmark">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <p>Mendapat solusi terbaik</p>
+            </div>
+          </div>
+
+          <div class="services-button">
+            <a class="btn btn-primary" href="#contact">
+              Buat jadwal sekarang
+            </a>
+          </div>
+        </section>
+      </article>
+      <!-- End of Services -->
+
+      <!-- Contact -->
+      <article class="contact" id="contact">
+        <section class="contact-left" id="animate__backInLeft">
+          <img src="images/Contact.svg" alt="Contact Us" />
+        </section>
+        <section class="contact-right" id="animate__backInRight">
+          <h1>Hubungi Kami</h1>
+
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="form-name">Nama</label>
+              <input
+                type="text"
+                id="form-name"
+                class="form-input"
+                placeholder="Masukkan nama Anda"
+              />
+            </div>
+            <div class="form-group">
+              <label for="form-subject">Subject</label>
+              <input
+                type="email"
+                id="form-subject"
+                class="form-input"
+                placeholder="Masukkan subject"
+              />
+            </div>
+            <div class="form-group">
+              <label for="form-email">Email</label>
+              <input
+                type="email"
+                id="form-email"
+                class="form-input"
+                placeholder="Masukkan email Anda"
+              />
+            </div>
+            <div class="form-group">
+              <label for="form-message">Pesan</label>
+              <textarea
+                id="form-message"
+                class="form-input"
+                rows="5"
+                cols="30"
+                placeholder="Tulis atau ceritakan permasalahan medis Anda disini"
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary">
+                <i class="fa-solid fa-paper-plane"></i> Kirim
+              </button>
+            </div>
+          </form>
+        </section>
+      </article>
+      <!-- End of Contact -->
+
+      <!-- Review -->
+      <article class="review" id="review">
+        <h1 id="animate__zoomInUp">Review dari para pasien</h1>
+
+        <div class="review-container">
+          <div class="card active" id="review-content">
+            <div class="review-text">
+              <p>
+                Berkat HelloDoc, saya sembuh dari penyakit saya dengan solusi
+                yang bagus dan cepat dari para Dokter disini dan juga saya
+                menjadi lebih mudah untuk mencari dokter yang tepat untuk
+                penyakit saya. Terimakasih HelloDoc.
+              </p>
+            </div>
+            <div class="review-person">
+              <img src="images/person/1.jpg" alt="John Doe" id="review-photo" />
+            </div>
+            <div class="review-name">
+              <h3>John Doe</h3>
+            </div>
+          </div>
+          <div class="card" id="review-content">
+            <div class="review-text">
+              <p>
+                HelloDoc mengubah hidup saya menjadi lebih sehat, dan juga saya
+                dapat berkomunikasi langsung dengan Dokter serta Dokter disini
+                menurut saya Dokter disini <i>fast respond</i>.
+              </p>
+            </div>
+            <div class="review-person">
+              <img
+                src="images/person/2.jpg"
+                alt="Jeniffer Kimberly"
+                id="review-photo"
+              />
+            </div>
+            <div class="review-name">
+              <h3>Jeniffer Kimberly</h3>
+            </div>
+          </div>
+          <div class="card" id="review-content">
+            <div class="review-text">
+              <p>
+                Berkat HelloDoc, saya dapat mengontrol kesehatan saya dengan
+                mudah dan juga dapat mengetahui solusi terbaik untuk
+                permasalahan kesehatan saya.
+              </p>
+            </div>
+            <div class="review-person">
+              <img
+                src="images/person/3.jpg"
+                alt="Joseph Gonzales"
+                id="review-photo"
+              />
+            </div>
+            <div class="review-name">
+              <h3>Joseph Gonzales</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-button">
+          <button type="button" class="btn btn-secondary" id="btn-prev">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button type="button" class="btn btn-secondary" id="btn-next">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </article>
+      <!-- End of Review -->
+
+      <!-- Creator -->
+      <aside id="animate__zoomInUp">
+        <article class="creator card">
+          <h3>Pembuat</h3>
+          <img src="images/me.png" alt="Lukman" />
+          <h5>Lukman Nul Hakim</h5>
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <i class="fa-solid fa-location-dot"></i>
+                </td>
+                <td>Jakarta, Indonesia</td>
+              </tr>
+              <tr>
+                <td>
+                  <i class="fa-solid fa-envelope"></i>
+                </td>
+                <td>
+                  <a href="mailto:lukmann.dev@gmail.com">
+                    lukmann.dev@gmail.com
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <i class="fa-brands fa-instagram"></i>
+                </td>
+                <td>
+                  <a href="https://instagram.com/lukmaan.24" target="_blank">
+                    @lukmaan.24
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </aside>
+      <!-- End of Creator -->
+
+      <!-- Scroll to Top -->
+      <div class="scroll-to-top" role="button">
+        <i class="fa-solid fa-angle-up"></i>
+      </div>
+      <!-- End of Scroll to Top -->
+    </main>
+    <!-- End of Main -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-social">
+          <div>
+            <a href="https://www.instagram.com/lukmaan.24" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.linkedin.com/in/lukman24/" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-text">
+          <p>
+            Copyright &copy; 2022. Made with
+            <i class="fa-solid fa-heart"></i> by Lukman
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- End of Footer -->
+    <script src="js/app.js"></script>
+  </body>
+</html>
