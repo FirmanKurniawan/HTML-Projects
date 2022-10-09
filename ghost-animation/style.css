@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body {
+    justify-content:center;
+    position:relative;
+    min-height:100vh;
+    background:black;
+    display:flex;
+    align-items:center;
+}
+.ghost{
+    position:relative;
+    height:180px;
+    width:160px;
+    border-radius:70% 70% 0 0;
+    background:white;
+    animation:float 3s linear infinite;
+}
+@keyframes float{
+    50%{
+        transform:translateY(10px);
+    }
+}
+.face{
+    width:160px;
+    position:absolute;
+    top:60px;
+    left:calc(50% -60px);
+}
+.eyes{
+    height:24px;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    margin-bottom:20px;
+}
+.eyes span{
+    height:12px;
+    width:24px;
+    background:black;
+    border-radius:8px 8px 26px 26px;
+    animation:3s smile linear infinite;
+}
+@keyframes smile{
+    50%{
+        border-radius:50%;
+        height:24px;
+    }
+}
+.mouth{
+    display:flex;
+    justify-content:space-around;
+}
+.mouth span{
+    width:34px;
+    height:8px;
+    background:black;
+    border-radius:0 0 20px 20px;
+    animation:laugh 3s linear infinite;
+    transition:.4s;
+}
+@keyframes laugh{
+    50%{
+        height:16px;
+    }
+}
+.hands{
+    width:220px;
+    position:absolute;
+    left:-30px;
+    top:30px;
+    display:flex;
+    justify-content:space-between;
+}
+.hands span{
+    width:30px;
+    height:30px;
+    background:white;
+    transform:translateY(-5px);
+    animation:shake 3s linear infinite;
+}
+@keyframes shake{
+    50%{
+        transform:translateY(5px);
+    }
+}
+.hands span:first-child{
+    border-radius:12px 0 0 20px;
+}
+.hands span:last-child{
+    border-radius:0 12px 20px 0 ;
+    animation-delay:1.5s;
+}
+.feet{
+    width:100%;
+    display:flex;
+    position:absolute;
+    bottom:-20px;
+}
+.feet span{
+    flex:1;
+    height:22px;
+    background:white;
+    border-radius:0 0 20px 20px;
+}
