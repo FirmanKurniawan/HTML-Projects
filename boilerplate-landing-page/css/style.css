@@ -1,0 +1,19 @@
+* {
+    font-family: 'Inter';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fw-medium {
+    font-weight: 500;
+}
+
+.my-6 {
+    margin-top: 6em;
+    margin-bottom: 6em;
+}
+
+h6 {
+    font-size: 16px;
+}
