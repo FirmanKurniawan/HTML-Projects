@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <title>HTML Playground</title>
+
+    <!-- Font awesome 5 - Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <!-- Google code prettify - Syntax highlighting -->
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <!-- Icon for the webpage -->
+    <link rel="shortcut icon" href="./assets/html-5.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Nav Bar -->
+    <nav>
+        <ul>
+            <li class="active"><a href="index.html"><i class="fab fa-html5"></i> Playground</a></li>
+            <li><a href="about.html" target="_blank"><i class="fa fa-users" aria-hidden="true"></i> About</a></li>
+            <li><a href="learn.html"><i class="fa fa-book" aria-hidden="true"></i> Learn</a></li>
+            <li><a href="https://github.com/yp-gpp/HTML-Playground" target="_blank"><i class="fab fa-github" aria-hidden="true"></i> Source</a></li>
+            <li><a href="css.html"><i class="fab fa-css3" aria-hidden="true"></i> CSS</a></li>
+        </ul>
+    </nav>
+
+    <!-- Content Navigation -->
+    <section class="content">
+        <div class="content">
+            <h1>Contents</h1>
+            <ul>
+                <li><a href="#basics">Basics</a></li>
+                <li><a href="#headings">Headings</a></li>
+                <li><a href="#text-formatting">Text Formatting</a></li>
+                <li><a href="#image">Images</a></li>
+                <li><a href="#list">Lists</a></li>
+                <li><a href="#tables">Tables</a></li>
+                <li><a href="#forms">Forms</a></li>
+                <li><a href="#others">Others</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- basics (content) -->
+    <hr>
+    <section id="basics">
+        <h1>Basics</h1>
+        <p>When writting HTML, a basic layout is to be followed, it looks like: </p>
+
+        <!-- Code -->
+        <!-- xmp tag considers the content b/w it as xmp, which allows us to write html directly inside html, which wont be rendered... perfect for the usecase -->
+        <pre class="prettyprint language-html"><xmp> 
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title of the Page</title>
+    </head>
+    <body>
+        Content Goes here
+    </body>
+</html>
+        </xmp></pre>
+
+        <p>Let's try to understand what this template is, <code><span class="tag">!Doctype html</span></code> is declaring the type of document you are writting, in this case we are writting html, it does not have any closing tag.. The <code><span class="tag">html</span></code> tag wraps around the whole content of the webpage, it has a closing tag <code><span class="tag">/html</span></code>. The <code><span class="tag">head</span></code> tag contains the metadata about the html document, <code><span class="tag">title</span></code> is one of the tag used inside the <code><span class="tag">head</span></code>, which is used to define the title of the page which we are able to see on the tab of browser. the <code><span class="tag">body</span></code> is the tag in which the content which is to be displayed to the user is written. All these tags also have a closing tag.</p>
+    </section>
+
+    <!-- heading -->
+    <hr>
+    <section id="headings">
+        <h1>Headings</h1>
+        <p>HTML headings are titles or subtitles that you want to add to your webpage. there are 6 heading tags ( 
+            <code><span class="tag">h1</span></code>, 
+            <code><span class="tag">h2</span></code>, 
+            <code><span class="tag">h3</span></code>, 
+            <code><span class="tag">h4</span></code>, 
+            <code><span class="tag">h5</span></code>, 
+            <code><span class="tag">h6</span></code> ) <code><span class="tag">h1</span></code> having the largest font size and <code><span class="tag">h6</span></code> having the smallest of them.</p>
+        
+        <p>Let's have a look at an example program:</p>
+        <pre class="prettyprint language-html"><xmp>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Headings</title>
+    </head>
+    <body>
+        <h1>My Heading 1</h1>
+        <h2>My Heading 2</h2>
+        <h3>My Heading 3</h3>
+        <h4>My Heading 4</h4>
+        <h5>My Heading 5</h5>
+        <h6>My Heading 6</h6>
+    </body>
+</html>
+        </xmp></pre>
+        
+        <iframe src="examples/headings.html" title="Output:" class="output" id="heading-frame" frameborder="0"></iframe>
+    </section>
+
+    <!-- text-formatting -->
+    <hr>
+    <section id="text-formatting">
+        <h1>Text Formatting</h1>
+        <p>There are many tags in html which help in formatting the text in different way.</p>
+        
+        <h2>Bold</h2>
+        <p>The <code><span class="tag">b</span></code> tag increases the weight of the font, example: <code><span class="tag">b</span>This text<span class="tag">/b</span></code> will look like "<b>This Text</b>".</p>
+
+        <h2>Italic</h2>
+        <p>The <code><span class="tag">i</span></code> tag is used to have italic effect on the text, example: <code><span class="tag">i</span>text in italics<span class="tag">/i</span></code> will be rendered as "<i>text in italics</i>".</p>
+
+        <h2>Strong</h2>
+        <p><code><span class="tag">strong</span></code> is used to mark some text important, example: <code><span class="tag">strong</span>This is important!<span class="tag">/strong</span></code>, will be rendered as "<strong>This is important!</strong>".</p>
+
+        <h2>Emphasize</h2>
+        <p>The <code><span class="tag">em</span></code> tag is used to emphasize text, example: <code><span class="tag">em</span>emphasized text<span class="tag">/em</span></code> will be displayed as "<em>emphasized text</em>".</p>
+
+        <h2>Underline</h2>
+        <p>The <code><span class="tag">u</span></code> tag is used to underline the text, example: <code><span class="tag">u</span>Underlined text<span class="tag">/u</span></code> will be displayed as "<u>Underlined text</u>".</p>
+
+        <h2>Small</h2>
+        <p><code><span class="tag">small</span></code> tag is used to make the font size to a smaller size, example: <code><span class="tag">small</span>small text<span class="tag">/small</span></code> will be displayed as: "<small>small text</small>".</p>
+
+        <h2>Mark</h2>
+        <p>To highlight some text, use the <code><span class="tag">mark</span></code> tag, example: <code><span class="tag">mark</span>Marked text<span class="tag">/mark</span></code> <span class="font-fira"> ~~> </span> "<mark>Marked text</mark>".</p>
+
+        <h2>Delete & Insert</h2>
+        <p><code><span class="tag">del</span></code> is same as strikethrough in MS Word and the <code><span class="tag">ins</span></code> underlines the inserted text, example: <code><span class="tag">del</span>deleted<span class="tag">/del</span><span class="tag">ins</span>inserted<span class="tag">/ins</span></code> <span class="font-fira">~~></span> "<del>deleted</del><ins>inserted</ins>".</p>
+
+        <h2>Subscript</h2>
+        <p><code><span class="tag">sub</span></code> is used to insert a subscript, <code>H<span class="tag">sub</span>2<span class="tag">/sub</span></code> <span class="font-fira">~~></span> "H<sub>2</sub>".</p>
+
+        <h2>Superscript</h2>
+        <p><code><span class="tag">sup</span></code> is used to insert a superscript, <code>X<span class="tag">sub</span>2<span class="tag">/sub</span></code> <span class="font-fira">~~></span> "X<sub>2</sub>".</p>
+    </section>
+
+    <!-- image -->
+    <hr>
+    <section id="image">
+        <h1>Images</h1>
+        <p>Images can be added in HTML using <code><span class="tag">img</span></code> tag, it is very simple <code><span class="tag">img src="images/image.jpg"</span></code> is its basic syntax, it will output the following:</p>
+        <div class="output">
+            <img src="images/image.jpg" alt="demo image from unsplash" style="width: 80%;" hspace="10">
+        </div>
+        <p>Let's try to understand in detail what is the <code>src="images/image.jpg"</code>, the src is called the attribute, tags have multiple attributes, in the case of <code><span class="tag">img</span></code> tag, src is used to give the path/name of the image. there are many other attributes
+            <br><u>src</u> <span class="font-fira"> -></span> Specifies the URL/Path to the image.
+            <br><u>alt</u> <span class="font-fira"> -></span> If there is some reason image is not displayed, the alt text will be displayed.
+            <br><u>height</u> <span class="font-fira"> -></span> Specifies the height the image.
+            <br><u>width</u> <span class="font-fira"> -></span> Specifies the width the image.
+            <br><u>style</u> <span class="font-fira"> -></span> Specifies the CSS styles for the image.
+            <br><u>hspace</u> <span class="font-fira"> -></span> Specifies the horizontal empty space around the image.
+            <br><u>vspace</u> <span class="font-fira"> -></span> Specifies the vertical empty space around the image.
+        </p>
+        <h2>Server Side image maps</h2>
+        <p>A server side image map will allow you to get the coordinates of where the user clicked on an image. the x-coordinate and y-coordinate gets appended to the redirect url, and the <code><span class="tag">a</span></code> tag is necessary for it to work, also the <code><span>ismap</span></code> keywords, let's see a example: </p>
+        <pre class="prettyprint language-html"><xmp>
+<a href="#">
+    <img src="images/image2.jpg" ismap>
+</a>
+        </xmp></pre> <br><br>
+
+        <div class="output">
+            <a href="#">
+                <img src="images/image2.jpg" alt="server map" style="width: 95%;" ismap>
+            </a>
+        </div>
+        <p>If you click anywhere on the above image, it will add <code>?x-coordinate,y-coordinate</code> to the URL, check the address bar.</p> 
+    </section>
+
+    <!-- lists -->
+    <hr>
+    <section id="list">
+        <h1>Lists</h1>
+        <p>lists in HTML allow web developers to group items in lists.
+        There are 3 different types of lists, Ordered lists, Unordered lists and Description lists.</p>
+
+        <h2>Ordered List</h2>
+        <p>An ordered list starts with <code><span class="tag">ol</span></code> tag and each item in the list starts with the <code><span class="tag">li</span></code> tag, both have ending tag. The marker type can be changed using the type attribute (<code>type="1"</code>) of <code><span class="tag">ol</span></code> tag.</p>
+        <pre class="prettyprint lang-html"><xmp>
+<ol>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ol>
+        </xmp></pre> <br><br><b>Will be rendered as: </b>
+
+        <div class="output">
+            <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ol>
+        </div>
+
+        <h2>Unordered List</h2>
+        <p>An unordered list starts with <code><span class="tag">ul</span></code> tag and each item in the list starts with the <code><span class="tag">li</span></code> tag, both have ending tag. The bullets type can be changed using the type attribute (<code>type="square"</code>) of <code><span class="tag">ul</span></code> tag.</p>
+        <pre class="prettyprint lang-html"><xmp>
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul>
+        </xmp></pre> <br><br><b>Will be rendered as: </b>
+
+        <div class="output">
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </div>
+
+        <h2>Defination List</h2>
+        <p>A defination list starts with <code><span class="tag">dl</span></code> tag and each term starts with <code><span class="tag">dt</span></code> tag and the defination of the term starts with <code><span class="tag">dd</span></code>, all having ending tag.</p>
+        <pre class="prettyprint lang-html"><xmp>
+<dl>
+    <dt>Term 1</dt>
+    <dd>- Term 1 is the first term in this list</dd>
+    
+    <dt>Term 2</dt>
+    <dd>- Term 2 is not the first term in this list</dd>
+</dl>
+        </xmp></pre> <br><br><b>Will be rendered as: </b>
+
+        <div class="output">
+            <dl>
+                <dt>Term 1</dt>
+                <dd>- Term 1 is the first term in this list</dd>
+                
+                <dt>Term 2</dt>
+                <dd>- Term 2 is not the first term in this list</dd>
+            </dl>
+        </div>
+    </section>
+
+    <hr>
+    <section id="tables">
+        <h1>Tables</h1>
+        <p>Tables in HTML allows us to arrange data in rows and columns. The <code><span class="tag">table</span></code> tag is used to define the table. A table row can be created using <code><span class="tag">tr</span></code> tag. The content in a cell can be in between the <code><span class="tag">td</span></code> (table data) and <code><span class="tag">th</span></code> (table header) tag.</p>
+        <p>Additional styles can be added using css in the <code><span class="tag">style</span></code> tag, use border property, to give border to the table.</p>
+        <p>The <code><span class="tag">caption</span></code> tag allows us to give title to the table.</p>
+        <pre class="prettyprint"><xmp>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tables Example</title>
+    <style>
+        table, th, td {
+            border: 1px solid; 
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>A random table</caption>
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+        </tr>
+        
+        <tr>
+            <th>row 1, Column 1</th>
+            <th>row 1, Column 2</th>
+            <th>row 1, Column 3</th>
+        </tr>
+        
+        <tr>
+            <th>row 2, Column 1</th>
+            <th>row 2, Column 2</th>
+            <th>row 2, Column 3</th>
+        </tr>
+        
+        <tr>
+            <th>row 3, Column 1</th>
+            <th>row 3, Column 2</th>
+            <th>row 3, Column 3</th>
+        </tr>
+    </table>
+</body>
+</html>
+        </xmp></pre>
+        <iframe src="./examples/tables.html" frameborder="0" class="output"></iframe>
+    </section>
+
+    <!-- Forms -->
+    <hr>
+    <section id="forms">
+        <h1>Forms</h1>
+        <p>Forms can be created using the <code><span class="tag">form</span></code> tag, and the input elements can be placed inside it, The <code><span class="tag">label</span></code> tag defines a label for the element.Using forms taking input from the user becomes very easy.</p>
+        <p>The <code><span class="tag">input</span></code> tag is one of the elements which allow us to take input from the user, it has a type attribute which defines what type of input will it take, the values for type attribute are "text", "submit", "reset", "checkbox", "radio", lets look at an example of input</p>
+        <pre class="prettyprint"><xmp>
+<form>
+    <label for="name">Name: </label>
+    <input type="text" id="name">
+</form>
+        </xmp></pre>
+        <div class="output">
+            <form>
+                <label for="name">Name: </label>
+                <input type="text" id="name">
+            </form>
+        </div>
+        <p><code><span class="tag">textarea</span></code> tag can be used to add a larger text input</p>
+        <pre class="prettyprint"><xmp>
+<form>
+    <label for="review">Review: </label>
+    <textarea id="review"></textarea>
+</form>
+        </xmp></pre>
+        <div class="output">
+            <form>
+                <label for="review">Review: </label>
+                <textarea id="review"></textarea>
+            </form>
+        </div>
+
+        <p>using the <code><span class="tag">select</span></code> and <code><span class="tag">option</span></code> tag a drop down list can be created: </p>
+        <pre class="prettyprint"><xmp>
+<form>
+    <label for="option">Option: </label>
+    <select id="option">
+        <option value="o1">Option 1</option>
+        <option value="o2">Option 2</option>
+        <option value="o3">Option 3</option>
+    </select>
+</form>
+        </xmp></pre>
+        <div class="output">
+            <form>
+                <label for="option">Option: </label>
+                <select id="option">
+                    <option value="o1">Option 1</option>
+                    <option value="o2">Option 2</option>
+                    <option value="o3">Option 3</option>
+                </select>
+            </form>
+        </div>
+    </section>
+
+    <!-- Others -->
+    <hr>
+    <section id="others">
+        <h1>Others</h1>
+        <h2>Hyperlinks</h2>
+        <p>using the anchor tag <code><span class="tag">a</span></code> hyperlinks can be entered into the webpage. The 'href' attribute is used to specify the URL.</p>
+        <pre class="prettyprint"><xmp>
+<a href="https://duckduckgo.com">Click here to get redirected to duck duck go.</a>
+        </xmp></pre>
+        <div class="output">
+            <a href="https://duckduckgo.com">Click here to get redirected to duck duck go.</a>
+        </div>
+
+        <h2>Comments</h2>
+        <p>Writting some text to explain the code to another developer is common, and comments help us do that, using comments you can write text which will get ignored by the browser.</p>
+        <pre class="prettyprint"><xmp>
+<!-- Hello This is a comment -->
+        </xmp></pre>
+      
+        <h2>Paragraph</h2>
+        <p>using the <code><span class="tag">p</span></code> tag for paragraphs, will add some space around the text.</p>
+        <pre class="prettyprint"><xmp>
+<p>Some Text in paragraph tag</p>
+<p>Some more Text in a different paragraph tag</p>
+        </xmp></pre>
+        <div class="output">
+            <p>Some Text in paragraph tag</p>
+            <p>Some more Text in a different paragraph tag</p>
+        </div>
+
+        <h2>Center</h2>
+        <p>To center any element, <code><span class="tag">center</span></code> tag can be used.</p>
+        <pre class="prettyprint"><xmp>
+<center>
+    Some text/content here
+</center>
+        </xmp></pre>
+        <center>
+            Some text/content here
+        </center>
+
+        <h2>Break</h2>
+        <p>Sometimes you want to break the line and continue on the new line, the break tag (<code><span class="tag">br</span></code>) allows you do to that.</p>
+        <pre class="prettyprint"><xmp>
+Some text<br>Some more text
+        </xmp></pre>
+        <div class="output">
+            Some text<br>Some more text
+        </div>
+
+        <h2>Horizontal line</h2>
+        <p>The <code><span class="tag">hr</span></code> tag can be used to add a horizontal line in the page.</p>
+
+        <h2>Blockquote</h2>
+        <p>To display text that is quoted on some other source, can be displayed using the blockquote tag.</p>
+        <pre class="prettyprint"><xmp>
+<blockquote>
+    Some quoted text here.
+</blockquote>
+        </xmp></pre>
+        <div class="output">
+            <blockquote>
+                Some quoted text here.
+            </blockquote>
+        </div>
+
+        <h2>Abbrevation</h2>
+        <p>when writting any abbreviated text using the <code><span class="tag">abbr</span></code> tag can be a good choice, when hovering on the text the full form will be displayed, and has a dotted underline.</p>
+        <pre class="prettyprint"><xmp>
+<abbr title="Artificial Neural Networks">ANN</abbr>
+        </xmp></pre>
+        <div class="output">
+            <abbr title="Artificial Neural Networks">ANN</abbr>
+        </div>
+
+        <h2>Address</h2>
+        <p>The contact information can be displayed using address tag, its displayed in italics and a block element.</p>
+        <pre class="prettyprint"><xmp>
+<address>
+    Street<br>
+    City, State<br>
+    India <br>
+    +91 1233 122 333
+</address>
+        </xmp></pre>
+        <div class="output">
+            <address>
+                Street<br>
+                City, State<br>
+                India <br>
+                +91 1233 122 333
+            </address>
+        </div>
+
+        <h2>Bi-directional override</h2>
+        <p><code><span class="tag">bdo</span></code> tag can be used to override the text directional, to 'rtl' (right to left) or 'ltr' (left to right)</p>
+        <pre class="prettyprint"><xmp>
+<bdo dir="ltr">Left To Right</bdo><br>
+<bdo dir="rtl">Right To Left</bdo>
+        </xmp></pre>
+        <div class="output">
+            <bdo dir="ltr">Left To Right</bdo><br>
+            <bdo dir="rtl">Right To Left</bdo>
+        </div>
+    </section>
+
+    <!-- End -->
+    <hr>
+    <section><center><H1>Thank You!</H1></center></section>
+
+    <hr>
+    <footer>
+        <small class="font-fira">&copy; Copyright 2021, Yash Pawar. under the MIT license.</small>
+    </footer>
+</body>
+</html>

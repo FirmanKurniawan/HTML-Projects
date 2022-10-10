@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <title>CSS Playground</title>
+
+    <!-- font awesome, for the icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+    <!-- Icon of the webpate -->
+    <link rel="shortcut icon" href="./assets/css-3.png" type="image/x-icon">
+
+    <!-- Open Graph (OG), for creating the embed when link is shared -->
+    <meta property="og:title" content="CSS Playground"/>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="HTML Playground"/>
+    <meta property="og:url" content="https://yp-gpp.github.io/HTML-Playground/css.html"/>
+    <meta property="og:description" content="Comming Soon... (Not Really)">
+    <meta property="og:image" content="https://yp-gpp.github.io/HTML-Playground/images/og-css.png">
+    <meta property="og:image:width" content="1920"/>
+    <meta property="og:image:height" content="1080"/>
+
+    <style>
+        .fp { 
+            background-image: url(./assets/stacked-waves-haikei.svg); 
+            min-height: 68vh;
+        }
+
+        .logo-main { color: rgb(241, 198, 198); }
+
+        .logo-main::after {
+            content: ' CSS';
+            display: inline;
+            font-weight: 700;
+        }
+        
+        .logo-main:hover { 
+            text-shadow: none;
+        }
+        
+        .logo-name { color: #fff; opacity: 1; }
+
+        nav ul, nav li { background-color: var(--color-green); }
+
+        nav li.active a { color: var(--color-green); }
+
+        nav li:hover { background-color: var(--color-green-dark); }
+
+        section h1 { color: var(--color-green-dark); }
+
+        hr { background-color: var(--color-green); }
+    </style>
+</head>
+<body>
+    <div class="fp">
+        <span class="logo-main"><i class="fab fa-css3"></i></span><br>
+        <span class="logo-name">Playground</span>
+
+        <div class="tagline font-fira"><br>Learn, Style, Build, Beautify.</div>
+    </div>
+
+    <!-- Nav Bar -->
+    <nav>
+        <ul>
+            <li class="active"><a href="index.html"><i class="fab fa-css3"></i> Playground</a></li>
+            <li><a href="about.html" target="_blank"><i class="fa fa-users" aria-hidden="true"></i> About</a></li>
+            <li><a href="https://github.com/yp-gpp/HTML-Playground" target="_blank"><i class="fab fa-github" aria-hidden="true"></i> Source</a></li>
+            <li><a href="index.html"><i class="fab fa-html5" aria-hidden="true"></i> HTML</a></li>
+        </ul>
+    </nav>
+
+    <!-- content -->
+    <section id="main">
+        <h1>Comming Soon!</h1>
+        <small style="color: var(--color-green); font-family: 'Fira code', monospace; font-size: 1.2rem;">Not really</small>
+    </section>
+
+    <hr>
+    <footer>
+        <small class="font-fira">&copy; Copyright 2021, Yash Pawar. under the MIT license.</small>
+    </footer>
+</body>
+</html>
