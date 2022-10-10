@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive House Rent Website</title>
+    <!-- LInk To CSS -->
+    <style>
+      /* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 3rem;
+  list-style: none;
+  text-decoration: none;
+}
+/* Variables */
+:root {
+  --main-color: #2288ff;
+  --second-color: #192f6a;
+  --text-color: #314862;
+  --bg-color: #fff;
+
+  /* Box Shadow */
+  --box-shadow: 2px 2px 18px rgb(14 52 54 / 15%);
+}
+img {
+  width: 100%;
+}
+body {
+  color: var(--text-color);
+}
+section {
+  padding: 4.5rem 0 3rem;
+}
+.container {
+  max-width: 1068px;
+  margin-left: auto;
+  margin-right: auto;
+}
+header {
+  display: block;
+  width: 100%;
+  background: var(--bg-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 35px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-color);
+  text-transform: uppercase;
+}
+.logo .bx {
+  font-size: 24px;
+  color: var(--main-color);
+}
+.navbar {
+  display: flex;
+}
+.navbar a {
+  padding: 8px 17px;
+  color: var(--text-color);
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.navbar a:hover {
+  color: var(--main-color);
+}
+#menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+#menu {
+  display: none;
+}
+.btn {
+  padding: 8px 22px;
+  background: var(--main-color);
+  color: var(--bg-color);
+  border-radius: 5rem;
+}
+.btn:hover {
+  background: #3492fd;
+}
+/* Home */
+.home {
+  margin-top: 5rem;
+  background: url(img/home.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 440px;
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.home-text {
+  padding-left: 35px;
+}
+.home-text h1 {
+  color: var(--bg-color);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.about {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, auto));
+  gap: 2rem;
+}
+.about-img img {
+  border-radius: 3rem 0 3rem 3rem;
+}
+.about-text span {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--main-color);
+}
+.about-text h2 {
+  font-size: 1.7rem;
+}
+.about-text p {
+  font-size: 0.938rem;
+  margin: 1rem 0 1rem;
+}
+.sales {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+  gap: 2.4rem;
+}
+.sales .box {
+  padding: 20px;
+  background: var(--bg-color);
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  border-radius: 2rem;
+}
+.sales .box:hover
+ {
+  background: var(--main-color);
+  color: var(--bg-color);
+  transition: 0.4s all linear;
+}
+.sales .box .bx {
+  padding: 10px;
+  border-radius: 50%;
+  background: #f6f6fe;
+  color: var(--main-color);
+  font-size: 20px;
+}
+.sales .box h3 {
+  font-size: 1.1rem;
+  margin: 1rem 0 0.4rem;
+}
+.sales .box p {
+  font-size: 00.938rem;
+}
+/* Properties */
+.heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.heading span {
+  font-weight: 500;
+  color: var(--main-color);
+}
+.heading h2 {
+  font-size: 1.7rem;
+}
+.heading p {
+  font-size: 0.938rem;
+}
+.properties {
+  background: #fbfbfb;
+  border-radius: 2rem;
+}
+.properties-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+  gap: 3rem;
+  padding: 0 50px;
+}
+.properties-container .box {
+  background: var(--bg-color);
+  padding: 10px;
+  border-radius: 1rem;
+  box-shadow: var(--box-shadow);
+}
+.properties-container .box:hover {
+  transform: translateY(-10px);
+  transition: 0.5s;
+}
+.properties-container .box img {
+  border-radius: 1rem;
+  height: 220px;
+  object-fit: cover;
+  object-position: center;
+}
+.properties-container .box h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  float: right;
+}
+.properties-container .box .content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.properties-container .box .content .text h3 {
+  font-weight: 500;
+}
+.properties-container .box .content .text p {
+  font-size: 0.8rem;
+}
+.properties-container .box .content .icon {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+.properties-container .box .content .icon .bx {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+.properties-container .box .content .icon span {
+  font-size: 12px;
+  font-weight: 500;
+  margin-left: 4px;
+}
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+  justify-content: center;
+  text-align: center;
+}
+.newsletter h2 {
+  font-size: 1.7rem;
+}
+.newsletter form {
+  background: var(--bg-color);
+  box-shadow: var(--box-shadow);
+  padding: 6px 10px;
+  border-radius: 5rem;
+}
+.newsletter form input {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+.newsletter #email-box {
+  width: 280px;
+}
+.newsletter .btn {
+  padding: 12px 34px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.footer {
+  background: var(--main-color);
+  color: var(--bg-color);
+  border-radius: 5rem 0 0 0;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+  gap: 2rem;
+}
+.footer-container h2 {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+.footer-box {
+  display: flex;
+  flex-direction: column;
+}
+.footer-box h3 {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.footer-box a {
+  font-size: 0.8rem;
+  color: var(--bg-color);
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+.footer-box a:hover {
+  color: var(--text-color);
+}
+.social a {
+  font-size: 20px;
+  margin-right: 1rem;
+}
+.social a:hover {
+  color: var(--second-color);
+}
+.copyright {
+  padding: 20px;
+  text-align: center;
+  color: var(--bg-color);
+  background: var(--main-color);
+}
+/* Log IN */
+.login {
+  display: grid;
+  grid-template-columns: 0.4fr 1fr;
+  align-items: center;
+  min-height: 100vh;
+  margin-top: 2rem;
+}
+.login-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.login-container h2 {
+  font-size: 1.4rem;
+}
+.login-container p {
+  font-size: 0.9rem;
+}
+.login-container form {
+  display: flex;
+  flex-direction: column;
+}
+.login-container form span {
+  font-size: 0.9rem;
+  color: #8a8a8a;
+  margin-bottom: 4px;
+}
+.login-container form input {
+  border: 1px solid #8a8a8a;
+  outline: none;
+  padding: 10px;
+  margin-bottom: 1rem;
+  background: var(--bg-color);
+}
+.login-container form .buttom {
+  outline: none;
+  border: none;
+  background: var(--main-color);
+  color: var(--bg-color);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+.login-container form .buttom:hover {
+  background: #3492fd;
+}
+.login-container form a {
+  font-size: 0.9rem;
+  text-align: right;
+}
+.login-container .btn {
+  border-radius: 0;
+  text-align: center;
+}
+/* Making Responsive */
+@media (max-width: 1080px) {
+  .container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+@media (max-width: 880px) {
+  section {
+    padding: 4rem 0 3rem;
+  }
+  .properties-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 1rem;
+    padding: 0 10px;
+  }
+  .footer-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 1rem;
+  }
+  .login {
+    grid-template-columns: 0.6fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .nav {
+    padding: 10px 0;
+  }
+  #menu-icon {
+    display: initial;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background: var(--second-color);
+    text-align: center;
+    clip-path: circle(0% at 100% 1%);
+    transition: 0.6s;
+  }
+  .navbar a {
+    display: block;
+    margin: 1rem;
+    padding: 20px;
+    color: var(--bg-color);
+  }
+  .navbar a:hover {
+    background: var(--main-color);
+    color: var(--bg-color);
+    transition: 0.2s;
+  }
+  #menu:checked ~ .navbar {
+    clip-path: circle(144% at 100% 1%);
+  }
+  .about-text span {
+    font-size: 0.9rem;
+  }
+  .about-text h2,
+  .heading h2,
+  .newsletter h2 {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 638px) {
+  .about-text {
+    text-align: center;
+  }
+  .about-img {
+    order: 2;
+  }
+  .login {
+    grid-template-columns: 0.8fr 1fr;
+  }
+  .login {
+    margin-top: 3rem;
+  }
+}
+@media (max-width: 572px) {
+  .login-image {
+    display: none;
+  }
+  .login {
+    justify-content: center;
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 442px) {
+  .home-text {
+    padding-left: 14px;
+  }
+  .home-text h1 {
+    font-size: 1.7rem;
+  }
+  .about-text h2,
+  .heading h2,
+  .newsletter h2 {
+    font-size: 1.2rem;
+  }
+  .properties-container {
+    padding: 0;
+  }
+  .newsletter #email-box {
+    width: 140px;
+  }
+  .footer {
+    border-radius: 3rem 0 0 0;
+  }
+}
+  </style>
+    <!-- Box Icons -->
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="nav container">
+            <!-- Logo -->
+            <a href="index.html" class="logo"><i class='bx bx-home'></i>R State</a>
+            <!-- Menu Icon -->
+            <input type="checkbox" name="" id="menu">
+            <label for="menu" <i class='bx bx-menu' id="menu-icon"></i></label>
+            <!-- Nav List -->
+            <ul class="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#sales">Sales</a></li>
+                <li><a href="#properties">Properties</a></li>
+            </ul>
+            <!-- Log In Button -->
+            <a href="login.html" class="btn">Log In</a>
+        </div>
+
+    </header>
+    <!-- Home -->
+    <section class="home container" id="home">
+        <div class="home-text">
+            <h1>Find Your Next <br>Perfect Place To <br>Live.</h1>
+            <a href="sign-up.html" class="btn">Sign Up</a>
+        </div>
+    </section>
+    <!-- About -->
+    <section class="about container" id="about">
+        <div class="about-img">
+            <img src="img/about.jpg" alt="">
+        </div>
+        <div class="about-text">
+            <span>About Us</span>
+            <h2>We Provide The Best <br>Property For You !</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto debitis ducimus neque assumenda facere magni!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto debitis ducimus neque assumenda facere magni!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, soluta.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </section>
+    <!-- Sales -->
+    <section class="sales container" id="sales">
+        <!-- Box 1 -->
+        <div class="box">
+            <i class='bx bx-user' ></i>
+            <h3>Make Your Dream True</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, aut.</p>
+        </div>
+        <!-- Box 2 -->
+        <div class="box">
+            <i class='bx bx-desktop' ></i>
+            <h3>Start Your Membership</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, aut.</p>
+        </div>
+        <!-- Box 1 -->
+        <div class="box">
+            <i class='bx bx-home-alt' ></i>
+            <h3>Enjoy Your New Home</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, aut.</p>
+        </div>
+    </section>
+    <!-- Properties -->
+    <section class="properties container" id="properties">
+        <div class="heading">
+            <span>Recent</span>
+            <h2>Our Featured Properties</h2>
+            <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Odio, laborum!</p>
+        </div>
+        <div class="properties-container container">
+            <!-- Box 1 -->
+            <div class="box">
+                <img src="img/p1.jpg" alt="">
+                <h3>$12,999</h3>
+                <div class="content">
+                    <div class="text">
+                        <h3>The Palace</h3>
+                        <p>London, UK</p>
+                    </div>
+                    <div class="icon">
+                        <i class='bx bx-bed' ><span>5</span></i>
+                        <i class='bx bx-bath' ><span>2</span></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Box 2 -->
+            <div class="box">
+                <img src="img/p2.jpg" alt="">
+                <h3>$12,999</h3>
+                <div class="content">
+                    <div class="text">
+                        <h3>The Palace</h3>
+                        <p>London, UK</p>
+                    </div>
+                    <div class="icon">
+                        <i class='bx bx-bed' ><span>5</span></i>
+                        <i class='bx bx-bath' ><span>2</span></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Box 3 -->
+            <div class="box">
+                <img src="img/p3.jpg" alt="">
+                <h3>$12,999</h3>
+                <div class="content">
+                    <div class="text">
+                        <h3>The Palace</h3>
+                        <p>London, UK</p>
+                    </div>
+                    <div class="icon">
+                        <i class='bx bx-bed' ><span>5</span></i>
+                        <i class='bx bx-bath' ><span>2</span></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Box 4 -->
+            <div class="box">
+                <img src="img/p4.jpg" alt="">
+                <h3>$12,999</h3>
+                <div class="content">
+                    <div class="text">
+                        <h3>The Palace</h3>
+                        <p>London, UK</p>
+                    </div>
+                    <div class="icon">
+                        <i class='bx bx-bed' ><span>5</span></i>
+                        <i class='bx bx-bath' ><span>2</span></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Box 5 -->
+            <div class="box">
+                <img src="img/p5.jpg" alt="">
+                <h3>$12,999</h3>
+                <div class="content">
+                    <div class="text">
+                        <h3>The Palace</h3>
+                        <p>London, UK</p>
+                    </div>
+                    <div class="icon">
+                        <i class='bx bx-bed' ><span>5</span></i>
+                        <i class='bx bx-bath' ><span>2</span></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Box 6 -->
+            <div class="box">
+                <img src="img/p6.jpg" alt="">
+                <h3>$12,999</h3>
+                <div class="content">
+                    <div class="text">
+                        <h3>The Palace</h3>
+                        <p>London, UK</p>
+                    </div>
+                    <div class="icon">
+                        <i class='bx bx-bed' ><span>5</span></i>
+                        <i class='bx bx-bath' ><span>2</span></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Newsletter -->
+    <section class="newsletter container">
+        <h2>Have Question in mind? <br>Let us help you</h2>
+        <form action="">
+            <input type="email" name="" id="email-box" placeholder="yourmail@gmail.com" required>
+            <input type="submit" value="Send" class="btn">
+        </form>
+    </section>
+    <!-- Footer -->
+    <section class="footer">
+        <div class="footer-container container">
+            <h2>R. State</h2>
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <a href="#">Agency</a>
+                <a href="#">Building</a>
+                <a href="#">Rates</a>
+            </div>
+            <div class="footer-box">
+                <h3>Locations</h3>
+                <a href="#">Birmingham</a>
+                <a href="#">London</a>
+                <a href="#">New York</a>
+            </div>
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <a href="#">+44 (0)800 123 4567</a>
+                <a href="#">yourmail@gmail.com</a>
+                <div class="social">
+                    <a href="#"><i class='bx bxl-facebook' ></i></a>
+                    <a href="#"><i class='bx bxl-twitter' ></i></a>
+                    <a href="#"><i class='bx bxl-instagram' ></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>&#169; CarpoolVenom All Right Reserved</p>
+    </div>
+
+    
+</body>
+</html>
