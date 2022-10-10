@@ -28,3 +28,4 @@ haxtober
 hacktoberfest2022
 hacktoberfest-2022
 hacktoberfest 2022
+HACKTOBERFEST 2022
