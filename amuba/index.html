@@ -1,0 +1,39 @@
+<main class="overflow-hidden vh-100 flex items-stretch overflow-hidden">
+  <svg class="w-100 h-100" viewBox="0 0 1200 1200" preserveAspectRatio="xMidYMid slice">
+    <rect width="100%" height="100%" fill="#080327" />
+
+    <g stroke-width="8" id="js-amoeba">
+      <circle id="js-parent-membrane" cx="400" cy="600" r="96"
+        fill="#080327" stroke="#3050D5" />
+
+      <path id="js-membrane-connector" d="" fill="#080327" stroke="#3050D5" />
+
+      <circle id="js-child-membrane" class="no-touch" cx="400" cy="600" r="64"
+        fill="#080327" stroke="#3050D5" opacity="0" />
+
+      <g class="move">
+        <!-- child ectoplasm -->
+        <circle id="js-child-ectoplasm" cx="500" cy="600" r="32"
+          fill="#080327" stroke="#FFB742" />
+
+        <!-- parent core -->
+        <g id="js-parent-core" class="no-touch" opacity="1">
+          <circle cx="500" cy="600" r="48"
+            fill="#080327" stroke="#FFB742" />
+          <circle class="no-touch" cx="500" cy="600" r="12"
+            fill="#FF5645" />
+        </g>
+
+        <path id="js-ectoplasm-connector" class="no-touch" d="" fill="#080327" stroke="#FFB742" />
+
+        <!-- child nucleus -->
+        <circle id="js-child-nucleus" class="no-touch" cx="500" cy="600" r="12"
+          fill="#FF5645" />
+
+        <path id="js-nucleus-connector" class="no-touch" d="" fill="#FF5645" />
+      </g>
+
+    </g>
+
+  </svg>
+</main>
