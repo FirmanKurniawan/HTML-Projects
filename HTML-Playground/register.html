@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+
+        <title>Register to HTML Playground</title>
+
+        <style>
+            /* specific styles for the page */
+            body { 
+                background: linen url("./assets/stacked-waves-haikei-linen.svg") no-repeat center bottom; 
+                background-size: cover;
+                min-height: 100vh;
+            }
+
+            form { 
+                max-width: 450px;
+                background: rgba(0, 0, 0, 0.2);
+                margin: 1rem auto;
+                padding: 1rem;
+                border-radius: 10px;
+            }
+
+            fieldset label {
+                text-align: left;
+                margin-top: 1vh;
+                margin-left: 3vw;
+            }
+            
+            
+            input[type="submit"], input[type="reset"], select, fieldset input {
+                margin-bottom: 1vh;
+                width: 95%;
+                margin: 0.3rem auto;
+                border: 1px solid transparent;
+                border-radius: 10px;
+                padding: 0.3rem;
+            }
+
+            select {
+                width: 80%;
+                margin-bottom: 0.7rem;
+            }
+            
+            fieldset input, fieldset label {
+                display: block;
+                cursor: pointer;
+            }
+
+            .rad label { display: inline-block; }
+            fieldset { margin: 0.5rem; }
+        </style>
+    </head>
+    <body>
+        <section>
+            <h2>Register</h2>
+            <!-- Registeration form -->
+            <form action="#">
+                <fieldset>
+                    <legend>Your Information</legend>
+
+
+                    <label for="name">Your Name: </label>
+                    <input type="text" name="name" id="name" placeholder="John Doe"> 
+
+                    <label for="uname" maxlength="25">Username: </label>
+                    <input type="text" name="uname" id="uname" placeholder="user0042" required> 
+                    
+                    <label for="pass">Password: </label>
+                    <input type="password" name="pass" id="pass" reqiored> 
+                    
+                    <label for="cpass">Confirm Password: </label>
+                    <input type="password" name="cpass" id="cpass" required> 
+
+                </fieldset>
+                
+                <div class="rad">
+                    <label for="interests">Interests: </label>
+                    <input type="radio" name="interests" id="html">
+                    <label for="html">HTML</label>
+                    <input type="radio" name="interests" id="css">
+                    <label for="css">CSS</label> 
+                </div>
+                
+                <hr>
+                <label for="how">I will use HTML Playground for: </label>
+                <select name="how" id="how">
+                    <option value="learn">To Learn HTML & CSS</option>
+                    <option value="teach">To Teach My Students</option>
+                    <option value="ref">As a reference</option>
+                </select>
+                
+                <br>
+                <input type="checkbox" name="tc" id="tc">
+                <label for="tc">I Agree all terms and conditions</label> 
+                <br>
+
+                <input type="submit" value="Register!"> <br>
+                <input type="reset" value="Clear">
+            </form>
+        </section>
+
+        <footer>
+            <small class="font-fira">&copy; Copyright 2021, Yash Pawar. under the MIT license.</small>
+        </footer>
+    </body>
+</html>

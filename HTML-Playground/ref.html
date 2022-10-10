@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Html Reference Table</title>
+
+    <!-- Font Awesome 5 - Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="./assets/html-5.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Nav Bar -->
+    <nav>
+        <ul>
+            <li class="active"><a href="index.html"><i class="fab fa-html5"></i> Playground</a></li>
+            <li><a href="about.html" target="_blank"><i class="fa fa-users" aria-hidden="true"></i> About</a></li>
+            <li><a href="learn.html"><i class="fa fa-book" aria-hidden="true"></i> Learn</a></li>
+            <li><a href="https://github.com/yp-gpp/HTML-Playground" target="_blank"><i class="fab fa-github" aria-hidden="true"></i> Source</a></li>
+            <li><a href="css.html"><i class="fab fa-css3" aria-hidden="true"></i> CSS</a></li>
+        </ul>
+    </nav>
+
+    <!-- content -->
+    <section>
+        <table id="ref">
+            <caption>HTML Reference</caption>
+            <tr> <!-- Header -->
+                <th>Tag Name</th>
+                <th>Syntax</th>
+                <th>Description</th>
+            </tr>
+
+            <!-- Basics section -->
+            <tr>
+                <th colspan="3">Basic</th> 
+            </tr>
+
+            <tr>
+                <td>doctype</td>
+                <td><code><span class="tag">!doctype html</span></code></td>
+                <td>Used to define the document type.</td>
+            </tr>
+
+            <tr>
+                <td>html</td>
+                <td><code><span class="tag">html</span>...<span class="tag">/html</span></code></td>
+                <td>Wraps around the whole HTML code</td>
+            </tr>
+
+            <tr>
+                <td>head</td>
+                <td><code><span class="tag">head</span>...<span class="tag">/head</span></code></td>
+                <td>Contains the metadata bout the html document, like the titile, linked documents, Open Graph.</td>
+            </tr>
+
+            <tr>
+                <td>title</td>
+                <td><code><span class="tag">title</span>My Page<span class="tag">/title</span></code></td>
+                <td>Used to define the title of the document, which will be displayed in the browser's tab bar.</td>
+            </tr>
+
+            <tr>
+                <td>body</td>
+                <td><code><span class="tag">body</span>...<span class="tag">/body</span></code></td>
+                <td>The actuall content which is to be displayed to the user is written here.</td>
+            </tr>
+
+            <!-- Text formatting section -->
+            <tr>
+                <th colspan="3">Text Formatting</th>
+            </tr>
+
+            <tr>
+                <td>bold</td>
+                <td><code><span class="tag">b</span>Some Text<span class="tag">/b</span></code></td>
+                <td>Increases the font weight to make it bold.</td>
+            </tr>
+
+            <tr>
+                <td>Italic</td>
+                <td><code><span class="tag">i</span>Some Text<span class="tag">/i</span></code></td>
+                <td>Italicizes the text.</td>
+            </tr>
+
+            <tr>
+                <td>underline</td>
+                <td><code><span class="tag">u</span>Some text<span class="tag">/u</span></code></td>
+                <td>Underlines the text.</td>
+            </tr>
+
+            <tr>
+                <td>strong</td>
+                <td><code><span class="tag">strong</span>Some Text<span class="tag">/strong</span></code></td>
+                <td>used to mark text important.</td>
+            </tr>
+
+            <tr>
+                <td>emphasize</td>
+                <td><code><span class="tag">em</span>Some Text<span class="tag">/em</span></code></td>
+                <td>Used to emphasize text.</td>
+            </tr>
+
+            <tr>
+                <td>small</td>
+                <td><code><span class="tag">small</span>Some Text<span class="tag">/small</span></code></td>
+                <td>Decreases the size of Text</td>
+            </tr>
+
+            <tr>
+                <td>mark</td>
+                <td><code><span class="tag">mark</span>Some Text<span class="tag">/mark</span></code></td>
+                <td>Gives a highlighting effect.</td>
+            </tr>
+
+            <tr>
+                <td>delete</td>
+                <td><code><span class="tag">del</span>Some Text<span class="tag">/del</span></code></td>
+                <td>adds a stirikethrough line.</td>
+            </tr>
+
+            <tr>
+                <td>Insert</td>
+                <td><code><span class="tag">del</span>Old text<span class="tag">/del</span><br><span class="tag">ins</span>New Text<span class="tag">/ins</span></code></td>
+                <td>Usually used after delete tag to insert new text instead of it, will underline the new text to highlight it.</td>
+            </tr>
+
+            <tr>
+                <td>Superscript</td>
+                <td><code>X<span class="tag">sup</span>2<span class="tag">/sup</span></code></td>
+                <td>Displays the given text as superscript.</td>
+            </tr>
+
+            <tr>
+                <td>Subscript</td>
+                <td><code>X<span class="tag">sub</span>2<span class="tag">/sub</span></code></td>
+                <td>Displays the given text as subscript.</td>
+            </tr>
+
+            <tr>
+                <td>Quote</td>
+                <td><code><span class="tag">q</span>Some Text<span class="tag">/q</span></code></td>
+                <td>Adds double quotes around the text.</td>
+            </tr>
+
+            <!-- Headings section -->
+            <tr><th colspan="3">Headings</th></tr>
+
+            <tr>
+                <td>Heading 1</td>
+                <td><code><span class="tag">h1</span>Heading 1<span class="tag">/h1</span></code></td>
+                <td>Displays text as heading 1 (largest)</td>
+            </tr>
+
+            <tr>
+                <td>Heading 2</td>
+                <td><code><span class="tag">h2</span>Heading 2<span class="tag">/h2</span></code></td>
+                <td>Displays text as heading 2</td>
+            </tr>
+
+            <tr>
+                <td>Heading 3</td>
+                <td><code><span class="tag">h3</span>Heading 3<span class="tag">/h3</span></code></td>
+                <td>Displays text as heading 3</td>
+            </tr>
+
+            <tr>
+                <td>Heading 4</td>
+                <td><code><span class="tag">h4</span>Heading 4<span class="tag">/h4</span></code></td>
+                <td>Displays text as heading 4</td>
+            </tr>
+
+            <tr>
+                <td>Heading 5</td>
+                <td><code><span class="tag">h5</span>Heading 5<span class="tag">/h5</span></code></td>
+                <td>Displays text as heading 5</td>
+            </tr>
+
+            <tr>
+                <td>Heading 6</td>
+                <td><code><span class="tag">h6</span>Heading 6<span class="tag">/h6</span></code></td>
+                <td>Displays text as heading 6 (smallest)</td>
+            </tr>
+
+            <!-- Lists section -->
+            <tr>
+                <th colspan="3">Lists</th>
+            </tr>
+
+            <tr>
+                <td>List Item</td>
+                <td><code><span class="tag">li</span>Some Item<span class="tag">/li</span></code></td>
+                <td>li tag is used inside the ordered/unordered list to add items to it.</td>
+            </tr>
+
+            <tr>
+                <td>Ordered list</td>
+                <td><code><span class="tag">ol</span><br><span class="tag">li</span>Item 1<span class="tag">/li</span><br><span class="tag">li</span>Item 2<span class="tag">/li</span><br><span class="tag">/ol</span></code></td>
+                <td>Items in ordered list have a particular order, displayed using numbers of other selected style.</td>
+            </tr>
+
+            <tr>
+                <td>Unordered list</td>
+                <td><code><span class="tag">ul</span><br><span class="tag">li</span>Item 1<span class="tag">/li</span><br><span class="tag">li</span>Item 2<span class="tag">/li</span><br><span class="tag">/ul</span></code></td>
+                <td>Items in unordered list are without order, displayed using bulllets or other choosen style.</td>
+            </tr>
+
+            <tr>
+                <td>Description term</td>
+                <td><code><span class="tag">dt</span>Term<span class="tag">/dt</span></code></td>
+                <td>Used inside defination lists, defines the term/name.</td>
+            </tr>
+
+            <tr>
+                <td>Description</td>
+                <td><code><span class="tag">dd</span>Description<span class="tag">/dd</span></code></td>
+                <td>The description of the term inside the description term tag.</td>
+            </tr>
+
+            <tr>
+                <td>Description List</td>
+                <td>
+                    <code><span class="tag">dl</span><br>
+                        <span class="tag">dt</span>Term 1<span class="tag">/dt</span><br><span class="tag">dd</span>Description 1<span class="tag">/dd</span><br>
+                        <span class="tag">dt</span>Term 2<span class="tag">/dt</span><br><span class="tag">dd</span>Description 2<span class="tag">/dd</span><br>
+                    <span class="tag">/dl</span></code>
+                </td>
+                <td>a description list is a list in which terms are there and their defination is also given.</td>
+            </tr>
+
+            <!-- tables section -->
+            <tr><th colspan="3">Tables</th></tr>
+
+            <tr>
+                <td>table</td>
+                <td><code><span class="tag">table</span>...<span class="tag">/table</span></code></td>
+                <td>Allows to arrange data in rows and columns.</td>
+            </tr>
+
+            <tr>
+                <td>table row</td>
+                <td><code><span class="tag">tr</span>...<span class="tag">/tr</span></code></td>
+                <td>The individual row of table.</td>
+            </tr>
+
+            <tr>
+                <td>table header</td>
+                <td><code><span class="tag">th</span>Header<span class="tag">/th</span></code></td>
+                <td>The header data to be displayed in cells of the table.</td>
+            </tr>
+
+            <tr>
+                <td>table data</td>
+                <td><code><span class="tag">td</span>Data<span class="tag">/td</span></code></td>
+                <td>The data to be displayed in the cells of the table.</td>
+            </tr>
+
+            <!-- forms section -->
+            <tr><th colspan="3">Forms</th></tr>
+
+            <tr>
+                <td>form</td>
+                <td><code><span class="tag">form</span>...<span class="tag">/form</span></code></td>
+                <td>Used to create forms in HTML.</td>
+            </tr>
+
+            <tr>
+                <td>label</td>
+                <td><code><span class="tag">label for="id"</span>Text Label<span class="tag">/label</span></code></td>
+                <td>Used to give a lable to input element.</td>
+            </tr>
+
+            <tr>
+                <td>input</td>
+                <td><code><span class="tag">input type="type"</span></code></td>
+                <td>Defines an input element of the given type, possible types values include "text", "submit", "reset", "checkbox", "radio", etc.</td>
+            </tr>
+
+            <tr>
+                <td>textarea</td>
+                <td><code><span class="tag">textarea</span>Text<span class="tag">/textarea</span></code></td>
+                <td>A much larger text area for text input.</td>
+            </tr>
+
+            <tr>
+                <td>option</td>
+                <td><code><span class="tag">option value="some-value"</span>Display Value<span class="tag">/option</span></code></td>
+                <td>Option for dropdown, to be used inside the select tag.</td>
+            </tr>
+
+            <tr>
+                <td>select</td>
+                <td>
+                    <code>
+                        <span class="tag">select id="dropdown"</span>
+                            <span class="tag">option value="v1"</span>V1<span class="tag">/option</span>
+                            <span class="tag">option value="v2"</span>V2<span class="tag">/option</span>
+                        <span class="tag">/select</span>
+                    </code>
+                </td>
+                <td>Used to create a dropdown menu</td>
+            </tr>
+
+            <!-- others -->
+            <tr>
+                <th colspan="3">Others</th>
+            </tr>
+
+            <tr>
+                <td>image</td>
+                <td><code><span class="tag">img src="image.jpg" alt="my-image"</span></code></td>
+                <td>
+                    Used to display images.<br>
+                    Atributes: 
+                    <br><u>src</u> <span class="font-fira"> -></span> Specifies the URL/Path to the image.
+                    <br><u>alt</u> <span class="font-fira"> -></span> If there is some reason image is not displayed, the alt text will be displayed.
+                    <br><u>height</u> <span class="font-fira"> -></span> Specifies the height the image.
+                    <br><u>width</u> <span class="font-fira"> -></span> Specifies the width the image.
+                    <br><u>style</u> <span class="font-fira"> -></span> Specifies the CSS styles for the image.
+                    <br><u>hspace</u> <span class="font-fira"> -></span> Specifies the horizontal empty space around the image.
+                    <br><u>vspace</u> <span class="font-fira"> -></span> Specifies the vertical empty space around the image.
+                </td>
+            </tr>
+
+            <tr>
+                <td>anchor tag</td>
+                <td><code><span class="tag">a href="url"</span>Text<span class="tag">/a</span></code></td>
+                <td>Used to create Hyperlinks in HTML.</td>
+            </tr>
+
+            <tr>
+                <td>break</td>
+                <td><code><span class="tag">br</span></code></td>
+                <td>Used to add line breaks.</td>
+            </tr>
+
+            <tr>
+                <td>horizontal rule</td>
+                <td><code><span class="tag">hr</span></code></td>
+                <td>Used to add a horizontal line.</td>
+            </tr>
+
+            <tr>
+                <td>comments</td>
+                <td><code><span class="tag">!-- some comment --</span></code></td>
+                <td>Used to write comments to explain the code.</td>
+            </tr>
+
+            <tr>
+                <td>blockquote</td>
+                <td><code><span class="tag">blockquote</span>Some text<span class="tag">/blockquote</span></code></td>
+                <td>Used to quote text from a different source.</td>
+            </tr>
+
+            <tr>
+                <td>abbrevation</td>
+                <td><code><span class="tag">abbr title="full"</span>short<span class="tag">abbr</span></code></td>
+                <td>Used to display abbrevations.</td>
+            </tr>
+
+            <tr>
+                <td>address</td>
+                <td><code><span class="tag">address</span>My Address<span class="tag">/address</span></code></td>
+                <td>this tag can be used to display the address.</td>
+            </tr>
+
+            <tr>
+                <td>bi-directional override</td>
+                <td><code><span class="tag">bdo dir="rtl"</span>Text<span class="tag">/bdo</span></code></td>
+                <td>Used to change the direction of text.</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- end -->
+    <hr>
+    <footer>
+        <small class="font-fira">&copy; Copyright 2021, Yash Pawar. under the MIT license.</small>
+    </footer>
+</body>
+</html>

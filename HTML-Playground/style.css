@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=Roboto:wght@300;700;900&display=swap');
+
+/* Using variables to avoid copy paste of color codes */
+:root {
+    --color-red: #ef395a;
+    --color-red-spot: #eea2a4;
+    --color-red-dark: #892033;
+    --color-red-switch: #700000;
+    --color-green: #00bb8e;
+    --color-green-dark: #006e53;
+    --color-white: #eee;
+}
+
+/* Remove padding and margin */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* set default font and background */
+body {
+    background: linen;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* Nav Bar Styles */
+nav {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    height: 40px;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    display: block;
+    background-color: var(--color-red);
+    height: 100%;
+}
+
+nav li {
+    background-color: var(--color-red);
+    display: inline;
+    float: right;
+    height: 100%;
+    list-style-type: none;
+}
+
+nav li:first-child {
+    float: left;
+}
+
+nav li.active {
+    background-color: var(--color-white);
+}
+
+nav li:hover {
+    background-color: var(--color-red-dark);
+}
+
+/* nav link styles */
+nav li a {
+    display: block;
+    color: var(--color-white);
+    height: 100%;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav li.active a {
+    font-size: 1.2rem;
+    color: var(--color-red);
+}
+
+nav li:hover a {
+    color: var(--color-white);
+}
+
+nav li a i { opacity: 0; }
+
+nav li:first-child a i { opacity: 1; }
+
+nav li:hover a i { opacity: 1; }
+
+/* Background & Logo */
+.font-fira {
+    font-family: 'fira code', 'Consolas', 'Courier New', monospace;
+}
+
+.fp {
+    background: linen url(./assets/wave-haikei.svg) no-repeat center bottom;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    width: 100%;
+}
+
+.logo-main {
+    color: var(--color-red);
+    font-size: 8rem;
+}
+
+.logo-main:hover {
+    text-shadow: 0 0 10px var(--color-red-dark),
+    0 0 20px var(--color-red-dark),
+    0 0 40px var(--color-red-dark);
+}
+
+.logo-main::after {
+    content: ' HTML';
+    display: inline;
+    font-weight: 700;
+}
+
+.logo-name {
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--color-red);
+    opacity: 0.8;
+}
+
+.logo-name::after {
+    content: 'Playground';
+    position: absolute;
+    transform: translate(-100%);
+    -webkit-text-stroke: 2px #fff;
+    opacity: 1;
+}
+
+/* element styles */
+hr {
+    margin: 1rem auto;
+    max-width: 880px;
+    /* color: var(--color-red);        */
+    height: 3px;
+    background-color: var(--color-red);
+    border: none;
+
+}
+
+footer {
+    text-align: center;
+    padding: 0.5rem;
+    margin-top: 0.75rem;
+}
+
+
+#learn-quote {
+    border-radius: 10px;
+    color: var(--color-red);
+    display: block;
+    font-size: 5rem;
+    margin: 2rem auto;
+    width: 90%;
+}
+
+/* add double quotes using the ::after and ::before */
+#learn-quote::after { content: '"'; }
+#learn-quote::before { content: '"'; }
+
+h1 a:link, h1 a {
+    color:rgb(122, 214, 191);
+}
+
+h1 a:visited {
+    text-decoration: none;
+}
+
+h1 a:hover {
+    color:rgb(92, 207, 159);
+    text-decoration: none;
+}
+
+h1 a:active {
+    color: var(--color-red);
+}
+
+#input-html {
+    border-radius: 10px;
+    display: block;
+    margin: 1rem auto;
+    width: 95%;
+    height: 35vh;
+    resize: none;
+}
+
+#output-html {
+    height: 30vh;
+}
+
+/* Learn Page Styles */
+section {
+    max-width: 900px;
+    margin: auto;
+    /* padding: 0.3rem; */
+}
+
+section.content {
+    /* content navigator in learn.html */
+    background: linen url("./assets/circle-scatter-haikei-fill.svg") no-repeat center top;
+}
+
+section h1 {
+    font-size: 3rem;
+    padding-top: 2rem;
+    color: var(--color-red-dark);
+}
+
+section h2 {
+    font-size: 2rem;
+    padding-top: 0.5rem;
+    margin-left: 0.5rem;
+    color: var(--color-red-switch);
+}
+
+section.content ul {
+    list-style-type: none;
+    padding-left: 4rem;
+}
+
+section.content li {
+    padding: 0.5rem 0;
+}
+
+section.content li a {
+    color: var(--color-red);
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: font-size 0.2s ease-in-out;
+}
+
+section.content li a:hover {
+    color: var(--color-red-spot);
+    text-decoration: underline;
+    font-size: 1.75rem;
+}
+
+section.content li a:visited {
+    color: var(--color-red-dark);
+}
+
+/* styles for code block */
+pre {
+    background: rgb(241, 241, 245);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(100, 100, 100, 30);
+    margin-top: 1rem; 
+}
+
+code, pre {
+    font-family: 'Fira Code', consolas, monospace;
+}
+
+/* add angular brackets using css */
+code span.tag { margin: 0 4px; }
+
+code span.tag::before { content: '<' }
+
+code span.tag::after { content: '>' }
+
+/* section styles */
+section p {
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 0.5rem; 
+    line-height: 1.5;
+}
+
+section p code {
+    background: rgb(227, 241, 238);
+    border: 1px solid #555;
+    border-radius: 3px;
+    font-size: 0.9rem;
+}
+
+section div.output { 
+    background: #fff;
+    font-family: sans-serif;
+    border: 1px solid black;
+    margin: 0.75rem;
+    padding: 1.5rem;
+    border-radius: 3px;
+}
+
+iframe.output {
+    background: #fff;
+    width: 97%;
+    border: 1px solid black;
+    margin: 1rem;
+    border-radius: 3px;
+}
+
+#heading-frame {
+    height: 300px;
+}
+
+section img { margin: auto; }
+
+/* ref.html styles */
+
+table#ref {
+    width: 100%;
+    border: 1px solid var(--color-red);
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table#ref caption {
+    text-align: left;
+    color: var(--color-red-dark);
+    font-size: 1.3rem;
+}
+
+table#ref tr { 
+    border: 1px solid var(--color-red);
+    min-height: 2rem;
+    height: 2.5rem;
+    padding: 0.4rem 0;
+}
+
+table#ref tr:nth-child(odd) { background: rgba(200, 200, 200, 200); }
+
+table#ref tr:first-child {
+    color: white;
+    background: var(--color-red-dark);
+}
+
+table#ref tr th[colspan="3"] { 
+    color: linen;
+    background: var(--color-red);
+}
+
+table#ref tr td { padding: 0.5rem; }
+
+table#ref tr td:first-child {
+    width: 12%;
+    text-align: right;
+}
+
+table#ref tr td:nth-child(2) {
+    width: 33%;
+    /* text-align: center; */
+}
+
+table#ref tr td:nth-child(3) {
+    text-align: left;
+}
