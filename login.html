@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8"/>
+		<title></title>
+	
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
+		<link rel="stylesheet" media="all" href=""/>
+		<meta name="viewport" content="width=device-width; initial-scale=1"/>
+		<!-- Add "maximum-scale=1" to fix the weird iOS auto-zoom bug on orientation changes. -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+		<LINK href="style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery.progressbar.min.js"></script> 
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#msg').html("0.0%").attr('class', 'huge');
+        $("#pb3").progressBar(0, { barImage: 'images/progressbg_orange.gif', showText: false} );
+      });
+    </script>
+    <style>
+      @font-face { 
+        font-family:'Essays 1743';
+        src:url('f/essays1743-webfont.eot');
+        src:local('Essays 1743'), url('f/essays1743-webfont.woff') 
+        format('woff'), url('f/essays1743-webfont.ttf') 
+        format('truetype');
+        font-weight:normal;
+        font-style:normal
+      }
+    body { 
+      background: #FFF;
+    }
+    </style>
+
+	</head>
+
+	<body>
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId  : '189326191078013',
+          status : true, // check login status
+          cookie : true, // enable cookies to allow the server to access the session
+          xfbml  : true  // parse XFBML
+        });
+
+        FB.getLoginStatus(function(response) {
+          if (response.session) {
+            // logged in and connected user, someone you know
+            //console.log(response); 
+            readMyFriends(); 
+          } 
+          else {
+            //console.log(response);
+            //console.log('no res');
+            var login_url = "http://www.facebook.com/dialog/oauth/?scope=email,user_birthday&client_id=189326191078013&redirect_uri=http://together.in.th/facebookapp/thisisthailand/verify.php&response_type=code_and_token&display=page";
+            top.window.location.href = login_url
+            var cur_loc = (top.window.location.href);
+            //console.log(cur_loc);
+            if(cur_loc.indexOf('come') == false) {
+            }
+            else {
+              //console.log('stop');
+              //window.location = "http://apps.facebook.com/thisisthailand"; 
+            }
+
+            // no user session available, someone you dont know
+          }
+        });
+            
+      };
+      (function() {
+        var e = document.createElement('script');
+        e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+        e.async = true;
+        document.getElementById('fb-root').appendChild(e);
+      }());
+    </script>
+
+    <div id="msg"></div>	
+    <span class="progressBar" id="pb3"></span>
+    <script type="text/javascript">
+      function readMyFriends() {
+        var counter = 0;
+        var size = 0;
+        var runner =0;
+        FB.api('me/friends', function(res) { 
+          size = res.data.length;
+          FB.Array.forEach(res.data, function(f, i) {
+            FB.api('/142609679128323/members/'+f.id, function(res) { 
+              if(res.data.length) {
+                counter++;
+              }
+              if (runner == size-1) { 
+                  var f_percent = (counter/size*100).toFixed(2);
+                  //console.log(size, runner, "Friends!"+ f_percent + '%');
+                  $("#pb3").hide();
+                  $('#msg').html(f_percent+'% of your friends like that!' );
+              } else {
+                  var percent = (runner/size*100).toFixed(1);
+                  $('#msg').html(percent+ '%').attr('class', 'huge');
+                  $("#pb3").progressBar(percent, { barImage: 'images/progressbg_orange.gif', showText: false} );
+              }
+              ++runner; 
+            }); // api
+          }); // forEach
+        });  //api
+      }
+    </script>    
+	</body>
+	
+</html>
+
+<!--
+verify.php
+!-->
+
+<html>
+<body>
+ok
+<script> top.location.href = "http://apps.facebook.com/thisisthailand#come2";
+</script>
+</body>
+</html>
