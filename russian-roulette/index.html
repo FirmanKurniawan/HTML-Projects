@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body background="russianroulette.JPG">
+    <div id="header">
+        <h2>Russian Roulette</h2>
+    </div>
+    <div id="question">
+        <label>Do you want to start first?</label>
+    </div>
+    <br />
+    <div id="radio">
+        <label>
+            <input type="radio" id="yes" name="choice" checked="checked" />
+            Yes
+        </label>
+        <label>
+            <input type="radio" id="no" name="choice" />
+            No
+        </label>
+    </div>
+    <br />
+    <div id="button">
+        <input type="button" value="Start" onclick="startFireWithGun();" id="start" />
+    </div>
+    <div id="board">
+
+    </div>
+    <div id="new" style="visibility: hidden;">
+        <input type="button" value="New Game" onclick="reloadPage();" style="visibility: hidden;" id="reload" />
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
