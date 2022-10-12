@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta htto-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <tittle>Pendaftaran</tittle>
+    <tittle>Hacktober</tittle>
 </head>
 <style>
     .center {
@@ -18,8 +18,8 @@
     }
 </style>
 <body>
-    <h1><center>Pendaftaran</center></h1>
-    <img src="profile.jpg" class="profile" alt="Gambar Profile"> </img> <br> <br> <br>
+    <h1><center>Hacktober</center></h1>
+    <img src="https://tse4.mm.bing.net/th?id=OIP.PP5IEEnD8z-BhtENpt8jjAAAAA&pid=Api&P=0" class="profile" alt="Gambar Profile"> </img> <br> <br> <br>
 <div>
     <form>
         <label>
