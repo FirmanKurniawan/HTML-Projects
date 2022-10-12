@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FILM TERPOPULER</title>
+</head>
+
+<body>
+    <script>
+        const h1 = document.createElement('h1')
+        h1.innerHTML = '50 Film Populer'
+        document.body.appendChild(h1)
+
+        const tbl = document.createElement('table')
+        const tr = document.createElement('tr')
+        tbl.border = 1
+        tbl.appendChild(tr)
+        document.body.appendChild(tbl)
+
+        const th1 = document.createElement('th')
+        th1.innerHTML = 'No'
+        tr.appendChild(th1)
+        const th2 = document.createElement('th')
+        th2.innerHTML = 'Title'
+        tr.appendChild(th2)
+        const th3 = document.createElement('th')
+        th3.innerHTML = 'Overview'
+        tr.appendChild(th3)
+        const th4 = document.createElement('th')
+        th4.innerHTML = 'Genres'
+        tr.appendChild(th4)
+        const th5 = document.createElement('th')
+        th5.innerHTML = 'Budget'
+        tr.appendChild(th5)
+        const th6 = document.createElement('th')
+        th6.innerHTML = 'Sosmed'
+        tr.appendChild(th6)
+        const th7 = document.createElement('th')
+        th7.innerHTML = 'Poster'
+        tr.appendChild(th7)
+        const th8 = document.createElement('th')
+        th8.innerHTML = 'Trailer YT'
+        tr.appendChild(th8)
+
+
+
+        fetch('https://glin.github.io/reactable/articles/popular-movies/tmdb_movies.json')
+            .then(res => res.json()).then(results => {
+                results.slice(0, 50).map((data, idx) => {
+                    const tr = document.createElement('tr')
+
+                    const td1 = document.createElement('td')
+                    td1.innerHTML = idx + 1
+                    tr.appendChild(td1)
+
+                    const td2 = document.createElement('td')
+                    td2.innerHTML = data.title
+                    tr.appendChild(td2)
+
+                    const td3 = document.createElement('td')
+                    td3.innerHTML = data.overview
+                    tr.appendChild(td3)
+
+                    const td4 = document.createElement('td')
+                    td4.innerHTML = data.genres.join(', ')
+                    tr.appendChild(td4)
+
+                    const td5 = document.createElement('td')
+                    td5.innerHTML = new Intl.NumberFormat('en-US', {
+                        style: 'currency',
+                        currency: 'USD'
+                    }).format(data.budget || 0)
+                    tr.appendChild(td5)
+
+                    const th6 = document.createElement('td')
+                    th6.innerHTML = `
+          <ul>
+            <li>Homepage: <a target='_blank' href='${data.homepage}'>${data.homepage}</a></li>
+            <li>IMDB: <a target='_blank' href='https://www.imdb.com/title/${data.external_ids.imdb_id}/'>${data.external_ids.imdb_id}</a></li>
+            <li>Facebook: <a target='_blank' href='https://fb.com/${data.external_ids.facebook_id}'>${data.external_ids.facebook_id}</a></li>
+            <li>Instagram: <a target='_blank' href='https://instagram.com/${data.external_ids.instagram_id}'>${data.external_ids.instagram_id}</a></li>
+            <li>Twitter: <a target='_blank' href='https://twitter.com/${data.external_ids.twitter_id}'>${data.external_ids.twitter_id}</a></li>
+          </ul>
+          `
+                    tr.appendChild(th6)
+
+                    const th7 = document.createElement('td')
+                    th7.innerHTML =
+                        `<img width='100' src='https://image.tmdb.org/t/p/original/${data.poster_path}'>`
+                    tr.appendChild(th7)
+                    const th8 = document.createElement('td')
+                    th8.innerHTML =
+                        `<a target='_blank' href='https://youtube.com/embed/${data.trailer_yt}'>https://youtube.com/embed/${data.trailer_yt}</a>`
+                    tr.appendChild(th8)
+
+
+                    tbl.appendChild(tr)
+                    console.log(data);
+                })
+            })
+    </script>
+</body>
+
+</html>
