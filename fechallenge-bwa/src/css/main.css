@@ -1,0 +1,371 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #FAFAFA;
+}
+
+.card {
+  width: 23rem;
+  margin-top: -35%;
+}
+
+.pop-img img {
+  border-radius: 20px;
+}
+.pop-img .card {
+  border-radius: 20px;
+  margin-left: 15px;
+}
+.pop-img .card img {
+  width: 20px;
+  height: 20px;
+}
+.pop-img .card p {
+  margin-top: -2px;
+  margin-left: 5px;
+  color: #656565;
+}
+.pop-img .card span {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #FFB800;
+}
+.pop-img .card .resto-info .btn {
+  margin-left: 140px;
+  margin-top: -20px;
+}
+
+.custom-nav .nav-item {
+  margin-left: 20px;
+}
+.custom-nav .nav-item .active {
+  border-bottom: #5A4FCF solid 3px;
+}
+.custom-nav .nav-brand {
+  font-family: "Nunito", sans-serif;
+  margin-left: 180px;
+  margin-right: 200px;
+  font-size: 1.5rem;
+}
+.custom-nav .nav-brand img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.custom-nav .search-item i img {
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 5px;
+  opacity: 0.5;
+}
+.custom-nav .search-item input {
+  border-radius: 15px;
+  padding-left: 40px;
+}
+.custom-nav .custom-btn {
+  background-color: rgba(90, 79, 207, 0.1);
+  border-radius: 10px;
+  padding: 8px 26px;
+  font-size: 1rem;
+  white-space: nowrap;
+  color: #5A4FCF;
+}
+
+.ads-sec .ads img {
+  margin-top: 50px;
+  margin-left: 60px;
+  border-radius: 25px;
+}
+.ads-sec .card {
+  border-radius: 25px;
+  margin-top: -35%;
+}
+.ads-sec .card .review img {
+  width: 20px;
+  height: 20px;
+}
+.ads-sec .card .review p {
+  margin-left: 10px;
+  color: #656565;
+}
+.ads-sec .card .review span {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #FFB800;
+}
+.ads-sec .card .card-text {
+  color: #656565;
+}
+.ads-sec .card .location {
+  margin-top: -8px;
+  margin-bottom: 30px;
+}
+.ads-sec .card .location img {
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+  opacity: 0.5;
+}
+.ads-sec .card .btn {
+  background-color: #FDC886;
+  border-radius: 10px;
+  padding: 16px;
+  font-weight: 500;
+}
+.ads-sec .card .btn .image-fluid {
+  margin-left: 5px;
+  width: 17px;
+  height: 17px;
+}
+.ads-sec .card .info {
+  margin-top: 13px;
+}
+.ads-sec .card .info img {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  opacity: 0.5;
+}
+
+.choose-text {
+  margin-top: 300px;
+}
+.choose-text p {
+  color: #5A4FCF;
+  font-weight: 500;
+}
+.choose-text h4 {
+  font-weight: 600;
+}
+
+.choose {
+  margin-top: 350px;
+}
+.choose .card {
+  height: 18rem;
+  background-color: #FAFAFA;
+  border: none;
+  border-radius: 20px;
+}
+.choose .card img {
+  margin-top: 10px;
+}
+.choose .card h5 {
+  margin-top: 60px;
+}
+.choose .card .btn {
+  margin-top: 80px;
+  background-color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+}
+.choose .card .mt {
+  margin-top: 95px;
+}
+.choose .card:hover .btn {
+  background-color: #FDC886;
+}
+.choose .card .img-fluid {
+  width: 18px;
+  height: 18px;
+  margin-left: 5px;
+  margin-top: -1px;
+}
+
+.popular {
+  margin-top: 100px;
+}
+.popular .featured {
+  margin-top: 10%;
+}
+.popular .featured h6 {
+  text-transform: uppercase;
+  color: #5A4FCF;
+}
+.popular .featured h4 {
+  font-weight: 600;
+}
+.popular .featured p {
+  margin-top: 20px;
+  color: #656565;
+}
+.popular a {
+  margin-top: 30px;
+  background-color: #FDC886;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 15px;
+}
+.popular a img {
+  width: 18px;
+  height: 18px;
+  margin-left: 5px;
+}
+.popular a:hover {
+  background-color: #FDC886;
+}
+
+.rest-loc {
+  margin-top: 200px;
+}
+.rest-loc .row .col-md-6 h6 {
+  text-transform: uppercase;
+  color: #5A4FCF;
+}
+.rest-loc .row .col-md-6 h3 {
+  margin-top: 15px;
+  font-weight: 600;
+}
+.rest-loc .row .col-md-6 .btn {
+  margin-left: 400px;
+  background-color: #F2F2F2;
+  border-radius: 20px;
+  padding: 15px 20px;
+}
+.rest-loc .row .col-md-6 .btn .location img {
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+  opacity: 0.5;
+}
+.rest-loc .row .col-md-4 .card {
+  margin-top: -150px;
+  margin-left: 30px;
+}
+.rest-loc .row .col-md-4 .card .card-text {
+  margin-top: -20px;
+}
+.rest-loc .row .col-md-4 a {
+  margin-top: -70px !important;
+  background-color: #FDC886;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 15px;
+  margin-left: 280px !important;
+}
+.rest-loc .row .col-md-4 a img {
+  width: 18px;
+  height: 18px;
+}
+.rest-loc .row .col-md-4 a:hover {
+  background-color: #FDC886;
+}
+.rest-loc button {
+  margin-top: 80px;
+  margin-left: 40%;
+  background-color: #FDC886;
+  border-radius: 10px;
+  padding: 10px 25px;
+  font-weight: 600;
+}
+.rest-loc button img {
+  margin-left: 5px;
+  width: 17px;
+  height: 17px;
+}
+
+.chef {
+  margin-top: 130px;
+  margin-bottom: 100px;
+}
+.chef .row img {
+  border-radius: 20px;
+}
+.chef .row .card {
+  border-radius: 20px;
+}
+.chef .row .card-shield {
+  width: 11rem;
+  margin-top: -740px;
+  margin-left: 420px;
+}
+.chef .row .card-shield .card-text {
+  color: #232631;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.chef .row .card-shield p {
+  color: #656565;
+  margin-top: -10px;
+}
+.chef .row .card-info {
+  margin-left: -50px;
+}
+.chef .row .card-info .col-md-6 {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.chef .row .card-info .col-md-6 .card-text {
+  color: #232631;
+  font-weight: 600;
+}
+.chef .row .card-info .col-md-6 p {
+  color: #656565;
+  margin-top: -10px;
+}
+.chef .row .card-info .col-md-6 a {
+  color: #FDC886;
+  text-decoration: none;
+  font-weight: 600;
+}
+.chef .row .chef-info h6 {
+  text-transform: uppercase;
+  color: #5A4FCF;
+}
+.chef .row .chef-info h3 {
+  margin-top: 15px;
+  font-weight: 600;
+}
+.chef .row .chef-info .chef-lists {
+  margin-top: 50px;
+}
+.chef .row .chef-info .chef-lists .info-bg {
+  border-radius: 15px;
+  padding: 20px 20px;
+  background-color: #FAFAFA;
+}
+.chef .row .chef-info .chef-lists .info {
+  margin-top: 50px;
+  margin-left: 20px;
+}
+.chef .row .chef-info .chef-lists p {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #656565;
+  text-transform: uppercase;
+}
+.chef .row .chef-info .chef-lists h5 span {
+  margin-left: 280px;
+  font-size: 1rem;
+}
+.chef .row .chef-info .chef-lists h5 span a {
+  text-decoration: none;
+  color: #FDC886;
+}
+.chef .row .chef-info .chef-lists .location img {
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+  opacity: 0.5;
+}
+.chef .row .chef-info .chef-lists button {
+  margin-top: 88px;
+  background-color: #FDC886;
+  border-radius: 10px;
+  padding: 10px 25px;
+  font-weight: 600;
+}
+.chef .row .chef-info .chef-lists button img {
+  margin-left: 5px;
+  width: 17px;
+  height: 17px;
+}
+
+/*# sourceMappingURL=main.css.map */
