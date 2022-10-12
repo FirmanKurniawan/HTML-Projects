@@ -1,0 +1,286 @@
+body{
+    background-color: white;
+    font-family: 'SF Compact Display', sans-serif;
+}
+
+// INDEX HTML
+.nav-style{
+    .btn-petunjuk{
+        background-color: #7A1F31;
+        color: white;
+
+        &:hover{
+            background-color: #852d3f;
+            color: white;
+        }
+    }
+
+    .btn-petunjuk-2{
+        background-color: #0F1F3C;
+        color: white;
+
+        &:hover{
+            background-color: #16243d;
+            color: white;
+        }
+    }
+
+    .text-nav{
+        font-size: 20px;
+        font-size: medium;
+        color: #555555 !important;
+    }
+    
+}
+
+.modal-style{
+    .text-top{
+        font-size: 25px;
+        color: #0F1F3C;
+        font-weight: 600;
+    }
+    .content-modal{
+        background-color: #E7EDFF;
+        border-radius: 15px;
+    }
+    .btn-mengerti{
+        font-weight: 500;
+        background-color: #7A1F31;
+        color: white;
+
+        &:hover{
+            background-color: #792737;
+            color: white;
+        }
+    }
+    .visi{
+        font-size: 15px;
+        font-weight: normal;
+    }
+}
+
+.section-countdown{
+    margin-top: 160px;
+
+    .text-besar{
+        font-size: 40px;
+        color: #0F1F3C;
+        font-weight: 600;
+    }
+
+    .text-kecil{
+        font-size: 15px;
+        color: 0F1F3C;
+        font-weight: 300;
+
+        .tahu{
+            font-weight: 900;
+            font-style: italic;
+        }
+
+        .ngoding{
+            font-style: italic;
+            font-weight: 400;
+        }
+    }
+
+    .countdown-hari{
+        background-color: #EAF1FF;
+        color: #0F1F3C;
+        border-radius: 12px;
+    }
+}
+
+
+// LANDING PAGE
+.section-login{
+    margin-top: 90px;
+    color: #0F1F3C;
+
+    .text-besar{
+        font-size: 33px;
+        font-weight: 600;
+    }
+
+    .form-style{
+        background-color: #EAF1FF;
+        border-radius: 12px;
+        border-color: #EAF1FF;
+    }
+    .btn-masuk{
+        background-color: #7A1F31;
+        color: white;
+
+        &:hover{
+            background-color: #852d3f;
+            color: white;
+        }
+    }
+    .text-kecil{
+        font-size: 15px;
+        color: #0F1F3C;
+        font-weight: 300;
+
+        .tahu{
+            font-weight: 900;
+            font-style: italic;
+        }
+
+        .ngoding{
+            font-style: italic;
+            font-weight: 400;
+        }
+    }
+}
+
+// MAIN PAGE
+.section-header{
+    margin-top: 90px;
+    color: #0F1F3C;
+
+    .text-besar{
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .text-kecil{
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .btn-biru{
+        background-color: #7A1F31;
+        color: white;
+        border-radius: 10px;
+
+        &:hover{
+            background-color: #7a2a3a;
+            color: white;
+        }
+    }
+
+    .alert-style{
+        background-color: #E7EDFF !important;
+        border-radius: 12px;
+        backdrop-filter: blur(5px);
+        
+
+        .border-style{
+            border-color: #0F1F3C !important;
+            border-radius: 15px;
+        }
+        .text-title-alert{
+            font-family: 'Poppins', sans-serif;
+            font-size: 10px;
+            font-weight: 900;
+            margin-left: 20px;
+        }
+        .text-alert-kecil{
+            font-family: 'Poppins', sans-serif;
+            font-size: 10px;
+            font-weight: 400;
+        }
+    }
+
+    .alert-style-2{
+        background-color: #E7EDFF;
+        border-radius: 12px;
+        backdrop-filter: blur(5px);
+        
+        .border-style{
+            border-color: #0F1F3C !important;
+            border-radius: 15px;
+        }
+        .text-title-alert{
+            font-family: 'Poppins', sans-serif;
+            font-size: 10px;
+            font-weight: 900;
+            margin-left: 20px;
+        }
+        .text-alert-kecil{
+            font-family: 'Poppins', sans-serif;
+            font-size: 10px;
+            font-weight: 400;
+        }
+    }
+}
+
+.section-bem{
+    color: #0F1F3C;
+
+    .text-besar{
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .card-calon{
+        background-color: 
+        #EEF2FE;
+        border-radius: 20px;
+        .nama{
+            font-size: 17px;
+            font-weight: 600;
+        }
+        .nim{
+            font-size: 15px;
+            font-weight: normal;
+        }
+        .fakultas{
+            font-size: 13px;
+        }
+        .organisasi{
+            font-size: 13px;
+        }
+        .btn-biru{
+            background-color: #7A1F31;
+            color: white;
+            border-radius: 10px;
+    
+            &:hover{
+                background-color: #852f40;
+                color: white;
+            }
+        }
+    }
+    .btn-keluar{
+        background-color: #7A1F31;
+        color: white;
+        border-radius: 12px;
+
+        &:hover{
+            background-color: #7e2b3b;
+            color: white;
+        }
+    }
+}
+
+.section-footer{
+    background-color: #7A1F31;
+    color: white;
+
+    .text-trm{
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .text-sudah{
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .text-kecil{
+        font-size: 15px;
+        color: white;
+        font-weight: 300;
+
+        .tahu{
+            font-weight: 900;
+            font-style: italic;
+        }
+
+        .ngoding{
+            font-style: italic;
+            font-weight: 400;
+        }
+    }
+}

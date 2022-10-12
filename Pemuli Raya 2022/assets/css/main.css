@@ -1,0 +1,293 @@
+body {
+  background-color: white;
+  font-family: 'SF Compact Display', sans-serif;
+}
+
+.nav-style .btn-petunjuk {
+  background-color: #7A1F31;
+  color: white;
+}
+
+.nav-style .btn-petunjuk:hover {
+  background-color: #852d3f;
+  color: white;
+}
+
+.nav-style .btn-petunjuk-2 {
+  background-color: #0F1F3C;
+  color: white;
+}
+
+.nav-style .btn-petunjuk-2:hover {
+  background-color: #16243d;
+  color: white;
+}
+
+.nav-style .text-nav {
+  font-size: 20px;
+  font-size: medium;
+  color: #555555 !important;
+}
+
+.modal-style .text-top {
+  font-size: 25px;
+  color: #0F1F3C;
+  font-weight: 600;
+}
+
+.modal-style .content-modal {
+  background-color: #E7EDFF;
+  border-radius: 15px;
+}
+
+.modal-style .btn-mengerti {
+  font-weight: 500;
+  background-color: #7A1F31;
+  color: white;
+}
+
+.modal-style .btn-mengerti:hover {
+  background-color: #792737;
+  color: white;
+}
+
+.modal-style .visi {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.section-countdown {
+  margin-top: 160px;
+}
+
+.section-countdown .text-besar {
+  font-size: 40px;
+  color: #0F1F3C;
+  font-weight: 600;
+}
+
+.section-countdown .text-kecil {
+  font-size: 15px;
+  color: 0F1F3C;
+  font-weight: 300;
+}
+
+.section-countdown .text-kecil .tahu {
+  font-weight: 900;
+  font-style: italic;
+}
+
+.section-countdown .text-kecil .ngoding {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.section-countdown .countdown-hari {
+  background-color: #EAF1FF;
+  color: #0F1F3C;
+  border-radius: 12px;
+}
+
+.section-login {
+  margin-top: 90px;
+  color: #0F1F3C;
+}
+
+.section-login .text-besar {
+  font-size: 33px;
+  font-weight: 600;
+}
+
+.section-login .form-style {
+  background-color: #EAF1FF;
+  border-radius: 12px;
+  border-color: #EAF1FF;
+}
+
+.section-login .btn-masuk {
+  background-color: #7A1F31;
+  color: white;
+}
+
+.section-login .btn-masuk:hover {
+  background-color: #852d3f;
+  color: white;
+}
+
+.section-login .text-kecil {
+  font-size: 15px;
+  color: #0F1F3C;
+  font-weight: 300;
+}
+
+.section-login .text-kecil .tahu {
+  font-weight: 900;
+  font-style: italic;
+}
+
+.section-login .text-kecil .ngoding {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.section-header {
+  margin-top: 90px;
+  color: #0F1F3C;
+}
+
+.section-header .text-besar {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.section-header .text-kecil {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.section-header .btn-biru {
+  background-color: #7A1F31;
+  color: white;
+  border-radius: 10px;
+}
+
+.section-header .btn-biru:hover {
+  background-color: #7a2a3a;
+  color: white;
+}
+
+.section-header .alert-style {
+  background-color: #E7EDFF !important;
+  border-radius: 12px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.section-header .alert-style .border-style {
+  border-color: #0F1F3C !important;
+  border-radius: 15px;
+}
+
+.section-header .alert-style .text-title-alert {
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+  font-weight: 900;
+  margin-left: 20px;
+}
+
+.section-header .alert-style .text-alert-kecil {
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.section-header .alert-style-2 {
+  background-color: #E7EDFF;
+  border-radius: 12px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.section-header .alert-style-2 .border-style {
+  border-color: #0F1F3C !important;
+  border-radius: 15px;
+}
+
+.section-header .alert-style-2 .text-title-alert {
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+  font-weight: 900;
+  margin-left: 20px;
+}
+
+.section-header .alert-style-2 .text-alert-kecil {
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.section-bem {
+  color: #0F1F3C;
+}
+
+.section-bem .text-besar {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.section-bem .card-calon {
+  background-color: #EEF2FE;
+  border-radius: 20px;
+}
+
+.section-bem .card-calon .nama {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.section-bem .card-calon .nim {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.section-bem .card-calon .fakultas {
+  font-size: 13px;
+}
+
+.section-bem .card-calon .organisasi {
+  font-size: 13px;
+}
+
+.section-bem .card-calon .btn-biru {
+  background-color: #7A1F31;
+  color: white;
+  border-radius: 10px;
+}
+
+.section-bem .card-calon .btn-biru:hover {
+  background-color: #852f40;
+  color: white;
+}
+
+.section-bem .btn-keluar {
+  background-color: #7A1F31;
+  color: white;
+  border-radius: 12px;
+}
+
+.section-bem .btn-keluar:hover {
+  background-color: #7e2b3b;
+  color: white;
+}
+
+.section-footer {
+  background-color: #7A1F31;
+  color: white;
+}
+
+.section-footer .text-trm {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.section-footer .text-sudah {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.section-footer .text-kecil {
+  font-size: 15px;
+  color: white;
+  font-weight: 300;
+}
+
+.section-footer .text-kecil .tahu {
+  font-weight: 900;
+  font-style: italic;
+}
+
+.section-footer .text-kecil .ngoding {
+  font-style: italic;
+  font-weight: 400;
+}
+/*# sourceMappingURL=main.css.map */
