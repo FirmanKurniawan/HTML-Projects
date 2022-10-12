@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8" />
+    <meta htto-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <tittle>Pendaftaran</tittle>
+</head>
+<style>
+    .center {
+        text-align: center;
+    }
+    .profile {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+</style>
+<body>
+    <h1><center>Pendaftaran</center></h1>
+    <img src="profile.jpg" class="profile" alt="Gambar Profile"> </img> <br> <br> <br>
+<div>
+    <form>
+        <label>
+          NIK :
+          <input type="text" name="nik" placeholder="Masukkan NIK"  /> <br />
+          <br />
+        </label>
+        <label>
+            Nama Lengkap :
+            <input type="text" name="Nama" placeholder="Nama Lengkap"  />
+        </label>
+        <br />
+        <br />
+        <label>
+            Alamat :
+            <input type="text" name="Alamat" placeholder="Alamat"  />
+        </label>
+        <br />
+        <br />
+        <label>
+            Tanggal lahir :
+            <input type="text" Alamat="tanggal_lahir" placeholder="TTL"  />
+        </label>
+        <br />
+        <br />
+        Jenis Kelamin : <br />
+        <input type="radio" name="jk" value="Laki-Laki" /> Laki-Laki <br />
+        <input type="radio" name="jk" value="Perempuan" /> Perempuan <br />
+        <br />
+        <label>
+            Nama Ayah :
+            <input type="text" name="nama_ayah" placeholder="Nama Ayah" />
+        </label>
+        <br />
+        <label>
+            Nama Ibu :
+            <input type="text" name="nama_ibu" placeholder="Nama Ibu" /> </input> 
+        </label>
+        <br /> <br />
+        <label>
+            Agama :
+            <select name="agama">
+                <option value="Islam">Islam</option>
+                <option value="Kristen">Kristen</option>
+                <option value="Katolik">katolik</option>
+                <option value="Budha">Budha</option>
+                <option value="Hindu">Hindu</option>
+            </select>
+        </label>
+        <br />
+        <br /> <br />
+        <input type="submit" value="Daftar" />
+    </form>
+</div>
+</br>
+<table border="1">
+    <tr>
+        <th>No</th>
+        <th>Nama Dosen</th>
+        <th>Mata kuliah</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Seno Muhammad</td>
+        <td>Statistik</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Carla Chan</td>
+        <td>Hukum Bisnis</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Sasmita Nur</td>
+        <td>Komunikasi</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Alex Kurniawan</td>
+        <td>Auditing</td>
+  </table>
+</body>
+</html>
