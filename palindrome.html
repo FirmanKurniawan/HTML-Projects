@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+</head>
+<body>
+    <h1>Palindrome Check</h1>
+    <span>Input:</span>
+    <input type="text" id="input">
+    <button type="submit" onclick="palindrome()">Check</button>
+    <br><br>
+    <span>Output:</span>
+    <span id="output"></span>
+    <script>
+        const palindrome = () => {
+            text = document.querySelector('#input').value
+            // konsepnya simple cuman reverse kata aja
+            reverseText = text.split('').reverse().join('') 
+            if (text !== reverseText) document.querySelector('#output').innerHTML = `${text} bukan palindrome`
+            else document.querySelector('#output').innerHTML = `${text} adalah palindrome`
+        }
+    </script>
+</body>
+</html>
