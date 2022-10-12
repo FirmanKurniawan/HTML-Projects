@@ -1,0 +1,707 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font -->
+    <link href="http://fonts.cdnfonts.com/css/sf-compact-display" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <title>Pemilu Raya 2022 - UNSAP Sumedang</title>
+  </head>
+  <body>
+    <!-- Navbar Mobile -->
+    <nav class="navbar nav-style navbar-expand-lg navbar-light d-sm-block d-md-none">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+              <img src="assets/image/unsap 1.png" width="55" height="50" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active text-nav" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#infoModal">Informasi</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link text-nav" href="#" data-bs-toggle="modal" data-bs-target="#syaratModal">
+                  Syarat dan Ketentuan
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <button class="btn btn-petunjuk btn-sm rounded-3" data-bs-toggle="modal" data-bs-target="#petunjukModal"><label class="px-4">Petunjuk</label></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <!-- Navbar Desktop -->
+    <nav class="navbar nav-style navbar-expand-lg navbar-light mt-3 d-none d-md-block">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+              <img src="assets/image/unsap 1.png" width="55" height="50" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+              <li class="nav-item mx-3">
+                <a class="nav-link active text-nav" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#infoModal">Informasi</a>
+              </li>
+              <li class="nav-item mx-3 dropdown">
+                <a class="nav-link text-nav" href="#" data-bs-toggle="modal" data-bs-target="#syaratModal">
+                  Syarat dan Ketentuan
+                </a>
+              </li>
+              <li class="nav-item mx-3">
+                <button class="btn btn-petunjuk btn-sm rounded-3" data-bs-toggle="modal" data-bs-target="#petunjukModal"><label class="px-4">Petunjuk</label></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <!-- Modal Syarat Desktop -->
+    <div class="modal fade" id="syaratModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-style modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <a href="#" class="text-decoration-none" data-bs-dismiss="modal"><img class="float-end" src="assets/image/close.png" alt=""></a>
+                    <div class="text-center">
+                        <h5 class="text-top mt-5">
+                            Syarat dan Ketentuan
+                        </h5>
+                        <!-- Desktop -->
+                        <div class="mx-5 my-5 text-start d-none d-md-block">
+                            <div class="px-5 py-5 content-modal">
+                                <ol>
+                                    <li>
+                                        Pendaftaran pemilih dilakukan oleh Panitia Pemilihan Umum Raya Mahasiswa Universitas Sebelas April dengan referensi nama pemilih sesuai daftar mahasiswa aktif dari Universitas Sebelas April 
+                                    </li><br>
+                                    <li>
+                                       Mahasiswa yang akan memberikan hak pilihnya merupakan mahasiswa aktif dan telah terdaftar dalam DPT (Daftar Pemilih Tetap)
+                                    </li><br>
+                                    <li>
+                                        Pemberian hak pilih tidak boleh diwakilkan.
+                                    </li><br>
+                                    <li>
+                                        Pemilih yang akan menggunakan hak suaranya diwajibkan menggunakan sistem e-voting yang telah disediakan.
+                                    </li><br>
+                                    <li>
+                                        Pemilih yang telah memberikan hak suaranya, tidak bisa masuk kembali pada sistem.
+                                    </li><br>
+                                    <li>
+                                        Masing-masing pemilih mendapatkan NIM dan Token melalui email masing-masing.
+                                    </li><br>
+                                    <li>
+                                        Token yang telah dipakai tidak bisa digunakan kembali.
+                                    </li><br>
+                                    <li>
+                                        Pemilih memasukkan sendiri NIM dan  kode token E-Voting pada sistem yang telah disediakan.
+                                    </li><br>
+                                    <li>
+                                        Pemilih menentukan pilihan dengan cara memvoting salah satu calon ketua Badan Eksekutif Mahasiswa (BEM) dan Badan Perwakilan Mahasiswa Universitas Sebelas April pada sistem yang telah disediakan yang sesuai dengan ketentuan panitia.
+                                    </li><br>
+                                    <li>
+                                        Pada saat Pemilihan, pemilih dilarang:
+                                        <ol type="a">
+                                            <li>Menghasut atau mengadu domba antar kelompok atau perorangan mahasiswa;</li>
+                                            <li>Mengancam, menganjurkan atau melakukan tindak kekerasan kepada mahasiswa;</li>
+                                            <li>Menghina suku, agama, ras, golongan;</li>
+                                            <li>Melakukan segala tindakan yang dianggap merugikan calon lain;</li>
+                                            <li>Memanfaatkan fasilitas tempat ibadah sebagai sarana kampanye di lingkungan Universitas Sebelas April sebagai sarana kampanye;</li>
+                                            <li>Merusak sarana dan prasarana kampus;</li>
+                                            <li>Melakukan kecurangan politik seperti money politik;</li>
+                                            <li>Melakukan kampanye pada saat kegiatan belajar mengajar dalam kelas.</li>
+                                        </ol>
+                                    </li><br>
+                                </ol>
+                            </div>
+                            <div class="d-grid gap-2 mt-4">
+                                <button class="btn btn-mengerti rounded-3" type="button" data-bs-dismiss="modal">Mengerti</button>
+                            </div>
+                        </div>
+                        <!-- Mobile -->
+                        <div class="mx-3 my-3 text-start d-sm-block d-md-none">
+                            <div class="px-3 py-3 content-modal">
+                                <ol>
+                                    <li>
+                                        Pendaftaran pemilih dilakukan oleh Panitia Pemilihan Umum Raya Mahasiswa Universitas Sebelas April dengan referensi nama pemilih sesuai daftar mahasiswa aktif dari Universitas Sebelas April 
+                                    </li><br>
+                                    <li>
+                                       Mahasiswa yang akan memberikan hak pilihnya merupakan mahasiswa aktif dan telah terdaftar dalam DPT (Daftar Pemilih Tetap)
+                                    </li><br>
+                                    <li>
+                                        Pemberian hak pilih tidak boleh diwakilkan.
+                                    </li><br>
+                                    <li>
+                                        Pemilih yang akan menggunakan hak suaranya diwajibkan menggunakan sistem e-voting yang telah disediakan.
+                                    </li><br>
+                                    <li>
+                                        Pemilih yang telah memberikan hak suaranya, tidak bisa masuk kembali pada sistem.
+                                    </li><br>
+                                    <li>
+                                        Masing-masing pemilih mendapatkan NIM dan Token melalui email masing-masing.
+                                    </li><br>
+                                    <li>
+                                        Token yang telah dipakai tidak bisa digunakan kembali.
+                                    </li><br>
+                                    <li>
+                                        Pemilih memasukkan sendiri NIM dan  kode token E-Voting pada sistem yang telah disediakan.
+                                    </li><br>
+                                    <li>
+                                        Pemilih menentukan pilihan dengan cara memvoting salah satu calon ketua Badan Eksekutif Mahasiswa (BEM) dan Badan Perwakilan Mahasiswa Universitas Sebelas April pada sistem yang telah disediakan yang sesuai dengan ketentuan panitia.
+                                    </li><br>
+                                    <li>
+                                        Pada saat Pemilihan, pemilih dilarang:
+                                        <ol type="a">
+                                            <li>Menghasut atau mengadu domba antar kelompok atau perorangan mahasiswa;</li>
+                                            <li>Mengancam, menganjurkan atau melakukan tindak kekerasan kepada mahasiswa;</li>
+                                            <li>Menghina suku, agama, ras, golongan;</li>
+                                            <li>Melakukan segala tindakan yang dianggap merugikan calon lain;</li>
+                                            <li>Memanfaatkan fasilitas tempat ibadah sebagai sarana kampanye di lingkungan Universitas Sebelas April sebagai sarana kampanye;</li>
+                                            <li>Merusak sarana dan prasarana kampus;</li>
+                                            <li>Melakukan kecurangan politik seperti money politik;</li>
+                                            <li>Melakukan kampanye pada saat kegiatan belajar mengajar dalam kelas.</li>
+                                        </ol>
+                                    </li><br>
+                                </ol>
+                            </div>
+                            <div class="d-grid gap-2 mt-4">
+                                <button class="btn btn-mengerti rounded-3" type="button" data-bs-dismiss="modal">Mengerti</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Info -->
+    <div class="modal fade" id="infoModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-style modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <a href="#" class="text-decoration-none" data-bs-dismiss="modal"><img class="float-end" src="assets/image/close.png" alt=""></a>
+                    <div class="text-center">
+                        <h5 class="text-top mt-5">
+                            Informasi
+                        </h5>
+                        <!-- Desktop -->
+                        <div class="mx-5 my-5 text-start d-none d-md-block">
+                            <div class="px-5 py-5 content-modal">
+                                <ol>
+                                    <li>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui quibusdam quam repellendus a porro est ex sapiente. Fugit quo sunt autem fugiat similique quibusdam dolores repellat natus voluptatibus blanditiis vero, incidunt eum eos odit consequuntur recusandae alias ducimus et laudantium, impedit corrupti nobis, officia dolorum iusto. Fuga dolore quia accusantium!
+                                    </li><br>
+                                    <li>
+                                       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam provident consectetur eius eaque modi incidunt eum dolorem. Debitis harum natus explicabo a corporis magni velit nam unde eveniet quod, corrupti voluptatem rem neque esse sequi porro dolorum. Debitis nam dignissimos, eveniet reprehenderit at vero, molestiae, ipsum id vitae magnam maxime?
+                                    </li><br>
+                                    <li>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus officiis, inventore rem quis accusamus quas fugit modi omnis necessitatibus! Iusto, facilis vitae voluptates eius tenetur, illo ratione cum eligendi amet cupiditate, assumenda corporis aperiam asperiores est quasi quam! Voluptate tenetur quis aut et dicta perspiciatis numquam eligendi iste non recusandae!
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="d-grid gap-2 mt-4">
+                                <button class="btn btn-mengerti rounded-3" type="button" data-bs-dismiss="modal">Mengerti</button>
+                            </div>
+                        </div>
+                        <!-- Mobile -->
+                        <div class="mx-3 my-3 text-start d-sm-block d-md-none">
+                            <div class="px-3 py-3 content-modal">
+                                <ol>
+                                    <li>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui quibusdam quam repellendus a porro est ex sapiente. Fugit quo sunt autem fugiat similique quibusdam dolores repellat natus voluptatibus blanditiis vero, incidunt eum eos odit consequuntur recusandae alias ducimus et laudantium, impedit corrupti nobis, officia dolorum iusto. Fuga dolore quia accusantium!
+                                    </li><br>
+                                    <li>
+                                       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam provident consectetur eius eaque modi incidunt eum dolorem. Debitis harum natus explicabo a corporis magni velit nam unde eveniet quod, corrupti voluptatem rem neque esse sequi porro dolorum. Debitis nam dignissimos, eveniet reprehenderit at vero, molestiae, ipsum id vitae magnam maxime?
+                                    </li><br>
+                                    <li>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus officiis, inventore rem quis accusamus quas fugit modi omnis necessitatibus! Iusto, facilis vitae voluptates eius tenetur, illo ratione cum eligendi amet cupiditate, assumenda corporis aperiam asperiores est quasi quam! Voluptate tenetur quis aut et dicta perspiciatis numquam eligendi iste non recusandae!
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="d-grid gap-2 mt-4">
+                                <button class="btn btn-mengerti rounded-3" type="button" data-bs-dismiss="modal">Mengerti</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Petunjuk -->
+    <div class="modal fade" id="petunjukModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-style modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <a href="#" class="text-decoration-none" data-bs-dismiss="modal"><img class="float-end" src="assets/image/close.png" alt=""></a>
+                    <div class="text-center">
+                        <h5 class="text-top mt-5">
+                            Petunjuk
+                        </h5>
+                        <!-- Desktop -->
+                        <div class="mx-5 my-5 text-start d-none d-md-block">
+                            <div class="px-5 py-5 content-modal">
+                                <ol>
+                                    <li>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui quibusdam quam repellendus a porro est ex sapiente. Fugit quo sunt autem fugiat similique quibusdam dolores repellat natus voluptatibus blanditiis vero, incidunt eum eos odit consequuntur recusandae alias ducimus et laudantium, impedit corrupti nobis, officia dolorum iusto. Fuga dolore quia accusantium!
+                                    </li><br>
+                                    <li>
+                                       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam provident consectetur eius eaque modi incidunt eum dolorem. Debitis harum natus explicabo a corporis magni velit nam unde eveniet quod, corrupti voluptatem rem neque esse sequi porro dolorum. Debitis nam dignissimos, eveniet reprehenderit at vero, molestiae, ipsum id vitae magnam maxime?
+                                    </li><br>
+                                    <li>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus officiis, inventore rem quis accusamus quas fugit modi omnis necessitatibus! Iusto, facilis vitae voluptates eius tenetur, illo ratione cum eligendi amet cupiditate, assumenda corporis aperiam asperiores est quasi quam! Voluptate tenetur quis aut et dicta perspiciatis numquam eligendi iste non recusandae!
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="d-grid gap-2 mt-4">
+                                <button class="btn btn-mengerti rounded-3" type="button" data-bs-dismiss="modal">Mengerti</button>
+                            </div>
+                        </div>
+                        <!-- Mobile -->
+                        <div class="mx-3 my-3 text-start d-sm-block d-md-none">
+                            <div class="px-3 py-3 content-modal">
+                                <ol>
+                                    <li>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui quibusdam quam repellendus a porro est ex sapiente. Fugit quo sunt autem fugiat similique quibusdam dolores repellat natus voluptatibus blanditiis vero, incidunt eum eos odit consequuntur recusandae alias ducimus et laudantium, impedit corrupti nobis, officia dolorum iusto. Fuga dolore quia accusantium!
+                                    </li><br>
+                                    <li>
+                                       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam provident consectetur eius eaque modi incidunt eum dolorem. Debitis harum natus explicabo a corporis magni velit nam unde eveniet quod, corrupti voluptatem rem neque esse sequi porro dolorum. Debitis nam dignissimos, eveniet reprehenderit at vero, molestiae, ipsum id vitae magnam maxime?
+                                    </li><br>
+                                    <li>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus officiis, inventore rem quis accusamus quas fugit modi omnis necessitatibus! Iusto, facilis vitae voluptates eius tenetur, illo ratione cum eligendi amet cupiditate, assumenda corporis aperiam asperiores est quasi quam! Voluptate tenetur quis aut et dicta perspiciatis numquam eligendi iste non recusandae!
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="d-grid gap-2 mt-4">
+                                <button class="btn btn-mengerti rounded-3" type="button" data-bs-dismiss="modal">Mengerti</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <main>
+        <section class="section-header">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-md-5">
+                        <h1 class="text-besar mb-3">
+                            Pemilihan Umum Raya <br>
+                            Universitas Sebelas April
+                        </h1>
+                        <p class="text-kecil mb-3">
+                            Memilih sesuai hati, bebas tanpa intimidasi, golput bukan<br> solusi. 
+                            Mari kita sukseskan Pemilu Raya 2022.
+                        </p>
+                        <div class="d-grid gap-2 d-block">
+                            <a href="#BEM-DESKTOP" class="btn btn-biru text-decoration-none px-5 py-2 text-white d-none d-md-block">BEM</a>
+                            <a href="#BPM-DESKTOP" class="btn btn-biru text-decoration-none px-5 py-2 text-white d-none d-md-block">BPM</a>
+                            <a href="#BEM-MOBILE" class="btn btn-biru text-decoration-none px-5 py-2 text-white d-sm-block d-md-none">BEM</a>
+                            <a href="#BPM-MOBILE" class="btn btn-biru text-decoration-none px-5 py-2 text-white d-sm-block d-md-none">BPM</a>
+                        </div>
+                    </div>
+                    <!-- Desktop Mode -->
+                    <div class="col-md-7 mb-5 text-center d-none d-md-block">
+                        <!-- <div style="margin-left: 100px;">
+                            <div class="alert text-start alert-style position-absolute alert-dismissible fade show shadow p-3 mb-5 bg-body rounded" role="alert" style="margin-top: 285px;">
+                                <div class="d-flex justify-content-end">
+                                    <img src="assets/image/Group 281.png" data-bs-dismiss="alert" aria-label="Close" class="img-fluid" alt="">
+                                </div>
+                                <h5 class="text-title-alert">
+                                    Alur Pemilihan
+                                </h5>
+                                <div class="px-3 pt-2 border border-2 border-style">
+                                    <div class="position-relative">
+                                        <div class="position-absolute mt-3 top-50 start-0 translate-middle rounded-circle" style="background-color: #0F1F3C; margin-left: -20px;"><label class="fw-bold text-center text-white fs-6 px-2 py-2"><i class="fas fa-paper-plane"></i></label></div>
+                                    </div>
+                                    <p class="text-alert-kecil">
+                                        Ikutilah pemilihan BEM kemudian <br>
+                                        Pemilihan BPM dihari yang sama.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="margin-left: 515px;">
+                            <div class="alert text-start alert-style-2 position-absolute fade show" role="alert" style="margin-top: 90px;">
+                                <div class="d-flex justify-content-end">
+                                    <img src="assets/image/Group 281.png" data-bs-dismiss="alert" aria-label="Close" class="img-fluid" alt="">
+                                </div>
+                                <h5 class="text-title-alert">
+                                    Ayo Memilih!    
+                                </h5>
+                                <div class="px-3 pt-2 border border-2 border-style">
+                                    <div class="position-relative">
+                                        <div class="position-absolute top-50 start-0 translate-middle rounded-circle" style="background-color: #0F1F3C; margin-left: -20px !important; margin-top: 40px;"><label class="fw-bold text-center text-white fs-6 px-2 py-2"><i class="fas fa-scroll"></i></label></div>
+                                    </div>
+                                    <p class="text-alert-kecil">
+                                        Gunakan hak suaramu <br>
+                                        untuk mensuksekan <br>
+                                        pemilu raya 2022 dan <br>
+                                        pilihlah yang terbaik <br>
+                                        menurutmu.
+                                    </p>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="text-end d-flex justify-content-end">
+                            <img src="assets/image/Illustrasi 2.png" class="img-fluid mx-auto d-block" alt="">
+                        </div>
+                    </div>
+                    <!-- Mobile Mode -->
+                    <div class="col-md-7 mb-5 text-center d-sm-block d-md-none mt-5">
+                        <!-- Alur -->
+                        <!-- <div style="margin-left: 10px;">
+                            <div class="alert text-start alert-style position-absolute alert-dismissible fade show shadow p-3 mb-5 bg-body rounded" role="alert" style="margin-top: 190px;">
+                                <div class="d-flex justify-content-end">
+                                    <img src="assets/image/Group 281.png" data-bs-dismiss="alert" aria-label="Close" class="img-fluid" alt="">
+                                </div>
+                                <h5 class="text-title-alert">
+                                    Alur Pemilihan
+                                </h5>
+                                <div class="px-3 pt-2 border border-2 border-style">
+                                    <p class="text-alert-kecil">
+                                        Ikutilah pemilihan BEM kemudian <br>
+                                        Pemilihan BPM dihari yang sama.
+                                    </p>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- Ayo -->
+                        <!-- <div style="margin-left: 240px;">
+                            <div class="alert text-start alert-style-2 position-absolute fade show" role="alert" style="margin-top: 39px;">
+                                <div class="d-flex justify-content-end">
+                                    <img src="assets/image/Group 281.png" data-bs-dismiss="alert" aria-label="Close" class="img-fluid" alt="">
+                                </div>
+                                <h5 class="text-title-alert">
+                                    Ayo Memilih!    
+                                </h5>
+                                <div class="px-3 pt-2 border border-2 border-style">
+                                    <p class="text-alert-kecil">
+                                        Gunakan hak suaramu <br>
+                                        untuk mensuksekan <br>
+                                        pemilu raya 2022 dan <br>
+                                        pilihlah yang terbaik <br>
+                                        menurutmu.
+                                    </p>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="d-flex justify-content-center">
+                            <img src="assets/image/Illustrasi 2.png" class="img-fluid mx-auto d-block" width="50%" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BEM Desktop -->
+        <section class="section-bem mb-5 d-none d-md-block" id="BEM-DESKTOP">
+            <div class="container">
+                <div class="row">
+                    <h1 class="text-center text-besar">
+                        Pemilihan Umum <br>
+                        Badan Eksekutif Mahasiswa
+                    </h1>
+                    <div class="row d-flex justify-content-center" >
+                        <div class="col-md-5 mx-5 mt-5">
+                            <div class="row card-calon d-flex justify-content-center py-5">
+                                <div class="col-md-3">
+                                    <div class="position-relative">
+                                        <div class="position-absolute top-0 start-0 translate-middle me-5 px-3 rounded-circle py-2 border border-3" style="border-color: #0F1F3C !important;"><label class="fw-bold fs-6">1</label></div>
+                                    </div>
+                                    <img src="assets/image/James.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md-7">
+                                    <label class="nama">
+                                        Ira Septiani
+                                    </label><br>
+                                    <label class="nim">
+                                        E1935223429
+                                    </label><br>
+                                    <label class="fakultas">
+                                        Fakultas Sosial dan Ilmu Politik
+                                    </label>
+                                    <div class="organisasi mt-2">
+                                        <label>Riwayat Organisasi</label>
+                                        <ol>
+                                            <li>Anggota Senat Mahasiswa FISIP 2020</li>
+                                            <li>Wakil Ketua UKM Kajian Islam 2020</li>
+                                            <li>Anggota UKM Himpunan Mahasiswa 2020</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mt-4 text-center text-muted">
+                            Anda telah memilih kandidat ini pada tanggal 8 <br>
+                            Februari 2022 pada pukul 15.30
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BEM  Mobile-->
+        <section class="section-bem mb-5 d-sm-block d-md-none" id="BEM-MOBILE">
+            <div class="container">
+                <div class="row">
+                    <h1 class="text-center text-besar">
+                        Pemilihan Umum <br>
+                        Badan Eksekutif Mahasiswa
+                    </h1>
+                    <div class="row" >
+                        <div class="col-10 mx-5 mt-5">
+                            <div class="position-relative mt-3">
+                                <div class="position-absolute mt-3 top-0 start-50 translate-middle-x px-3 rounded-circle py-2 border border-3" style="border-color: #0F1F3C !important;"><label class="fw-bold fs-6">1</label></div>
+                            </div>
+                            <div class="row card-calon d-flex justify-content-center py-5">
+                                <div class="col-md-3">  
+                                    <img src="assets/image/James.png" class="img-fluid mx-auto d-block" alt="">
+                                </div>
+                                <div class="col-md-7">
+                                    <label class="nama mt-2">
+                                        Ira Septiani
+                                    </label><br>
+                                    <label class="nim">
+                                        E1935223429
+                                    </label><br>
+                                    <label class="fakultas">
+                                        Fakultas Sosial dan Ilmu Politik
+                                    </label>
+                                    <div class="organisasi mt-2">
+                                        <label>Riwayat Organisasi</label>
+                                        <ol>
+                                            <li>Anggota Senat Mahasiswa FISIP 2020</li>
+                                            <li>Wakil Ketua UKM Kajian Islam 2020</li>
+                                            <li>Anggota UKM Himpunan Mahasiswa 2020</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mt-3 text-center text-muted">
+                                Anda telah memilih kandidat ini pada tanggal 8 Februari 2022 pada pukul 15.30
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BPM Desktop -->
+        <section class="section-bem mt-5 mb-5 d-none d-md-block" id="BPM-DESKTOP">
+            <div class="container">
+                <div class="row">
+                    <h1 class="text-center text-besar">
+                        Pemilihan Umum <br>
+                        Badan Perwakilan Mahasiswa
+                    </h1>
+                    <div class="row d-flex justify-content-center" >
+                        <div class="col-md-5 mx-5 mt-5">
+                            <div class="row card-calon d-flex justify-content-center py-5">
+                                <div class="col-md-3">
+                                    <div class="position-relative">
+                                        <div class="position-absolute top-0 start-0 translate-middle me-5 px-3 rounded-circle py-2 border border-3" style="border-color: #0F1F3C !important;"><label class="fw-bold fs-6">1</label></div>
+                                    </div>
+                                    <img src="assets/image/James 5.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md-7">
+                                    <label class="nama">
+                                        Sandi
+                                    </label><br>
+                                    <label class="nim">
+                                        D11904036
+                                    </label><br>
+                                    <label class="fakultas">
+                                        Fakultas Ekonomi dan Bisnis
+                                    </label>
+                                    <div class="organisasi mt-2">
+                                        <label>Riwayat Organisasi</label>
+                                        <ol>
+                                            <li>Anggota Pramuka Ambalan 2018</li>
+                                            <li>Ketua Dewan Saka Bhayangkara 2018</li>
+                                            <li>Dewan Kerja Ranting Sumedang Utara 2018</li>
+                                            <li>Dewan Kerja Cabang Sumedang 2019</li>
+                                            <li>Anggota Senat Mahasiswa 2020</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mt-4 text-center text-muted">
+                            Anda telah memilih kandidat ini pada tanggal 8 <br>
+                            Februari 2022 pada pukul 15.30
+                        </p>
+                        <button class="btn btn-keluar col-3 mt-3"><a href="landing-page.html" class="text-decoration-none text-white">Keluar</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BPM  Mobile-->
+        <section class="section-bem mb-5 d-sm-block d-md-none" id="BPM-MOBILE">
+            <div class="container">
+                <div class="row">
+                    <h1 class="text-center text-besar">
+                        Pemilihan Umum <br>
+                        Badan Eksekutif Mahasiswa
+                    </h1>
+                    <div class="row" >
+                        <div class="col-10 mx-5 mt-5">
+                            <div class="position-relative mt-3">
+                                <div class="position-absolute mt-3 top-0 start-50 translate-middle-x px-3 rounded-circle py-2 border border-3" style="border-color: #0F1F3C !important;"><label class="fw-bold fs-6">1</label></div>
+                            </div>
+                            <div class="row card-calon d-flex justify-content-center py-5">
+                                <div class="col-md-3">  
+                                    <img src="assets/image/James 5.png" class="img-fluid mx-auto d-block" alt="">
+                                </div>
+                                <div class="col-md-7">
+                                    <label class="nama mt-2">
+                                        Sandi
+                                    </label><br>
+                                    <label class="nim">
+                                        D11904036
+                                    </label><br>
+                                    <label class="fakultas">
+                                        Fakultas Ekonomi dan Bisnis
+                                    </label>
+                                    <div class="organisasi mt-2">
+                                        <label>Riwayat Organisasi</label>
+                                        <ol>
+                                            <li>Anggota Pramuka Ambalan 2018</li>
+                                            <li>Ketua Dewan Saka Bhayangkara 2018</li>
+                                            <li>Dewan Kerja Ranting Sumedang Utara 2018</li>
+                                            <li>Dewan Kerja Cabang Sumedang 2019</li>
+                                            <li>Anggota Senat Mahasiswa 2020</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mt-3 text-center text-muted">
+                                Anda telah memilih kandidat ini pada tanggal 8 Februari 2022 pada pukul 15.50
+                            </p>
+                            <div class="text-center">
+                                <button class="btn text-center btn-keluar col-10 mt-3"><a href="landing-page.html" class="text-decoration-none text-white">Keluar</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal Visi dan Misi -->
+        <div class="modal fade" id="visiModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-style modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <a href="#" class="text-decoration-none" data-bs-dismiss="modal"><img class="float-end" src="assets/image/close.png" alt=""></a>
+                        <div class="text-center">
+                            <h5 class="text-top mt-5">
+                                Visi & Misi
+                            </h5>
+                            <h5 class="text-top">
+                                Ira Septiani
+                            </h5>
+                            <!-- Desktop -->
+                            <div class="mx-5 my-5 text-start d-none d-md-block">
+                                <div class="px-5 py-5 content-modal">
+                                    <img src="assets/image/James.png" class="img-fluid mx-auto d-block mb-4" alt="">
+                                    <h5 class="fw-bold text-center mb-3">
+                                        Visi
+                                    </h5>
+                                    <p class="visi mx-5 mb-5">
+                                        UNSAP JUARA (JUJUR, UNGGUL, AKTIF, RESPONSIF, ADIL) Mewujudkan BEM UNSAP yang Jujur, Unggul, Aktif, Responsif dan Adil dalam lingkup univ maupun masyarakat luas.
+                                    </p>
+                                    <h5 class="fw-bold text-center mt-5 mb-3">
+                                        Misi
+                                    </h5>
+                                    <ol class="visi mx-5">
+                                        <li>
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui quibusdam quam repellendus a porro est ex sapiente. Fugit quo sunt autem fugiat similique quibusdam dolores repellat natus voluptatibus blanditiis vero, incidunt eum eos odit consequuntur recusandae alias ducimus et laudantium, impedit corrupti nobis, officia dolorum iusto. Fuga dolore quia accusantium!
+                                        </li><br>
+                                        <li>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam provident consectetur eius eaque modi incidunt eum dolorem. Debitis harum natus explicabo a corporis magni velit nam unde eveniet quod, corrupti voluptatem rem neque esse sequi porro dolorum. Debitis nam dignissimos, eveniet reprehenderit at vero, molestiae, ipsum id vitae magnam maxime?
+                                        </li><br>
+                                        <li>
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus officiis, inventore rem quis accusamus quas fugit modi omnis necessitatibus! Iusto, facilis vitae voluptates eius tenetur, illo ratione cum eligendi amet cupiditate, assumenda corporis aperiam asperiores est quasi quam! Voluptate tenetur quis aut et dicta perspiciatis numquam eligendi iste non recusandae!
+                                        </li>
+                                    </ol>
+                                </div>
+                                <div class="d-grid gap-2 mt-4">
+                                    <button class="btn btn-mengerti rounded-3" type="button" data-bs-target="#pilihModal" data-bs-toggle="modal">Pilih</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Pilih -->
+        <div class="modal fade" id="pilihModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-style modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <a href="#" class="text-decoration-none" data-bs-dismiss="modal"><img class="float-end" src="assets/image/close.png" alt=""></a>
+                        <img src="assets/image/Vector 2.png" class="img-fluid w-auto mx-auto d-block mt-5" alt="">
+                        <div class="text-center mt-3">
+                            <h5 class="fw-bold">
+                                Berhasil!
+                            </h5>
+                            <p>
+                                Terima kasih sudah <br>
+                                menggunakan hak suaramu
+                            </p>
+                        </div>
+                        <div class="d-grid gap-2 mt-4">
+                            <button class="btn btn-mengerti rounded-3" type="button" data-bs-dismiss="modal">Kembali</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="section-footer text-center">
+            <div class="container">
+                <div class="row">
+                    <img src="assets/image/Vector.png" class="img-fluid w-auto mx-auto d-block mt-5" alt="">
+                    <h5 class="text-trm mt-3">
+                        Terima Kasih
+                    </h5>
+                    <h5 class="mt-1 text-sudah">
+                        Sudah Menggunakan Hak Suaramu
+                    </h5>
+                    <h5 class="mt-3 text-center text-kecil mb-5">
+                        Build with passion by <font class="tahu">TAHU</font><font class="ngoding">NGODING</font>
+                    </h5>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
