@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- 
+  Code Made By Deka Tutorial
+  Youtube: Deka Tutorial
+  Tiktok: @deka_tutorial
+  -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      div {width: 120px; margin: auto; display: flex; justify-content: space-between;}
+    </style>
+    <title>Just For You &#129505</title>
+  </head>
+  <body style="text-align: center">
+    <img src="Gambar" alt="DekaTutorial" style="height: 280px" />
+    <h1>NAMA</h1>
+    <h2>PERTANYAAN</h2>
+    <div>
+      <button onclick="mau()">MAU</button>
+      <button onmouseover="gak(this)">GAK</button>
+    </div>
+    <script>
+      function mau() {
+        alert("Makasih mau nerima aku :)");
+        alert("Kirim jawabannya ke WA aku ya");
+
+        location.assign("https://wa.me/?text=Aku%20mau%20jadi%20pacar%20kamu%20><");
+      }
+      function gak(ini) {
+        ini.style.position = "absolute";
+        ini.style.left = `${Math.floor(Math.random() * 90)}%`;
+        ini.style.top = `${Math.floor(Math.random() * 90)}%`;
+      }
+    </script>
+  </body>
+</html>
