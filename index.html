@@ -1,20 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Notes App</title>
-        <link rel="stylesheet" href="style.css" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-        />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/1.1.1/marked.min.js"></script>
-        <script src="script.js" defer></script>
-    </head>
-    <body>
-        <button class="add" id="add">
-            <i class="fas fa-plus"></i> Add note
-        </button>
-    </body>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chill Vibes Web Lyrics :(</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"><link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./rain.css">
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body id="adbintang" class="bg-image">
+	
+
+<!-- partial:index.partial.html -->
+<div class="holder">
+	
+	
+  <div class="audio green-audio-player">
+    <div class="loading">
+      <div class="spinner"></div>
+    </div>
+    <div class="play-pause-btn">  
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 18 24">
+        <path fill="#566574" fill-rule="evenodd" d="M18 12L0 24V0" class="play-pause-icon" id="playPause"/>
+      </svg>
+    </div>
+
+    <div class="controls">
+      <span class="current-time">0:00</span>
+      <div class="slider" data-direction="horizontal">
+        <div class="progress">
+          <div class="pin" id="progress-pin" data-method="rewind"></div>
+        </div>
+      </div>
+      <span class="total-time">0:00</span>
+    </div>
+
+    <div class="volume">
+      <div class="volume-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path fill="#566574" fill-rule="evenodd" d="M14.667 0v2.747c3.853 1.146 6.666 4.72 6.666 8.946 0 4.227-2.813 7.787-6.666 8.934v2.76C20 22.173 24 17.4 24 11.693 24 5.987 20 1.213 14.667 0zM18 11.693c0-2.36-1.333-4.386-3.333-5.373v10.707c2-.947 3.333-2.987 3.333-5.334zm-18-4v8h5.333L12 22.36V1.027L5.333 7.693H0z" id="speaker"/>
+        </svg>
+      </div>
+      <div class="volume-controls hidden">
+        <div class="slider" data-direction="vertical">
+          <div class="progress">
+            <div class="pin" id="volume-pin" data-method="changeVolume"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+	 
+    <audio controls autoplay src="https://github.com/setan777/linewithoutahook/raw/main/Ricky%20Montgomery%20%E2%80%9CLine%20Without%20A%20Hook%E2%80%9D%20but%20it%E2%80%99s%20played%20in%20another%20room%20and%20it%E2%80%99s%20raining..mp3" type="audio/mp3">
+	    <source src="https://github.com/setan777/linewithoutahook/raw/main/Ricky%20Montgomery%20%E2%80%9CLine%20Without%20A%20Hook%E2%80%9D%20but%20it%E2%80%99s%20played%20in%20another%20room%20and%20it%E2%80%99s%20raining..mp3" type="audio/mpeg">  
+    </audio>
+  </div>
+  
+<div class="rabbit-lyrics" data-media="#audio-1">
+
+adbintang
+[00:00.01] Like this song, iam just line without a hook
+[00:06.00] And I'm not interested in romance yet
+
+</div>
+</div>
+<!-- partial -->
+<script>(function () {
+        var viewFullScreen = document.getElementById("gg");
+        if (viewFullScreen) {
+            viewFullScreen.addEventListener("click", function () {
+                var docElm = document.documentElement;
+                if (docElm.requestFullscreen) {
+                    docElm.requestFullscreen();
+                }
+                else if (docElm.mozRequestFullScreen) {
+                    docElm.mozRequestFullScreen();
+                }
+                else if (docElm.webkitRequestFullScreen) {
+                    docElm.webkitRequestFullScreen();
+                }
+            }, false);
+        }
+        })();</script>
+                            
+  <script  src="./script.js"></script>
+<script src="./lirik.js" type="text/javascript"></script>
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script><script  src="./rain.js"></script>
+</body>
 </html>
