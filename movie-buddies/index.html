@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <title>Movie Buddies</title>
+  </head>
+  <body>
+    <!-- header section -->
+    <header>
+      <!-- header mobile -->
+      <div class="mobile-nav-container">
+        <div class="logo">
+          <a href="index.html"><img src="./assets/logo.png" width="200px" alt="logo" /></a>
+        </div>
+        <div class="dropdown">
+          <a onclick="onClick()" class="box-icon button-menu dropbtn">
+            <i class="fa-solid fa-bars dropbtn"></i>
+          </a>
+          <div id="menu" class="dropdown-content">
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT US</a>
+            <a href="#how">HOW IT WORKS</a>
+            <a href="#myself">ABOUT ME</a>
+            <a href="#footer">CONTACT US</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- header desktop -->
+      <div class="desktop-nav-container">
+        <div class="logo">
+          <a href="index.html"><img src="./assets/logo.png" width="170px" alt="logo" /></a>
+        </div>
+        <div class="nav">
+          <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="#how">HOW IT WORKS</a></li>
+            <li><a href="#myself">ABOUT ME</a></li>
+            <li><a href="#footer">CONTACT US</a></li>
+          </ul>
+        </div>
+        <div class="box-icon">
+          <i class="fa-solid fa-search"></i>
+        </div>
+      </div>
+    </header>
+    <!-- main section -->
+    <main class="main-container">
+      <!-- hero -->
+      <section id="home">
+        <div class="hero hero-container">
+          <div class="hero-img">
+            <img src="./assets/hero-image.jpg" width="600rem" alt="" />
+          </div>
+          <div>
+            <div class="box-start">
+              <div class="box-white"><span class="alert">New Cinemas Added!</span></div>
+              <div class="box-white"><a class="start">Getting started</a></div>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <article class="hero-txt">
+              <h1>Find your movie buddy easily</h1>
+              <p>Find your own movie buddy to watch both of your favorite movie together.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- company logos -->
+      <section id="company-logos">
+        <div class="logo-container">
+          <div><p class="trusted">Trusted By</p></div>
+          <div class="company-logos">
+            <div>
+              <img src="./assets/logo-1.png" class="cgv" width="200rem" />
+            </div>
+            <div>
+              <img src="./assets/logo-2.png" class="xxi" width="240rem" />
+            </div>
+            <div>
+              <img src="./assets/logo-3.png" class="cinepolis" width="150rem" />
+            </div>
+            <div>
+              <img src="./assets/logo-4.webp" class="cinemax" width="150rem" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- about us -->
+      <section id="about">
+        <div class="about-container">
+          <article class="about-txt">
+            <h1>Who are we?</h1>
+            <p>We are the first ever startup based in Indonesia that provide a platform for everyone to find a movie-buddy easily</p>
+          </article>
+          <div class="about-img">
+            <img src="./assets/buddy-image.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- how it works -->
+      <section id="how">
+        <div class="how-container">
+          <div class="how-txt">
+            <h1>How does it works?</h1>
+          </div>
+          <!-- mobile -->
+          <div class="how-box">
+            <div class="line-1">
+              <div class="step-1">
+                <div class="pack"><i class="fa-solid fa-magnifying-glass"></i><span class="span">Find your most favorite cinema in your town</span></div>
+              </div>
+              <div class="step-1">
+                <div class="pack"><i class="fa-solid fa-film"></i><span class="span">Find the movie that you want to watch together with them</span></div>
+              </div>
+            </div>
+            <div class="line-2">
+              <div class="step-1">
+                <div class="pack"><i class="fa-regular fa-comment"></i><span class="span">Create a group or individual room chat and just ask!</span></div>
+              </div>
+              <div class="step-1">
+                <div class="pack"><i class="fa-solid fa-users"></i><span class="span">See members that having the same movie interests</span></div>
+              </div>
+            </div>
+          </div>
+          <!-- desktop -->
+          <div class="how-box-desktop">
+            <div class="step-1">
+              <div class="pack"><i class="fa-solid fa-magnifying-glass"></i><span class="span">Find your most favorite cinema in your town</span></div>
+            </div>
+            <div class="step-1">
+              <div class="pack"><i class="fa-solid fa-film"></i><span class="span">Find the movie that you want to watch together with them</span></div>
+            </div>
+            <div class="step-1">
+              <div class="pack"><i class="fa-regular fa-comment"></i><span class="span">Create a group or individual room chat and just ask!</span></div>
+            </div>
+            <div class="step-1">
+              <div class="pack"><i class="fa-solid fa-users"></i><span class="span">See members that having the same movie interests</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- myself -->
+      <section id="myself">
+        <div class="about-container me">
+          <aside class="myself-desktop">
+            <img src="./assets/dea.png" alt="" />
+          </aside>
+          <aside>
+            <h1>Who Am I?</h1>
+            <p>
+              Hi. I'm Dea Ananda Gunawan <br />
+              An Informatics Engineering Student in <br />
+              <b>Batam State Polytechnic.</b>
+            </p>
+            <p style="margin-top: 2px">Currently working with Angular and Tailwind CSS as a Frontend Developer Intern in a Softwar Houser company called Mitra Integritas Indonesia - Folxcode</p>
+            <div class="box-start">
+              <div class="box-white"><text class="alert">Let's get to know each other!</text></div>
+              <div class="box-white"><a class="start" href="https://deaportfolio-recap.super.site/" target="_blank">My full profile</a></div>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </aside>
+
+          <aside class="myself">
+            <img src="./assets/dea.png" alt="" />
+          </aside>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="footer-container">
+        <div class="content">
+          <div class="summary">
+            <div class="footer-logo">
+              <a href="index.html"><img src="./assets/logo.png" width="200px" alt="logo" /></a>
+            </div>
+            <p>Find your own movie buddy to watch both of your favorite movie together.</p>
+          </div>
+          <div class="sections">
+            <div class="mobile-app">
+              <ul>
+                <h4>Mobile App</h4>
+                <li>Features</li>
+                <li>Live Share</li>
+                <li>Live Events</li>
+              </ul>
+            </div>
+            <div class="community">
+              <ul>
+                <h4>Community</h4>
+                <li>Featured Cinemas</li>
+                <li>Featured Movies</li>
+                <li>Featured Teather</li>
+              </ul>
+            </div>
+            <div class="company">
+              <ul>
+                <h4>Company</h4>
+                <li>About Us</li>
+                <li>About Me</li>
+                <li>Contact Me</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div style="background-color: black; height: 1px; margin-top: 55px"></div>
+        <div class="rights">
+          <span>© 2022. Made with love by Dea</span>
+          <span>Submission Dicoding</span>
+        </div>
+      </div>
+      <a class="up" href="#">
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+    </footer>
+
+    <script>
+      // Activate menu on click
+      function onClick() {
+        document.getElementById("menu").classList.toggle("active");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = (e) => {
+        if (!e.target.matches(".dropbtn")) {
+          let dropdowns = document.getElementsByClassName("dropdown-content");
+          let i;
+          for (i = 0; i < dropdowns.length; i++) {
+            let openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("active")) {
+              openDropdown.classList.remove("active");
+            }
+          }
+        }
+      };
+    </script>
+  </body>
+</html>
