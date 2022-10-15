@@ -1,0 +1,269 @@
+@charset "utf-8";
+/* CSS Document */
+
+  /***************/
+ /*** CLASSES ***/
+/***************/
+
+.slideleft{
+	position: relative;
+	left: -30px;
+	width: 80px;
+	height: 50px;
+	background-color: #C5C5C5;
+	-webkit-transition: all 0.55s; 
+    -moz-transition: all 0.55s; 
+	-ms-transition: all 0.5s;
+    -o-transition: all 0.5s; 
+    transition: all 0.5s;
+}
+
+.slideleft:hover{
+	left: 0px;
+	cursor: pointer;
+}
+
+
+.name{
+	color: #3366FF;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.comment{
+	font-size: 12px;
+	color: #FFF;
+}
+
+.commentdate{
+	font-size: 9px;
+	float: right;
+	padding-top: 3px;
+}
+
+.voteresults{
+	width: 230px;
+	height: 30px;
+	font-weight: bold;
+}
+
+  /****************/
+ /*** SIDE BAR ***/
+/****************/
+
+#sidebar{
+	font-family: Helvetica;
+	position: absolute;
+	left: -60px;
+	top: 29%;
+	z-index: 1;
+	font-size: 15px;
+}
+
+#sidebarhide{
+	display: block;
+	color: #FFFFFF;
+	opacity: 0;
+	width: 80px;
+	height: 50px;
+	padding-left: 5px;
+	line-height: 50px;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#sidebarhide:hover{
+	opacity: 1;
+}
+
+  /****************/
+ /*** COMMENTS ***/
+/****************/
+
+#commentswrap{
+	width: 280px;
+	position: absolute;
+}
+
+#comments{
+	float: left;
+	position: absolute;
+	display: none;
+	left: -230px;
+	top: 0px;
+	width: 230px;
+	min-height: 500px;
+	background-color: #C5C5C5;
+	z-index: 1;
+}
+
+#commentsbutton{
+	display: block;
+	float: left;
+	width: 80px;
+	height: 50px;
+	background-image: url("../pesing_files/commentsicon.png");
+	background-position: 40px center;
+	background-repeat: no-repeat;
+	padding: 5px 5px;
+	background-color: #C5C5C5;
+	-webkit-transition: all 0.55s; 
+    -moz-transition: all 0.55s; 
+	-ms-transition: all 0.5s;
+    -o-transition: all 0.5s; 
+    transition: all 0.5s;
+}
+
+#commentsbutton:hover{
+	background-image: none;
+	cursor: pointer;
+}
+
+
+#commentsclosebutton{
+	float: left;
+	width: 50px;
+	height: 50px;
+	background-image: url("../pesing_files/closeicon.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	padding: 5px 5px;
+	background-color: #C5C5C5;
+	display: none;
+}
+
+#commentsclosebutton:hover{
+	cursor: pointer;
+}
+
+  /**********************/
+ /*** COMMENTS STYLE ***/
+/**********************/
+
+.commentss{
+	width: 230px;
+	height: 90px;
+}
+
+#commentsdp{
+	float: left;
+	width: 32px;
+	height: 90px;
+	background-image: url("../pesing_files/commentsdp.png");
+	background-repeat: no-repeat;
+	background-position: center 7px;
+	margin-left: 7px;
+	margin-right: 7px;
+}
+
+#comment{
+	width: 170px;
+	height: 90px;
+	float: left;
+}
+
+#postbutton{
+	width: 60px; 
+	height: 25px; 
+	background-color: #47639E; 
+	text-align: center; 
+	line-height: 25px; 
+	position: relative; 
+	right: 16px; 
+	top: 12px; 
+	float: right; 
+	border: solid 1px #1A356E;
+	-webkit-transition: all 0.7s; 
+    -moz-transition: all 0.7s; 
+	-ms-transition: all 0.7s;
+    -o-transition: all 0.7s; 
+    transition: all 0.7s;
+}
+
+#postbutton:hover{
+	background-color: #4871C4;
+	cursor: pointer;
+}
+
+  /************/
+ /*** POLL ***/
+/************/
+
+#pollwrap{
+	position: relative;
+	left: 0px;
+	top: 50px;
+}
+
+#poll{
+	float: left;
+	position: absolute;
+	display: none;
+	left: -230px;
+	top: 0px;
+	width: 230px;
+	min-height: 130px;
+	background-color: #C5C5C5;
+	z-index: 1;
+}
+
+#pollbutton{
+	display: block;
+	float: left;
+	width: 80px;
+	height: 50px;
+	background-image: url("../pesing_files/pollicon.png");
+	background-position: 40px center;
+	background-repeat: no-repeat;
+	padding: 5px 5px;
+	background-color: #C5C5C5;
+	-webkit-transition: all 0.55s; 
+    -moz-transition: all 0.55s; 
+	-ms-transition: all 0.5s;
+    -o-transition: all 0.5s; 
+    transition: all 0.5s;
+}
+
+#yesvotes{
+	float: left;
+	width: 180px;
+	height: 18px;
+	background-color: #0C0;
+	text-align: center;
+	margin-left: 5px;
+}
+
+#novotes{
+	float: left;
+	width: 40px;
+	height: 18px;
+	background-color: #F00;
+	text-align: center;
+	margin-left: 5px;
+	overflow: hidden;
+}
+
+#pollbutton:hover{
+	background-image: none;
+	cursor: pointer;
+}
+
+
+#pollclosebutton{
+	float: left;
+	width: 50px;
+	height: 50px;
+	background-image: url("../pesing_files/closeicon.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	padding: 5px 5px;
+	background-color: #C5C5C5;
+	display: none;
+}
+
+#pollclosebutton:hover{
+	cursor: pointer;
+}
