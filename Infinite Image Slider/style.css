@@ -1,0 +1,39 @@
+.slide-container{
+    margin: 0 auto;
+    height: 90vh;
+    width: 60%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slides{
+    display: flex;
+    height: 100%;
+}
+
+.slide{
+    min-width: 100%;
+}
+
+.slide img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.next-btn, .prev-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    padding: 10px;
+}
+
+.next-btn{
+    right: 20px;
+}
+
+.prev-btn{
+    left: 20px;
+}
