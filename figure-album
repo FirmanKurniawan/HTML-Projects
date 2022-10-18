@@ -1,9 +1,5 @@
 <DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="index.js"></script>
-    </head>
     <body>
         <header>
             <h1>Figure Album</h1> 
@@ -35,4 +31,57 @@
         </main>
         <p class="description" align="center"> <output id="favorite"> EZ IS MY FAVORITE </output> </p>
     </body>
+    <style>
+        body {
+            background-image: url(https://pm1.narvii.com/6335/4e92a52d3427ef6b24ea7fb88c40fda9582b005d_hq.jpg);
+        }
+        h1 {
+          text-align: center;
+          background-color:#dcdcdc;
+          padding-top:2%;
+          font-family: Comic Sans MS;
+          height: 10%;
+        }
+        h2 {
+          text-align: center;
+          background-color: #dcdcdc;
+          font-family: Comic Sans MS;
+        }
+        main img{
+          text-align: center;
+          border-radius: 50%;
+          border:solid;
+          border-color:#dcdcdc;
+
+        }
+        table {
+          margin-top:5%;
+          float:right;
+          margin-right:10%;
+
+
+        }
+        .description {
+          text-align: center;
+          background-color: #dcdcdc;
+          font-family: Comic Sans MS;
+
+
+        }
+        .imageSide{
+         margin-top:6%; 
+          float: right;
+          border-radius: 10%;
+          border:solid;
+          border-color:#dcdcdc;
+
+        }
+    </style>
+    <script>
+        function change(image, title, favorite) {
+          document.getElementById('image_principal').src = image;
+          document.getElementById('title').value = title;
+          document.getElementById('favorite').value = favorite;
+        }
+    </script>
 </html>
