@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dongle', sans-serif;
+}
+
+.header{
+    min-height: 70vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+   display: flex;
+   padding: 1% 1%;
+   justify-content: space-between;
+   align-items: center; 
+}
+
+nav img{
+    width:140px;
+    height: 80px;
+}
+
+.nav-bar{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-bar ul li{
+    list-style: none;
+    display: inline-block;
+    padding:8px 12px;
+    position: relative;
+    font-size: 31px;
+}
+
+.nav-bar ul li a{
+    color: aquamarine;
+    text-decoration: none;
+    font-size: 26px;
+}
+.nav-bar ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    }
+    .pushable {
+        background: hsl(340deg 100% 32%);
+        border-radius: 12px;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        outline-offset: 4px;
+      }
+      .front {
+        display: block;
+        padding: 12px 42px;
+        border-radius: 12px;
+        font-size: 1.25rem;
+        background: hsl(345deg 100% 47%);
+        color: white;
+        transform: translateY(-6px);
+      }
+    
+      .pushable:active .front {
+        transform: translateY(-2px);
+      }
+
+.start-1{
+    width: 100%;
+    color: #eb9411;
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding-left: 1%;
+    padding-top: 15%;
+}
+
+.start-1 h1{
+    font-size: 50px;
+    text-align: left;
+    padding-top: 13%;
+}
+
+.start-1 p{
+    margin: 10px o 40px;
+    padding-right: 1%;
+    text-align: left;
+    font-size: 18px;
+    color: #000000;
+    font-family: monospace;
+}
+
+.table{
+    padding-left:2% ;
+    font-family: monospace;
+    font-size: 28px;
+}
+body{
+    background-image: url(webimages/c.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+}
+
