@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Pengisian Feedback</title>
+        <link rel="stylesheet" href="AzharRizkiZulma.css" type="text/css"/>
+        <style type="text/css">
+            /* internal CSS border email dengan id, untuk CSS background terdapat di inline */
+            #i1 {
+                border: 2px inset blue;
+            }
+            .judul {
+                color: white;
+                font-size: 60px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                text-decoration: underline;
+            }
+
+            p {
+                color: white;
+            }
+
+            label {
+                color: white;
+            }
+
+            #p1 {
+                color: red;
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body background = "imgur.png">
+        <h1 class="judul">Feedback Form</h1>
+        <p id="p1">Please fill our form help us improve our site</p>
+        <label for="Name" id="l1"> Name: </label>
+        <input type="text">
+        <br>
+        <br>
+        <label for="Comments" id="l2"> Comments: </label>
+        <br>
+        <textarea name="Comments" style="height:100px"></textarea>
+        <br>
+        <br>
+        <label for="Email Address" id="l3"> Email Address </label>
+        <input id="i1" type="text">
+        <p> Things you liked </p>
+        <p>Site Design<input type="checkbox" id="cba" name="Site">
+        Links<input type="checkbox" id="cbb" name="Links">
+        Ease of us<input type="checkbox" id="cbc" name="Ease of us">
+        Images<input type="checkbox" id="cbd" name="Images"></p>
+        <p> How did you get to our website </p>
+        <p>Search engines<input type="radio" id="r1" name="Search">
+        Links from another website<input type="radio" id="r2" name="Links"></p>
+        <label for="Rate"> Rate our site: </label>
+        <select name="Rate">
+            <option value="Amazing">Amazing</option>
+            <option value="Neutral">Neutral</option>
+            <option value="Bad">Bad</option>
+        </select>
+        <br>
+        <br>
+        <input type="Submit" value="Submit">
+    </body>
+</html>
